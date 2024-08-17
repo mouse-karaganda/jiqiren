@@ -33,9 +33,6 @@ li {
     margin-bottom: 0;
     padding-bottom: 1em;
 }
-.left_menu {
-    w_float: left;
-}
 .nav_menu {
     display: inline-block;
     vertical-align: top;

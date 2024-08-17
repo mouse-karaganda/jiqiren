@@ -10,6 +10,22 @@ let tool = {
     },
 
     prepareFigureList: () => {
+        for (let appItem of app) {
+            for (let figure of appItem.figures) {
+                if (!figure.model.sorted) {
+                    figure.model.sorted = [];
+                }
+                figure.model.sorted.push(figure);
+            }
+            for (let model of appItem.models) {
+                if (model.sorted) {
+                    model.sorted.sort((a, b) => a.number - b.number);
+                }
+            }
+            //delete appItem.models;
+            delete appItem.figures;
+        }
+        console.log('after sort = ', app);
     },
     
     findParent: (node, tagName) => {
@@ -41,7 +57,8 @@ let tool = {
         if (withIndex) {
             newText.push(`<td><p class="count_index">${figure.index + 1})</p></td>`);
         }
-        let result = newText.join('\r\n');
+        let result = document.createElement('tr');
+        result.innerHTML = newText.join('\r\n');
         return result;
     },
     
@@ -55,7 +72,7 @@ let tool = {
             if (!findRow) {
                 continue;
             }
-            console.log('findRow = ', findRow);
+            console.log('findRow [%s] = ', appItem.folder, findRow);
             
             let folderPath = findRow.querySelector('p.folder_path');
             if (folderPath) {
@@ -64,14 +81,37 @@ let tool = {
             
             let nextRow = findRow.nextElementSibling;
             for (let figure of appItem.figures) {
-                let newRow = document.createElement('tr');
-                newRow.innerHTML = tool.printFigureItem(figure, true);
+                let newRow = tool.printFigureItem(figure, true);
                 findRow.parentElement.insertBefore(newRow, nextRow);
             }
         }
     },
     
     printModelTable:() => {
+        tool.prepareFigureList();
+        
+        for (let appItem of app) {
+            for (let model of appItem.models) {
+                if (!model.sorted) {
+                    continue;
+                }
+                let findLink = document.querySelector(`a[name=${model.folder}]`);
+                if (!findLink) {
+                    continue;
+                }
+                let findRow = tool.findParent(findLink, 'tr');
+                if (!findRow) {
+                    continue;
+                }
+                console.log('findRow [%s] = ', model.folder, findRow);
+                
+                let nextRow = findRow.nextElementSibling;
+                for (let figure of model.sorted) {
+                    let newRow = tool.printFigureItem(figure, false);
+                    findRow.parentElement.insertBefore(newRow, nextRow);
+                }
+            }
+        }
     }
 };
 
