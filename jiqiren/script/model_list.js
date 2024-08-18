@@ -121,24 +121,6 @@ app.ApitorKit.figures = [{
     name: {rus: '', eng: ''},
     number: 99,
     model: app.ApitorKit.robotE
-}];
-
-app.SuperBot.figures = [{
-    index: 0,
-    folder: 'chanche',
-    cover: '47.png',
-    count: 47,
-    name: {rus: 'Таран', eng: 'Plough Car'},
-    number: 2,
-    model: app.SuperBot.construct_sb
-}, {
-    index: 1,
-    folder: 'dianbaoji',
-    cover: '66.png',
-    count: 66,
-    name: {rus: 'Телеграф', eng: 'Telegraph Machine'},
-    number: 12,
-    model: app.SuperBot.construct_sb
 }, {
     index: 99,
     folder: '',
@@ -146,9 +128,243 @@ app.SuperBot.figures = [{
     count: 99,
     name: {rus: '', eng: ''},
     number: 99,
+    model: app.ApitorKit.robotE
+}, {
+    index: 99,
+    folder: '',
+    cover: '8.png',
+    count: 99,
+    name: {rus: '', eng: ''},
+    number: 99,
+    model: app.ApitorKit.robotE
+}, {
+    index: 99,
+    folder: '',
+    cover: '8.png',
+    count: 99,
+    name: {rus: '', eng: ''},
+    number: 99,
+    model: app.ApitorKit.robotE
+}, {
+    index: 99,
+    folder: '',
+    cover: '8.png',
+    count: 99,
+    name: {rus: '', eng: ''},
+    number: 99,
+    model: app.ApitorKit.robotE
+}, {
+    index: 99,
+    folder: '',
+    cover: '8.png',
+    count: 99,
+    name: {rus: '', eng: ''},
+    number: 99,
+    model: app.ApitorKit.robotE
+}, {
+    index: 99,
+    folder: '',
+    cover: '8.png',
+    count: 99,
+    name: {rus: '', eng: ''},
+    number: 99,
+    model: app.ApitorKit.robotE
+}, {
+    index: 99,
+    folder: '',
+    cover: '8.png',
+    count: 99,
+    name: {rus: '', eng: ''},
+    number: 99,
+    model: app.ApitorKit.robotE
+}, {
+    index: 99,
+    folder: '',
+    cover: '8.png',
+    count: 99,
+    name: {rus: '', eng: ''},
+    number: 99,
+    model: app.ApitorKit.robotE
+}, {
+    index: 99,
+    folder: '',
+    cover: '8.png',
+    count: 99,
+    name: {rus: '', eng: ''},
+    number: 99,
+    model: app.ApitorKit.robotE
+}, {
+    index: 99,
+    folder: '',
+    cover: '8.png',
+    count: 99,
+    name: {rus: '', eng: ''},
+    number: 99,
+    model: app.ApitorKit.robotE
+}];
+
+app.SuperBot.figures = [{
+    index: 0,
+    folder: 'chanche/chanche',
+    cover: '47.png',
+    count: 47,
+    name: {rus: 'Таран', eng: 'Plough Car'},
+    number: 2,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 1,
+    folder: 'dianbaoji/dianbaoji',
+    cover: '66.png',
+    count: 66,
+    name: {rus: 'Телеграф', eng: 'Telegraph Machine'},
+    number: 12,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 2,
+    folder: 'huatujiqiren/huatujiqiren',
+    cover: '59.png',
+    count: 59,
+    name: {rus: 'Робот-художник', eng: 'Drawing Robot'},
+    number: 13,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 3,
+    folder: 'huiliche/huiliche',
+    cover: '31.png',
+    count: 32,
+    name: {rus: 'Гоночный трицикл', eng: 'Rubber Band Racing Tricycle'},
+    number: 6,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 4,
+    folder: 'hushizhanche/hushizhanche',
+    cover: '40.png',
+    count: 40,
+    name: {rus: 'Колесница тигра - дракона', eng: 'Dragon Tiger Chariot'},
+    number: 8,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 5,
+    folder: 'jipuche/jipuche',
+    cover: '72.png',
+    count: 72,
+    name: {rus: 'Джип', eng: 'SUV'},
+    number: 3,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 6,
+    folder: 'jiqiren/jiqiren',
+    cover: '63.png',
+    count: 63,
+    name: {rus: 'Курьер', eng: 'Delivery Man'},
+    number: 7,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 7,
+    folder: 'laohu/laohu',
+    cover: '89.png',
+    count: 89,
+    name: {rus: 'Тигр', eng: 'Tiger'},
+    number: 16,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 8,
+    folder: 'motuoche/motuoche',
+    cover: '38.png',
+    count: 38,
+    name: {rus: 'Мотоцикл', eng: 'Motorcycle'},
+    number: 5,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 9,
+    folder: 'niao/niao',
+    cover: '51.png',
+    count: 51,
+    name: {rus: 'Птица', eng: 'Bird'},
+    number: 19,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 10,
+    folder: 'pingpangqiuche/pingpangqiuche',
+    cover: '68.png',
+    count: 68,
+    name: {rus: 'Футбольный робот', eng: 'Football Robot'},
+    number: 17,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 11,
+    folder: 'sanlunche/sanlunche',
+    cover: '52.png',
+    count: 52,
+    name: {rus: 'Трицикл', eng: 'Tricycle'},
+    number: 9,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 12,
+    folder: 'tanliche/tanliche',
+    cover: '23.png',
+    count: 23,
+    name: {rus: 'Трицикл с резиновой лентой', eng: 'Rubber Band Tricycle'},
+    number: 1,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 13,
+    folder: 'tianping/tianping',
+    cover: '39.png',
+    count: 39,
+    name: {rus: 'Баланс', eng: 'Balance'},
+    number: 4,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 14,
+    folder: 'tingchechangxitong/tingchechangxitong',
+    cover: '31.png',
+    count: 31,
+    name: {rus: 'Парковщик', eng: 'Parking System'},
+    number: 14,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 15,
+    folder: 'xiangpujiqiren/xiangpujiqiren',
+    cover: '57.png',
+    count: 57,
+    name: {rus: 'Сумо робот', eng: 'Sumo Robot'},
+    number: 18,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 16,
+    folder: 'yinyuehe/yinyuehe',
+    cover: '44.png',
+    count: 44,
+    name: {rus: 'Музыкальная шкатулка', eng: 'Music Box'},
+    number: 11,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 17,
+    folder: 'zhanche/zhanche',
+    cover: '34.png',
+    count: 34,
+    name: {rus: 'Колесница', eng: 'Chariot'},
+    number: 10,
+    model: app.SuperBot.construct_sb
+}, {
+    index: 18,
+    folder: 'zhihejiqiren/zhihejiqiren',
+    cover: '36.png',
+    count: 36,
+    name: {rus: 'Робот бумажный журавль', eng: 'Paper Crane Robot'},
+    number: 15,
     model: app.SuperBot.construct_sb
 }];
 
-app.RobotMake.figures = [];
+app.RobotMake.figures = [{
+    index: 99,
+    folder: '/',
+    cover: '8.png',
+    count: 99,
+    name: {rus: '', eng: ''},
+    number: 99,
+    model: app.SuperBot.construct_sb
+}];
 
 console.log('appList = ', app);

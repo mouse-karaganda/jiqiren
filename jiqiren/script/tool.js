@@ -22,7 +22,6 @@ let tool = {
                     model.sorted.sort((a, b) => a.number - b.number);
                 }
             }
-            //delete appItem.models;
             delete appItem.figures;
         }
         console.log('after sort = ', app);
@@ -41,7 +40,7 @@ let tool = {
     
     //getQ: (search) => document.querySelector(search),
     
-    printFigureItem: (figure, withIndex) => {
+    createFigureItem: (figure, withIndex) => {
         let coverSrc = (`img/${figure.model.app.folder}/${figure.model.folder}/${figure.folder}/${figure.cover}`);
         let newText = [
             '<td>',
@@ -62,28 +61,31 @@ let tool = {
         return result;
     },
     
+    appendFigureRows: (findRow, list, withIndex) => {
+        if (!findRow) {
+            return;
+        }
+        let nextRow = findRow.nextElementSibling;
+        for (let figure of list) {
+            let newRow = tool.createFigureItem(figure, withIndex);
+            findRow.parentElement.insertBefore(newRow, nextRow);
+        }
+    },
+    
     printFigureTable: () => {
         for (let appItem of app) {
             let findLink = document.querySelector(`a[name=${appItem.folder}]`);
-            if (!findLink) {
-                continue;
-            }
             let findRow = tool.findParent(findLink, 'tr');
-            if (!findRow) {
-                continue;
-            }
             console.log('findRow [%s] = ', appItem.folder, findRow);
             
-            let folderPath = findRow.querySelector('p.folder_path');
-            if (folderPath) {
-                folderPath.innerHTML = appItem.path;
+            if (findRow) {
+                let folderPath = findRow.querySelector('p.folder_path');
+                if (folderPath) {
+                    folderPath.innerHTML = appItem.path;
+                }
             }
             
-            let nextRow = findRow.nextElementSibling;
-            for (let figure of appItem.figures) {
-                let newRow = tool.printFigureItem(figure, true);
-                findRow.parentElement.insertBefore(newRow, nextRow);
-            }
+            tool.appendFigureRows(findRow, appItem.figures, true);
         }
     },
     
@@ -96,20 +98,10 @@ let tool = {
                     continue;
                 }
                 let findLink = document.querySelector(`a[name=${model.folder}]`);
-                if (!findLink) {
-                    continue;
-                }
                 let findRow = tool.findParent(findLink, 'tr');
-                if (!findRow) {
-                    continue;
-                }
                 console.log('findRow [%s] = ', model.folder, findRow);
                 
-                let nextRow = findRow.nextElementSibling;
-                for (let figure of model.sorted) {
-                    let newRow = tool.printFigureItem(figure, false);
-                    findRow.parentElement.insertBefore(newRow, nextRow);
-                }
+                tool.appendFigureRows(findRow, model.sorted, false);
             }
         }
     }
