@@ -53,7 +53,7 @@ let tool = {
             '</div>',
             '</td>',
             `<td><p class="count">${figure.count}</p></td>`,
-            `<td class="veat"><a class="cover" target="_blank" href="${coverSrc}"><img alt="${figure.name.eng}" src="${coverSrc}" /></a></td>`
+            `<td><a class="cover" target="_blank" href="${coverSrc}"><img alt="${figure.name.eng}" src="${coverSrc}" /></a></td>`
         ];
         if (withIndex) {
             newText.push(`<td><p class="count_index">${figure.index + 1})</p></td>`);

@@ -17,14 +17,14 @@ let app = [{
     folder: 'SuperBot',
     path: 'SuperBot/construct/',
     models: [
-        {label: 'Build', folder: 'construct_sb'}
+        {label: 'Sb Build', folder: 'construct_sb'}
     ]
 }, {
     label: 'Makerzoid SuperBot',
     folder: 'Makerzoid_SuperBot',
     path: 'Android/data/com.tudao.MakerzoidKit/files/construct/',
     models: [
-        {label: 'Build', folder: 'construct_mz_sb'}
+        {label: 'Mz Build', folder: 'construct_mz_sb'}
     ]
 }, {
     label: 'Robot Make',
@@ -1025,7 +1025,7 @@ app.Makerzoid_SuperBot.figures = [{
     folder: 'shensuojia/shensuojia',
     cover: '17.png',
     count: 17,
-    name: {rus: 'Расширительный зажим', eng: 'Expansion Clamp'},
+    name: {rus: 'Щипцы', eng: 'Expansion Clamp'},
     number: 6,
     model: app.Makerzoid_SuperBot.construct_mz_sb
 }, {
