@@ -20,6 +20,13 @@ let app = [{
         {label: 'Build', folder: 'construct_sb'}
     ]
 }, {
+    label: 'Makerzoid SuperBot',
+    folder: 'Makerzoid_SuperBot',
+    path: 'Android/data/com.tudao.MakerzoidKit/files/construct/',
+    models: [
+        {label: 'Build', folder: 'construct_mz_sb'}
+    ]
+}, {
     label: 'Robot Make',
     folder: 'RobotMake',
     path: 'RobotMake/construct/',
@@ -206,7 +213,7 @@ app.ApitorKit.figures = [{
     folder: '10e9bf6fcc10239c38f86804f722c9c1',
     cover: '41.jpg',
     count: 41,
-    name: {rus: 'Баскетбольная машина', eng: ''},
+    name: {rus: 'Баскетбольная машина', eng: 'Basketball Machine'},
     number: 11,
     model: app.ApitorKit.robotQ
 }, {
@@ -294,7 +301,7 @@ app.ApitorKit.figures = [{
     folder: '080beb181c219e55bfaf4f0de605e1ad',
     cover: '47.png',
     count: 47,
-    name: {rus: 'Колесо обозрения', eng: ''},
+    name: {rus: 'Колесо обозрения', eng: 'Ferris Wheel'},
     number: 2,
     model: app.ApitorKit.robotG
 }, {
@@ -310,7 +317,7 @@ app.ApitorKit.figures = [{
     folder: '228f2b7a03efb41e6e849d1895b0b9a5',
     cover: '46.png',
     count: 46,
-    name: {rus: 'Балет кроликов', eng: ''},
+    name: {rus: 'Балет кроликов', eng: 'Bunny Ballet'},
     number: 7,
     model: app.ApitorKit.robotG
 }, {
@@ -342,7 +349,7 @@ app.ApitorKit.figures = [{
     folder: '479e36d93748988adb64831d53083b65',
     cover: '59.png',
     count: 61,
-    name: {rus: 'Самолётная пусковая установка', eng: ''},
+    name: {rus: 'Самолётная пусковая установка', eng: 'Airplane Launcher'},
     number: 8,
     model: app.ApitorKit.robotB
 }, {
@@ -350,7 +357,7 @@ app.ApitorKit.figures = [{
     folder: '0548f0b03a5a68bc6b6902ccbd2e26f6',
     cover: '62.jpg',
     count: 62,
-    name: {rus: 'Кукурузник', eng: ''},
+    name: {rus: 'Кукурузник', eng: 'Propeller Plane'},
     number: 20,
     model: app.ApitorKit.robotQ
 }, {
@@ -358,7 +365,7 @@ app.ApitorKit.figures = [{
     folder: '585f3849407ab0014da6d5cde2a307f8',
     cover: '61.png',
     count: 63,
-    name: {rus: 'Птеродактиль', eng: ''},
+    name: {rus: 'Птеродактиль', eng: 'Pterodactyl'},
     number: 2,
     model: app.ApitorKit.robotB
 }, {
@@ -366,7 +373,7 @@ app.ApitorKit.figures = [{
     folder: '818ee4aca576441e0600ecba04de7da1',
     cover: '50.png',
     count: 50,
-    name: {rus: 'Барабанщик', eng: ''},
+    name: {rus: 'Барабанщик', eng: 'Drummer'},
     number: 1,
     model: app.ApitorKit.robotE
 }, {
@@ -374,7 +381,7 @@ app.ApitorKit.figures = [{
     folder: '849b9ac1c818c252fe4c31e71caaafac',
     cover: '54.png',
     count: 55,
-    name: {rus: 'Монстр-кар', eng: ''},
+    name: {rus: 'Монстр-кар', eng: 'Monster Car'},
     number: 5,
     model: app.ApitorKit.robotB
 }, {
@@ -406,7 +413,7 @@ app.ApitorKit.figures = [{
     folder: '965b4fc4129048bd2dee93dab4102d5e',
     cover: '41.png',
     count: 42,
-    name: {rus: 'Ножничный подъёмник', eng: ''},
+    name: {rus: 'Ножничный подъёмник', eng: 'Scissor Lift'},
     number: 9,
     model: app.ApitorKit.robotE
 }, {
@@ -414,7 +421,7 @@ app.ApitorKit.figures = [{
     folder: '6140e7ebe04b960b2383832ce16826ae',
     cover: '50.jpg',
     count: 50,
-    name: {rus: 'Качели', eng: ''},
+    name: {rus: 'Качели', eng: 'Swing'},
     number: 12,
     model: app.ApitorKit.robotQ
 }, {
@@ -430,7 +437,7 @@ app.ApitorKit.figures = [{
     folder: '7510d0ab7da1cac23b35102aed3cfb4b',
     cover: '51.png',
     count: 53,
-    name: {rus: 'Робот-собака', eng: ''},
+    name: {rus: 'Робот-собака', eng: 'Robot Dog'},
     number: 8,
     model: app.ApitorKit.robotE
 }, {
@@ -438,7 +445,7 @@ app.ApitorKit.figures = [{
     folder: '7516e7614af94def5436d489aaf1b9ca',
     cover: '47.png',
     count: 47,
-    name: {rus: 'Цветок', eng: ''},
+    name: {rus: 'Цветок', eng: 'Flower'},
     number: 8,
     model: app.ApitorKit.robotG
 }, {
@@ -454,7 +461,7 @@ app.ApitorKit.figures = [{
     folder: '67895cc57ae604b1e06a23bda8c36066',
     cover: '60.png',
     count: 60,
-    name: {rus: 'Пингвин', eng: ''},
+    name: {rus: 'Пингвин', eng: 'Penguin'},
     number: 4,
     model: app.ApitorKit.robotG
 }, {
@@ -462,7 +469,7 @@ app.ApitorKit.figures = [{
     folder: '88623c8aa75be5f442924be3a6f0e373',
     cover: '33.png',
     count: 35,
-    name: {rus: 'Весы', eng: ''},
+    name: {rus: 'Весы', eng: 'Balance Scale'},
     number: 6,
     model: app.ApitorKit.robotE
 }, {
@@ -470,7 +477,7 @@ app.ApitorKit.figures = [{
     folder: '304688ef132621e2690a64c4cddfd096',
     cover: '45.jpg',
     count: 45,
-    name: {rus: 'Клоун', eng: ''},
+    name: {rus: 'Клоун', eng: 'Clown'},
     number: 16,
     model: app.ApitorKit.robotQ
 }, {
@@ -478,7 +485,7 @@ app.ApitorKit.figures = [{
     folder: '871949bcb50c9f72d40bdc4ca3c2aa40',
     cover: '62.png',
     count: 62,
-    name: {rus: 'Боевой робот', eng: ''},
+    name: {rus: 'Боевой робот', eng: 'Battle Mech'},
     number: 6,
     model: app.ApitorKit.robotB
 }, {
@@ -494,7 +501,7 @@ app.ApitorKit.figures = [{
     folder: '8775603575c7b835286fbbc491f49ae1',
     cover: '51.png',
     count: 53,
-    name: {rus: 'Бульдозер', eng: ''},
+    name: {rus: 'Бульдозер', eng: 'Bulldozer'},
     number: 3,
     model: app.ApitorKit.robotB
 }, {
@@ -502,7 +509,7 @@ app.ApitorKit.figures = [{
     folder: '25331808001dbb7247eb469212b30e3c',
     cover: '56.png',
     count: 56,
-    name: {rus: 'Горилла', eng: ''},
+    name: {rus: 'Горилла', eng: 'Gorilla'},
     number: 1,
     model: app.ApitorKit.robotQ
 }, {
@@ -518,7 +525,7 @@ app.ApitorKit.figures = [{
     folder: 'a6bc17309126de2c3692e9c637640574',
     cover: '44.png',
     count: 44,
-    name: {rus: 'Волчок', eng: ''},
+    name: {rus: 'Волчок', eng: 'Spinning Top'},
     number: 5,
     model: app.ApitorKit.robotQ
 }, {
@@ -534,7 +541,7 @@ app.ApitorKit.figures = [{
     folder: 'a12f14dca26bc4e642dae35016a907a9',
     cover: '51.png',
     count: 51,
-    name: {rus: 'Единорог', eng: ''},
+    name: {rus: 'Единорог', eng: 'Unicorn'},
     number: 1,
     model: app.ApitorKit.robotG
 }, {
@@ -542,7 +549,7 @@ app.ApitorKit.figures = [{
     folder: 'a804a85a94efe9dd26ac5403b1ddfc1a',
     cover: '50.png',
     count: 52,
-    name: {rus: 'Трицератопс', eng: ''},
+    name: {rus: 'Трицератопс', eng: 'Triceratops'},
     number: 4,
     model: app.ApitorKit.robotB
 }, {
@@ -558,7 +565,7 @@ app.ApitorKit.figures = [{
     folder: 'b9a0d93f96682c04f72b99c21389c112',
     cover: '37.png',
     count: 39,
-    name: {rus: 'Роботизированная рука', eng: ''},
+    name: {rus: 'Роботизированная рука', eng: 'Robotic Arm'},
     number: 13,
     model: app.ApitorKit.robotE
 }, {
@@ -566,7 +573,7 @@ app.ApitorKit.figures = [{
     folder: 'b70a09f8e0d3059b6e87763414c0b00c',
     cover: '47.png',
     count: 49,
-    name: {rus: 'Уборочная машина', eng: ''},
+    name: {rus: 'Уборочная машина', eng: 'Sweeper Car'},
     number: 10,
     model: app.ApitorKit.robotE
 }, {
@@ -574,7 +581,7 @@ app.ApitorKit.figures = [{
     folder: 'bb00e60f349c579ee61b16ca1b1b734c',
     cover: '50.jpg',
     count: 50,
-    name: {rus: 'Подъёмный кран', eng: ''},
+    name: {rus: 'Подъёмный кран', eng: 'Tower Crane'},
     number: 7,
     model: app.ApitorKit.robotQ
 }, {
@@ -598,7 +605,7 @@ app.ApitorKit.figures = [{
     folder: 'c9dc93b87536b361cd00ea95d120beb9',
     cover: '52.jpg',
     count: 52,
-    name: {rus: 'Мотоцикл', eng: ''},
+    name: {rus: 'Мотоцикл', eng: 'Motorcycle'},
     number: 8,
     model: app.ApitorKit.robotQ
 }, {
@@ -646,7 +653,7 @@ app.ApitorKit.figures = [{
     folder: 'd15a7d6ff203a6ac533ae879dafba47d',
     cover: '39.png',
     count: 41,
-    name: {rus: 'Пружинящая машина', eng: ''},
+    name: {rus: 'Пружинящая машина', eng: 'Bounce Car'},
     number: 2,
     model: app.ApitorKit.robotE
 }, {
@@ -662,7 +669,7 @@ app.ApitorKit.figures = [{
     folder: 'd60a88eeec4fe1452cdf11e6660d0a23',
     cover: '50.jpg',
     count: 50,
-    name: {rus: 'Качающаяся лодка', eng: ''},
+    name: {rus: 'Качающаяся лодка', eng: 'Rocking Boat'},
     number: 9,
     model: app.ApitorKit.robotQ
 }, {
@@ -686,7 +693,7 @@ app.ApitorKit.figures = [{
     folder: 'e215d69448f7399fc07284d52da0b7ce',
     cover: '38.jpg',
     count: 38,
-    name: {rus: 'Автоматические двери', eng: ''},
+    name: {rus: 'Автоматические двери', eng: 'Automatic Door'},
     number: 15,
     model: app.ApitorKit.robotQ
 }, {
@@ -694,7 +701,7 @@ app.ApitorKit.figures = [{
     folder: 'e3721dda400e07588214ace56bbdd714',
     cover: '34.jpg',
     count: 34,
-    name: {rus: 'Лифт', eng: ''},
+    name: {rus: 'Лифт', eng: 'Elevator'},
     number: 19,
     model: app.ApitorKit.robotQ
 }, {
@@ -718,7 +725,7 @@ app.ApitorKit.figures = [{
     folder: 'fbc8c68e9bf0564e580ca9708a87beb5',
     cover: '56.jpg',
     count: 56,
-    name: {rus: 'Гоночная машина', eng: ''},
+    name: {rus: 'Гоночная машина', eng: 'Racing Car'},
     number: 3,
     model: app.ApitorKit.robotQ
 }];
@@ -877,10 +884,220 @@ app.SuperBot.figures = [{
     model: app.SuperBot.construct_sb
 }];
 
+app.Makerzoid_SuperBot.figures = [{
+    index: 0,
+    folder: 'cb_f1/cb_f1',
+    cover: '74.png',
+    count: 74,
+    name: {rus: 'Формула-1', eng: 'F1'},
+    number: 26,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 1,
+    folder: 'chanche/chanche',
+    cover: '47.png',
+    count: 47,
+    name: {rus: 'Таран', eng: 'Plough Car'},
+    number: 2,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 2,
+    folder: 'dajiaoche/dajiaoche',
+    cover: '96.png',
+    count: 96,
+    name: {rus: 'Внедорожник Bighorn', eng: 'Bighorn Car'},
+    number: 23,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 3,
+    folder: 'dianbaoji/dianbaoji',
+    cover: '66.png',
+    count: 66,
+    name: {rus: 'Телеграф', eng: 'Telegraph Machine'},
+    number: 15,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 4,
+    folder: 'gancaocha/gancaocha',
+    cover: '11.png',
+    count: 11,
+    name: {rus: 'Вилы', eng: 'Hayfork'},
+    number: 5,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 5,
+    folder: 'huatujiqiren/huatujiqiren',
+    cover: '59.png',
+    count: 59,
+    name: {rus: 'Робот-художник', eng: 'Drawing Robot'},
+    number: 16,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 6,
+    folder: 'huiliche/huiliche',
+    cover: '31.png',
+    count: 32,
+    name: {rus: 'Гоночный трицикл', eng: 'Rubber Band Racing Tricycle'},
+    number: 8,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 7,
+    folder: 'huojianche_1/huojianche_1',
+    cover: '58.png',
+    count: 58,
+    name: {rus: 'Реактивная машина', eng: 'Jet car'},
+    number: 24,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 8,
+    folder: 'hushizhanche/longhuzhanche',
+    cover: '40.png',
+    count: 40,
+    name: {rus: 'Колесница тигра - дракона', eng: 'Dragon Tiger Chariot'},
+    number: 11,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 9,
+    folder: 'jipuche/jipuche',
+    cover: '72.png',
+    count: 72,
+    name: {rus: 'Джип', eng: 'SUV'},
+    number: 3,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 10,
+    folder: 'jiqiren/songcanjiqiren',
+    cover: '63.png',
+    count: 63,
+    name: {rus: 'Курьер', eng: 'Delivery Man'},
+    number: 10,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 11,
+    folder: 'laohu/laohu',
+    cover: '89.png',
+    count: 89,
+    name: {rus: 'Тигр', eng: 'Tiger'},
+    number: 19,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 12,
+    folder: 'minihuiliche/minihuiliche',
+    cover: '17.png',
+    count: 17,
+    name: {rus: 'Гоночный мини-трицикл', eng: 'Mini Rubber Band Racing Tricycle'},
+    number: 9,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 13,
+    folder: 'motuoche/motuoche',
+    cover: '38.png',
+    count: 38,
+    name: {rus: 'Мотоцикл', eng: 'Motorcycle'},
+    number: 7,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 14,
+    folder: 'niao/niao',
+    cover: '51.png',
+    count: 51,
+    name: {rus: 'Птица', eng: 'Bird'},
+    number: 22,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 15,
+    folder: 'pingpangqiuche/qiusaijiqiren',
+    cover: '68.png',
+    count: 68,
+    name: {rus: 'Футбольный робот', eng: 'Football Robot'},
+    number: 20,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 16,
+    folder: 'sanlunche/sanlunche',
+    cover: '52.png',
+    count: 52,
+    name: {rus: 'Трицикл', eng: 'Tricycle'},
+    number: 12,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 17,
+    folder: 'shensuojia/shensuojia',
+    cover: '17.png',
+    count: 17,
+    name: {rus: 'Расширительный зажим', eng: 'Expansion Clamp'},
+    number: 6,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 18,
+    folder: 'tanliche/tanliche',
+    cover: '23.png',
+    count: 23,
+    name: {rus: 'Трицикл с резиновой лентой', eng: 'Rubber Band Tricycle'},
+    number: 1,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 19,
+    folder: 'tianping/tianping',
+    cover: '39.png',
+    count: 39,
+    name: {rus: 'Баланс', eng: 'Balance'},
+    number: 4,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 20,
+    folder: 'tingchechangxitong/zhinengzamen',
+    cover: '31.png',
+    count: 31,
+    name: {rus: 'Парковщик', eng: 'Parking System'},
+    number: 17,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 21,
+    folder: 'xiangpujiqiren/xiangpujiqiren',
+    cover: '57.png',
+    count: 57,
+    name: {rus: 'Сумо робот', eng: 'Sumo Robot'},
+    number: 21,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 22,
+    folder: 'yinyuehe/yinyuehe',
+    cover: '44.png',
+    count: 44,
+    name: {rus: 'Музыкальная шкатулка', eng: 'Music Box'},
+    number: 14,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 23,
+    folder: 'zhanche/zhanche',
+    cover: '34.png',
+    count: 34,
+    name: {rus: 'Колесница', eng: 'Chariot'},
+    number: 13,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 24,
+    folder: 'zhancheshengjiban_1/zhancheshengjiban_1',
+    cover: '137.png',
+    count: 137,
+    name: {rus: 'Бэтмобиль', eng: 'Batmobile'},
+    number: 25,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}, {
+    index: 25,
+    folder: 'zhihejiqiren/zhihejiqiren',
+    cover: '36.png',
+    count: 36,
+    name: {rus: 'Робот бумажный журавль', eng: 'Paper Crane Robot'},
+    number: 18,
+    model: app.Makerzoid_SuperBot.construct_mz_sb
+}];
+
 app.RobotMake.figures = [{
     index: 99,
     folder: '/',
-    cover: '8.png',
+    cover: '00.png',
     count: 99,
     name: {rus: '', eng: ''},
     number: 99,

@@ -41,17 +41,19 @@ let tool = {
     //getQ: (search) => document.querySelector(search),
     
     createFigureItem: (figure, withIndex) => {
-        let coverSrc = (`img/${figure.model.app.folder}/${figure.model.folder}/${figure.folder}/${figure.cover}`);
+        let coverSrc = (`img/app/${figure.model.app.folder}/${figure.model.folder}/${figure.folder}/${figure.cover}`);
         let newText = [
-            '<td>',
+            '<td class="veat">',
             `<p class="guid">${figure.folder}</p>`,
             `<p class="model">${figure.model.label}</p>`,
+            '<div>',
             `<div class="number">${figure.number}</div>`,
             `<div class="name"><p class="name_rus">${figure.name.rus}</p>`,
             `<p class="name_eng">${figure.name.eng}</p></div>`,
+            '</div>',
             '</td>',
             `<td><p class="count">${figure.count}</p></td>`,
-            `<td><a class="cover" target="_blank" href="${coverSrc}"><img alt="${figure.name.eng}" src="${coverSrc}" /></a></td>`
+            `<td class="veat"><a class="cover" target="_blank" href="${coverSrc}"><img alt="${figure.name.eng}" src="${coverSrc}" /></a></td>`
         ];
         if (withIndex) {
             newText.push(`<td><p class="count_index">${figure.index + 1})</p></td>`);
@@ -89,7 +91,7 @@ let tool = {
         }
     },
     
-    printModelTable:() => {
+    printModelTable: () => {
         tool.prepareFigureList();
         
         for (let appItem of app) {
