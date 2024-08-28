@@ -2,6 +2,7 @@ let app = [{
     label: 'Apitor Kit',
     folder: 'ApitorKit',
     path: 'Android/data/com.robot.apitor/files/download/com.robot.apitor/apitor/.download/',
+    menu: tool.menu.left,
     models: [
         {label: 'Robot X', folder: 'robotX'},
         {label: 'Robot S', folder: 'robotS'},
@@ -16,6 +17,7 @@ let app = [{
     label: 'Apitor SuperBot',
     folder: 'SuperBot',
     path: 'SuperBot/construct/',
+    menu: tool.menu.right,
     models: [
         {label: 'Sb Build', folder: 'construct_sb'}
     ]
@@ -23,6 +25,7 @@ let app = [{
     label: 'Makerzoid SuperBot',
     folder: 'Makerzoid_SuperBot',
     path: 'Android/data/com.tudao.MakerzoidKit/files/construct/',
+    menu: tool.menu.right,
     models: [
         {label: 'Mz Build', folder: 'construct_mz_sb'}
     ]
@@ -30,11 +33,12 @@ let app = [{
     label: 'Robot Make',
     folder: 'RobotMake',
     path: 'RobotMake/construct/',
+    menu: tool.menu.right,
     models: [
-        {label: 'Robot X', folder: 'robotX'},
-        {label: 'Robot S', folder: 'robotS'},
-        {label: 'Robot Q', folder: 'robotQ'},
-        {label: 'Robot J', folder: 'robotJ'}
+        {label: 'Robot X', folder: 'robotX1'},
+        {label: 'Robot S', folder: 'robotS1'},
+        {label: 'Robot Q', folder: 'robotQ1'},
+        {label: 'Robot J', folder: 'robotJ1'}
     ]
 }];
 

@@ -1,4 +1,9 @@
 let tool = {
+    menu: {
+        left: 'left_menu',
+        right: 'right_menu'
+    },
+
     prepareAppList: () => {
         for (let appItem of app) {
             for (let model of appItem.models) {
@@ -26,7 +31,7 @@ let tool = {
         }
         console.log('after sort = ', app);
     },
-    
+
     findParent: (node, tagName) => {
         if (!node) {
             return null;
@@ -38,72 +43,148 @@ let tool = {
         return tool.findParent(p, tagName);
     },
     
-    //getQ: (search) => document.querySelector(search),
+    create: (config) => {
+        let tagName = (config.tag) ? config.tag : 'div';
+        let newDiv = document.createElement(tagName);
+        newDiv.innerHTML = config.html.join('\r\n');
+        if (config.parent) {
+            config.parent.appendChild(newDiv);
+        }
+        return newDiv;
+    },
+
+    get: (search) => document.querySelector(search),
+
+    getAll: (search) => document.querySelectorAll(search),
     
     createFigureItem: (figure, withIndex) => {
         let coverSrc = (`img/app/${figure.model.app.folder}/${figure.model.folder}/${figure.folder}/${figure.cover}`);
+
+        let indexText = (withIndex)? (`<div class="td count_index">${figure.index + 1})</div>`) : '';
         let newText = [
-            '<td class="veat">',
-            `<p class="guid">${figure.folder}</p>`,
-            `<p class="model">${figure.model.label}</p>`,
-            '<div>',
-            `<div class="number">${figure.number}</div>`,
-            `<div class="name"><p class="name_rus">${figure.name.rus}</p>`,
-            `<p class="name_eng">${figure.name.eng}</p></div>`,
-            '</div>',
-            '</td>',
-            `<td><p class="count">${figure.count}</p></td>`,
-            `<td><a class="cover" target="_blank" href="${coverSrc}"><img alt="${figure.name.eng}" src="${coverSrc}" /></a></td>`
+            `<div class="item_label">`,
+                `<p class="guid">${figure.folder}</p>`,
+                `<p class="model">${figure.model.label}</p>`,
+                `<div class="item_number">`,
+                    `<div class="number"><span>${figure.number}</span></div>`,
+                    `<div class="name">`,
+                        `<p class="name_rus">${figure.name.rus}</p>`,
+                        `<p class="name_eng">${figure.name.eng}</p>`,
+                    `</div>`,
+                `</div>`,
+            `</div>`,
+            `<div class="item_right">`,
+                `<div class="td item_count">${figure.count}</div>`,
+                `<div class="item_cover"><a class="cover" target="_blank" href="${coverSrc}"><img alt="${figure.name.eng}" src="${coverSrc}" /></a></div>`,
+                indexText,
+            `</div>`
         ];
-        if (withIndex) {
-            newText.push(`<td><p class="count_index">${figure.index + 1})</p></td>`);
-        }
-        let result = document.createElement('tr');
-        result.innerHTML = newText.join('\r\n');
+        let result = tool.create({ html: newText });
+        result.className = 'figure_item';
         return result;
     },
-    
-    appendFigureRows: (findRow, list, withIndex) => {
-        if (!findRow) {
-            return;
-        }
-        let nextRow = findRow.nextElementSibling;
-        for (let figure of list) {
-            let newRow = tool.createFigureItem(figure, withIndex);
-            findRow.parentElement.insertBefore(newRow, nextRow);
-        }
-    },
-    
-    printFigureTable: () => {
-        for (let appItem of app) {
-            let findLink = document.querySelector(`a[name=${appItem.folder}]`);
-            let findRow = tool.findParent(findLink, 'tr');
-            console.log('findRow [%s] = ', appItem.folder, findRow);
-            
-            if (findRow) {
-                let folderPath = findRow.querySelector('p.folder_path');
-                if (folderPath) {
-                    folderPath.innerHTML = appItem.path;
-                }
-            }
-            
-            tool.appendFigureRows(findRow, appItem.figures, true);
-        }
-    },
-    
-    printModelTable: () => {
-        tool.prepareFigureList();
-        
-        for (let appItem of app) {
-            for (let model of appItem.models) {
-                if (!model.sorted) {
+
+    model: {
+        printMenu: () => {
+            let menuList = {};
+            menuList[tool.menu.left] = tool.get('.nav_menu.' + tool.menu.left);
+            menuList[tool.menu.right] = tool.get('.nav_menu.' + tool.menu.right);
+
+            for (let appItem of app) {
+                let menuElem = menuList[appItem.menu];
+                if (!menuElem) {
                     continue;
                 }
-                let findLink = document.querySelector(`a[name=${model.folder}]`);
-                let findRow = tool.findParent(findLink, 'tr');
-                console.log('findRow [%s] = ', model.folder, findRow);
+                let newText = [`<p class="app"><a href="#${appItem.folder}">${appItem.label}</a></p>`];
+                newText.push('<ul>');
+                for (let model of appItem.models) {
+                    newText.push(`<li><a href="#${model.folder}">${model.label}</a></li>`);
+                }
+                newText.push('</ul>');
+
+                tool.create({
+                    html: newText,
+                    parent: menuElem
+                });
+            }
+        },
+
+        printTable: () => {
+            let withIndex = false;
+            tool.model.printMenu();
+            tool.prepareFigureList();
+
+            let content = tool.get('#wrapper');
+            if (!content) {
+                return;
+            }
+            for (let appItem of app) {
+                let newText = [`<a name="${appItem.folder}"></a><h2 withIndex="${withIndex}">${appItem.label}</h2>`];
+                tool.create({
+                    html: newText,
+                    parent: content
+                });
+
+                for (let model of appItem.models) {
+                    newText = [`<a name="${model.folder}"></a><h3>${model.label}</h3>`];
+                    tool.create({
+                        html: newText,
+                        parent: content
+                    });
+                    
+                    if (!model.sorted) {
+                        continue;
+                    }
+                    let list = model.sorted;
+                    for (let figure of list) {
+                        newDiv = tool.createFigureItem(figure, withIndex);
+                        content.appendChild(newDiv);
+                    }
+                }
+            }
+        }
+    },
+
+    figure: {
+        printMenu: () => {
+            let menuElem = tool.get('.nav_menu');
+            if (!menuElem) {
+                return;
+            }
+            for (let appItem of app) {
+                let newText = [`<a href="#${appItem.folder}">${appItem.label}</a>`];
+                tool.create({
+                    tag: 'li',
+                    html: newText,
+                    parent: menuElem
+                });
+            }
+        },
+        
+        printTable: () => {
+            let withIndex = true;
+            tool.figure.printMenu();
+            
+            let content = tool.get('#wrapper');
+            if (!content) {
+                return;
+            }
+            for (let appItem of app) {
+                let newText = [
+                    `<a name="${appItem.folder}"></a><h2 with-index="${withIndex}">${appItem.label}</h2>`,
+                    '<p>Внутренняя память <span class="storage_path">/storage/emulated/0/</p>',
+                    `<p class="folder_path">${appItem.path}</p>`
+                ];
+                tool.create({
+                    html: newText,
+                    parent: content
+                });
                 
-                tool.appendFigureRows(findRow, model.sorted, false);
+                let list = appItem.figures;
+                for (let figure of list) {
+                    newDiv = tool.createFigureItem(figure, withIndex);
+                    content.appendChild(newDiv);
+                }
             }
         }
     }
