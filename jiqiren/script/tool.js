@@ -29,7 +29,7 @@ let tool = {
             }
             delete appItem.figures;
         }
-        console.log('after sort = ', app);
+        console.log('After sort = ', app);
     },
 
     findParent: (node, tagName) => {
@@ -42,11 +42,15 @@ let tool = {
         }
         return tool.findParent(p, tagName);
     },
-    
+
     create: (config) => {
         let tagName = (config.tag) ? config.tag : 'div';
         let newDiv = document.createElement(tagName);
         newDiv.innerHTML = config.html.join('\r\n');
+
+        if (config.className) {
+            newDiv.className = config.className;
+        }
         if (config.parent) {
             config.parent.appendChild(newDiv);
         }
@@ -56,31 +60,33 @@ let tool = {
     get: (search) => document.querySelector(search),
 
     getAll: (search) => document.querySelectorAll(search),
-    
+
     createFigureItem: (figure, withIndex) => {
         let coverSrc = (`img/app/${figure.model.app.folder}/${figure.model.folder}/${figure.folder}/${figure.cover}`);
 
-        let indexText = (withIndex) ? (`<div class="td index_value">${figure.index + 1})</div>`) : '';
+        let indexText = (withIndex) ? (`<div class="index_value">${figure.index + 1})</div>`) : '';
         let newText = [
-            `<div class="item_label">`,
+            '<div class="item_label">',
                 `<p class="guid">${figure.folder}</p>`,
                 `<p class="model">${figure.model.label}</p>`,
-                `<div class="item_number">`,
+                '<div class="item_number">',
                     `<div class="number"><span>${figure.number}</span></div>`,
-                    `<div class="name">`,
+                    '<div class="name">',
                         `<p class="name_rus">${figure.name.rus}</p>`,
                         `<p class="name_eng">${figure.name.eng}</p>`,
-                    `</div>`,
-                `</div>`,
-            `</div>`,
-            `<div class="item_right">`,
-                `<div class="td item_count">${figure.count}</div>`,
+                    '</div>',
+                '</div>',
+            '</div>',
+            '<div class="item_right">',
+                `<div class="item_count">${figure.count}</div>`,
                 `<div class="item_cover"><a class="cover" target="_blank" href="${coverSrc}"><img alt="${figure.name.eng}" src="${coverSrc}" /></a></div>`,
                 indexText,
-            `</div>`
+            '</div>'
         ];
-        let result = tool.create({ html: newText });
-        result.className = 'figure_item';
+        let result = tool.create({
+            html: newText,
+            className: 'figure_item'
+        });
         return result;
     },
 
@@ -131,13 +137,13 @@ let tool = {
                         html: newText,
                         parent: content
                     });
-                    
+
                     if (!model.sorted) {
                         continue;
                     }
                     let list = model.sorted;
                     for (let figure of list) {
-                        newDiv = tool.createFigureItem(figure, withIndex);
+                        let newDiv = tool.createFigureItem(figure, withIndex);
                         content.appendChild(newDiv);
                     }
                 }
@@ -152,19 +158,19 @@ let tool = {
                 return;
             }
             for (let appItem of app) {
-                let newText = [`<a href="#${appItem.folder}">${appItem.label}</a>`];
-                tool.create({
+                let newElem = {
                     tag: 'li',
-                    html: newText,
+                    html: [`<a href="#${appItem.folder}">${appItem.label}</a>`],
                     parent: menuElem
-                });
+                };
+                tool.create(newElem);
             }
         },
-        
+
         printTable: () => {
             let withIndex = true;
             tool.figure.printMenu();
-            
+
             let content = tool.get('#wrapper');
             if (!content) {
                 return;
@@ -179,10 +185,10 @@ let tool = {
                     html: newText,
                     parent: content
                 });
-                
+
                 let list = appItem.figures;
                 for (let figure of list) {
-                    newDiv = tool.createFigureItem(figure, withIndex);
+                    let newDiv = tool.createFigureItem(figure, withIndex);
                     content.appendChild(newDiv);
                 }
             }
