@@ -60,7 +60,7 @@ let tool = {
     createFigureItem: (figure, withIndex) => {
         let coverSrc = (`img/app/${figure.model.app.folder}/${figure.model.folder}/${figure.folder}/${figure.cover}`);
 
-        let indexText = (withIndex)? (`<div class="td count_index">${figure.index + 1})</div>`) : '';
+        let indexText = (withIndex) ? (`<div class="td index_value">${figure.index + 1})</div>`) : '';
         let newText = [
             `<div class="item_label">`,
                 `<p class="guid">${figure.folder}</p>`,

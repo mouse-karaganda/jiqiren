@@ -8,6 +8,7 @@
     --border-green: #00bb00;
     --border-red: #f8d5db;
     --border-red: #ff0000;
+    --soft-radius: 10px;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
     font-size: 0.8em;
     background: var(--bg-yellow);
     margin: 0;
-    padding: 0 0 60px 0;
+    padding: 0;
 }
 
 .td {
@@ -30,9 +31,10 @@ h2 {
     border-color: var(--bg-yellow);
     border-style: double;
     border-width: 0 0 9px 9px;
-    border-top-right-radius: 20px;
-    border-radius: 0 20px;
     padding: 9px 18px;
+    margin-left: -3px;
+    w_border-top-right-radius: 20px;
+    border-radius: 0 20px;
     background: var(--border-blue);
     color: white;
 }
@@ -44,20 +46,16 @@ h2[with-index="true"] {
 .cover img {
     width: 200px;
     border: 1px solid var(--border-green);
-    border-radius: 8px;
+    border-radius: var(--soft-radius);
 }
 
 p {
     margin: 0;
-    padding: 0.5em 2px;
+    padding: 0.5em 0;
 }
 
 li {
     padding: 0.5em 0;
-}
-
-nav {
-    display: flex;
 }
 
 .left_menu {
@@ -78,9 +76,8 @@ nav {
 }
 
 a.goto {
-    background-image: url(../img/external_link.svg);
+    background: no-repeat url(../img/external_link.svg);
     background-position: right center;
-    background-repeat: no-repeat;
     background-size: 12px;
     padding-right: 16px;
 }
@@ -88,14 +85,14 @@ a.goto {
 .arrow_top {
     position: fixed;
     bottom: 10px;
-    left: 290px;
+    left: 280px;
 }
 
 .arrow_top a {
     display: block;
-    border: 1px solid var(--border-red);
     background: var(--bg-red);
     color: var(--border-red);
+    border: 1px solid var(--border-red);
 }
 
 .arrow_top a:active {
@@ -104,7 +101,6 @@ a.goto {
 }
 
 .number {
-    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
@@ -115,35 +111,36 @@ a.goto {
 .number,
 .arrow_top a {
     font-size: 1.5em;
-    border-radius: 8px;
+    border-radius: var(--soft-radius);
     padding: 0.5em 0;
     width: 2.1em;
     text-align: center;
 }
 
-#content {
+#page {
+    margin: 0 auto 60px auto;
+    padding: 10px;
+}
+
+nav,
+#content,
+.figure_item,
+.item_number,
+.number,
+.item_right {
     display: flex;
 }
 
 #wrapper {
-    padding: 0 10px;
+    padding-right: 10px;
 }
 
-.figure_item {
-    display: flex;
+.item_right {
+    align-items: center;
 }
 
 .item_label {
     width: 300px;
-}
-
-.item_number {
-    display: flex;
-}
-
-.item_right {
-    display: flex;
-    align-items: center;
 }
 
 .item_cover {
@@ -151,7 +148,7 @@ a.goto {
 }
 
 .item_count,
-.count_index {
+.index_value {
     width: 32px;
     text-align: right;
 }

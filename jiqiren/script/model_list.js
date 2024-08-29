@@ -147,7 +147,7 @@ app.ApitorKit.figures = [{
     count: 166,
     name: {rus: 'Совместные модели SX', eng: 'SX Joint Model'},
     number: 11,
-    model: app.ApitorKit.robotS, 
+    model: app.ApitorKit.robotS
 }, {
     index: 12,
     folder: '6f88b00bfb9b159bb0c29c215d27aa51',
