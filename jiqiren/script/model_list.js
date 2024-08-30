@@ -1,7 +1,9 @@
 let app = [{
     label: 'Apitor Kit',
     folder: 'ApitorKit',
+    androidId: 'com.robot.apitor',
     path: 'Android/data/com.robot.apitor/files/download/com.robot.apitor/apitor/.download/',
+    comment: 'Новая линейка Apitor',
     menu: tool.menu.left,
     models: [
         {label: 'Robot X', folder: 'robotX'},
@@ -14,25 +16,41 @@ let app = [{
         {label: 'Robot B', folder: 'robotB'}
     ]
 }, {
-    label: 'Apitor SuperBot',
-    folder: 'SuperBot',
+    label: 'Apitor Robot',
+    folder: 'SuperBot_Apitor',
+    androidId: 'com.tudao.ApitorRobot',
     path: 'SuperBot/construct/',
+    comment: 'SuperBot: версия от Apitor',
     menu: tool.menu.right,
     models: [
-        {label: 'Sb Build', folder: 'construct_sb'}
+        {label: 'Apitor SuperBot', folder: 'construct_sb_ap'}
     ]
 }, {
-    label: 'Makerzoid SuperBot',
-    folder: 'Makerzoid_SuperBot',
+    label: 'Makerzoid Kit',
+    folder: 'SuperBot_Makerzoid',
+    androidId: 'com.tudao.MakerzoidKit',
     path: 'Android/data/com.tudao.MakerzoidKit/files/construct/',
+    comment: 'SuperBot: версия от Makerzoid',
     menu: tool.menu.right,
     models: [
-        {label: 'Mz Build', folder: 'construct_mz_sb'}
+        {label: 'Makerzoid SuperBot', folder: 'construct_sb_mz'}
+    ]
+},{
+    label: 'Makerzoid',
+    folder: 'Makerzoid',
+    androidId: 'com.tudao.makerzoid',
+    path: 'Android/data/com.tudao.makerzoid/files/construct/',
+    comment: 'Новая линейка Makerzoid',
+    menu: tool.menu.right,
+    models: [
+        {label: 'Mz Build', folder: 'construct_sb_mz'}
     ]
 }, {
-    label: 'Robot Make',
-    folder: 'RobotMake',
+    label: 'SuperBot',
+    folder: 'SuperBot_RobotMake',
+    androidId: 'com.tudao.superRobot',
     path: 'RobotMake/construct/',
+    comment: 'Старая линейка Makerzoid: китайская версия',
     menu: tool.menu.right,
     models: [
         {label: 'Robot X', folder: 'robotX1'},
@@ -734,14 +752,14 @@ app.ApitorKit.figures = [{
     model: app.ApitorKit.robotQ
 }];
 
-app.SuperBot.figures = [{
+app.SuperBot_Apitor.figures = [{
     index: 0,
     folder: 'chanche/chanche',
     cover: '47.png',
     count: 47,
     name: {rus: 'Таран', eng: 'Plough Car'},
     number: 2,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 1,
     folder: 'dianbaoji/dianbaoji',
@@ -749,7 +767,7 @@ app.SuperBot.figures = [{
     count: 66,
     name: {rus: 'Телеграф', eng: 'Telegraph Machine'},
     number: 12,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 2,
     folder: 'huatujiqiren/huatujiqiren',
@@ -757,7 +775,7 @@ app.SuperBot.figures = [{
     count: 59,
     name: {rus: 'Робот-художник', eng: 'Drawing Robot'},
     number: 13,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 3,
     folder: 'huiliche/huiliche',
@@ -765,7 +783,7 @@ app.SuperBot.figures = [{
     count: 32,
     name: {rus: 'Гоночный трицикл', eng: 'Rubber Band Racing Tricycle'},
     number: 6,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 4,
     folder: 'hushizhanche/hushizhanche',
@@ -773,7 +791,7 @@ app.SuperBot.figures = [{
     count: 40,
     name: {rus: 'Колесница тигра - дракона', eng: 'Dragon Tiger Chariot'},
     number: 8,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 5,
     folder: 'jipuche/jipuche',
@@ -781,7 +799,7 @@ app.SuperBot.figures = [{
     count: 72,
     name: {rus: 'Джип', eng: 'SUV'},
     number: 3,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 6,
     folder: 'jiqiren/jiqiren',
@@ -789,7 +807,7 @@ app.SuperBot.figures = [{
     count: 63,
     name: {rus: 'Курьер', eng: 'Delivery Man'},
     number: 7,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 7,
     folder: 'laohu/laohu',
@@ -797,7 +815,7 @@ app.SuperBot.figures = [{
     count: 89,
     name: {rus: 'Тигр', eng: 'Tiger'},
     number: 16,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 8,
     folder: 'motuoche/motuoche',
@@ -805,7 +823,7 @@ app.SuperBot.figures = [{
     count: 38,
     name: {rus: 'Мотоцикл', eng: 'Motorcycle'},
     number: 5,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 9,
     folder: 'niao/niao',
@@ -813,7 +831,7 @@ app.SuperBot.figures = [{
     count: 51,
     name: {rus: 'Птица', eng: 'Bird'},
     number: 19,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 10,
     folder: 'pingpangqiuche/pingpangqiuche',
@@ -821,7 +839,7 @@ app.SuperBot.figures = [{
     count: 68,
     name: {rus: 'Футбольный робот', eng: 'Football Robot'},
     number: 17,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 11,
     folder: 'sanlunche/sanlunche',
@@ -829,7 +847,7 @@ app.SuperBot.figures = [{
     count: 52,
     name: {rus: 'Трицикл', eng: 'Tricycle'},
     number: 9,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 12,
     folder: 'tanliche/tanliche',
@@ -837,7 +855,7 @@ app.SuperBot.figures = [{
     count: 23,
     name: {rus: 'Трицикл с резиновой лентой', eng: 'Rubber Band Tricycle'},
     number: 1,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 13,
     folder: 'tianping/tianping',
@@ -845,7 +863,7 @@ app.SuperBot.figures = [{
     count: 39,
     name: {rus: 'Баланс', eng: 'Balance'},
     number: 4,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 14,
     folder: 'tingchechangxitong/tingchechangxitong',
@@ -853,7 +871,7 @@ app.SuperBot.figures = [{
     count: 31,
     name: {rus: 'Парковщик', eng: 'Parking System'},
     number: 14,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 15,
     folder: 'xiangpujiqiren/xiangpujiqiren',
@@ -861,7 +879,7 @@ app.SuperBot.figures = [{
     count: 57,
     name: {rus: 'Сумо робот', eng: 'Sumo Robot'},
     number: 18,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 16,
     folder: 'yinyuehe/yinyuehe',
@@ -869,7 +887,7 @@ app.SuperBot.figures = [{
     count: 44,
     name: {rus: 'Музыкальная шкатулка', eng: 'Music Box'},
     number: 11,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 17,
     folder: 'zhanche/zhanche',
@@ -877,7 +895,7 @@ app.SuperBot.figures = [{
     count: 34,
     name: {rus: 'Колесница', eng: 'Chariot'},
     number: 10,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }, {
     index: 18,
     folder: 'zhihejiqiren/zhihejiqiren',
@@ -885,17 +903,17 @@ app.SuperBot.figures = [{
     count: 36,
     name: {rus: 'Робот бумажный журавль', eng: 'Paper Crane Robot'},
     number: 15,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }];
 
-app.Makerzoid_SuperBot.figures = [{
+app.SuperBot_Makerzoid.figures = [{
     index: 0,
     folder: 'cb_f1/cb_f1',
     cover: '74.png',
     count: 74,
     name: {rus: 'Формула-1', eng: 'F1'},
     number: 26,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 1,
     folder: 'chanche/chanche',
@@ -903,7 +921,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 47,
     name: {rus: 'Таран', eng: 'Plough Car'},
     number: 2,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 2,
     folder: 'dajiaoche/dajiaoche',
@@ -911,7 +929,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 96,
     name: {rus: 'Внедорожник Bighorn', eng: 'Bighorn Car'},
     number: 23,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 3,
     folder: 'dianbaoji/dianbaoji',
@@ -919,7 +937,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 66,
     name: {rus: 'Телеграф', eng: 'Telegraph Machine'},
     number: 15,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 4,
     folder: 'gancaocha/gancaocha',
@@ -927,7 +945,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 11,
     name: {rus: 'Вилы', eng: 'Hayfork'},
     number: 5,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 5,
     folder: 'huatujiqiren/huatujiqiren',
@@ -935,7 +953,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 59,
     name: {rus: 'Робот-художник', eng: 'Drawing Robot'},
     number: 16,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 6,
     folder: 'huiliche/huiliche',
@@ -943,7 +961,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 32,
     name: {rus: 'Гоночный трицикл', eng: 'Rubber Band Racing Tricycle'},
     number: 8,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 7,
     folder: 'huojianche_1/huojianche_1',
@@ -951,7 +969,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 58,
     name: {rus: 'Реактивная машина', eng: 'Jet car'},
     number: 24,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 8,
     folder: 'hushizhanche/longhuzhanche',
@@ -959,7 +977,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 40,
     name: {rus: 'Колесница тигра - дракона', eng: 'Dragon Tiger Chariot'},
     number: 11,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 9,
     folder: 'jipuche/jipuche',
@@ -967,7 +985,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 72,
     name: {rus: 'Джип', eng: 'SUV'},
     number: 3,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 10,
     folder: 'jiqiren/songcanjiqiren',
@@ -975,7 +993,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 63,
     name: {rus: 'Курьер', eng: 'Delivery Man'},
     number: 10,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 11,
     folder: 'laohu/laohu',
@@ -983,7 +1001,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 89,
     name: {rus: 'Тигр', eng: 'Tiger'},
     number: 19,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 12,
     folder: 'minihuiliche/minihuiliche',
@@ -991,7 +1009,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 17,
     name: {rus: 'Гоночный мини-трицикл', eng: 'Mini Rubber Band Racing Tricycle'},
     number: 9,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 13,
     folder: 'motuoche/motuoche',
@@ -999,7 +1017,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 38,
     name: {rus: 'Мотоцикл', eng: 'Motorcycle'},
     number: 7,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 14,
     folder: 'niao/niao',
@@ -1007,7 +1025,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 51,
     name: {rus: 'Птица', eng: 'Bird'},
     number: 22,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 15,
     folder: 'pingpangqiuche/qiusaijiqiren',
@@ -1015,7 +1033,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 68,
     name: {rus: 'Футбольный робот', eng: 'Football Robot'},
     number: 20,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 16,
     folder: 'sanlunche/sanlunche',
@@ -1023,7 +1041,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 52,
     name: {rus: 'Трицикл', eng: 'Tricycle'},
     number: 12,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 17,
     folder: 'shensuojia/shensuojia',
@@ -1031,7 +1049,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 17,
     name: {rus: 'Щипцы', eng: 'Expansion Clamp'},
     number: 6,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 18,
     folder: 'tanliche/tanliche',
@@ -1039,7 +1057,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 23,
     name: {rus: 'Трицикл с резиновой лентой', eng: 'Rubber Band Tricycle'},
     number: 1,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 19,
     folder: 'tianping/tianping',
@@ -1047,7 +1065,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 39,
     name: {rus: 'Баланс', eng: 'Balance'},
     number: 4,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 20,
     folder: 'tingchechangxitong/zhinengzamen',
@@ -1055,7 +1073,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 31,
     name: {rus: 'Парковщик', eng: 'Parking System'},
     number: 17,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 21,
     folder: 'xiangpujiqiren/xiangpujiqiren',
@@ -1063,7 +1081,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 57,
     name: {rus: 'Сумо робот', eng: 'Sumo Robot'},
     number: 21,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 22,
     folder: 'yinyuehe/yinyuehe',
@@ -1071,7 +1089,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 44,
     name: {rus: 'Музыкальная шкатулка', eng: 'Music Box'},
     number: 14,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 23,
     folder: 'zhanche/zhanche',
@@ -1079,7 +1097,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 34,
     name: {rus: 'Колесница', eng: 'Chariot'},
     number: 13,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 24,
     folder: 'zhancheshengjiban_1/zhancheshengjiban_1',
@@ -1087,7 +1105,7 @@ app.Makerzoid_SuperBot.figures = [{
     count: 137,
     name: {rus: 'Бэтмобиль', eng: 'Batmobile'},
     number: 25,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }, {
     index: 25,
     folder: 'zhihejiqiren/zhihejiqiren',
@@ -1095,17 +1113,17 @@ app.Makerzoid_SuperBot.figures = [{
     count: 36,
     name: {rus: 'Робот бумажный журавль', eng: 'Paper Crane Robot'},
     number: 18,
-    model: app.Makerzoid_SuperBot.construct_mz_sb
+    model: app.SuperBot_Makerzoid.construct_sb_mz
 }];
 
-app.RobotMake.figures = [{
+app.SuperBot_RobotMake.figures = [{
     index: 99,
     folder: '/',
     cover: '00.png',
     count: 99,
     name: {rus: '', eng: ''},
     number: 99,
-    model: app.SuperBot.construct_sb
+    model: app.SuperBot_Apitor.construct_sb_ap
 }];
 
 console.log('appList = ', app);

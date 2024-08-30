@@ -10,6 +10,7 @@ let tool = {
                 model.app = appItem;
                 appItem[model.folder] = model;
             }
+            appItem.figures = [];
             app[appItem.folder] = appItem;
         }
     },
@@ -46,7 +47,7 @@ let tool = {
     create: (config) => {
         let tagName = (config.tag) ? config.tag : 'div';
         let newDiv = document.createElement(tagName);
-        newDiv.innerHTML = config.html.join('\r\n');
+        newDiv.innerHTML = (config.html || []).join('\r\n');
 
         if (config.className) {
             newDiv.className = config.className;
@@ -61,10 +62,9 @@ let tool = {
 
     getAll: (search) => document.querySelectorAll(search),
 
-    createFigureItem: (figure, withIndex) => {
+    createFigureItem: (figure, withIndex, parent) => {
         let coverSrc = (`img/app/${figure.model.app.folder}/${figure.model.folder}/${figure.folder}/${figure.cover}`);
 
-        let indexText = (withIndex) ? (`<div class="index_value">${figure.index + 1})</div>`) : '';
         let newText = [
             '<div class="item_label">',
                 `<p class="guid">${figure.folder}</p>`,
@@ -80,14 +80,14 @@ let tool = {
             '<div class="item_right">',
                 `<div class="item_count">${figure.count}</div>`,
                 `<div class="item_cover"><a class="cover" target="_blank" href="${coverSrc}"><img alt="${figure.name.eng}" src="${coverSrc}" /></a></div>`,
-                indexText,
+                `<div class="index_value" with-index="${withIndex}">${figure.index + 1})</div>`,
             '</div>'
         ];
-        let result = tool.create({
+        tool.create({
+            className: 'figure_item',
             html: newText,
-            className: 'figure_item'
+            parent: parent
         });
-        return result;
     },
 
     model: {
@@ -120,22 +120,38 @@ let tool = {
             tool.model.printMenu();
             tool.prepareFigureList();
 
-            let content = tool.get('#wrapper');
-            if (!content) {
+            let wrapper = tool.get('#wrapper');
+            if (!wrapper) {
                 return;
             }
             for (let appItem of app) {
-                let newText = [`<a name="${appItem.folder}"></a><h2 withIndex="${withIndex}">${appItem.label}</h2>`];
+                let content = tool.create({
+                    tag: 'article',
+                    parent: wrapper
+                });
+                let newText = [
+                    `<a name="${appItem.folder}"></a><h2 with-index="${withIndex}"><span>${appItem.label}</span>`,
+                    `<span class="android_id">${appItem.androidId}</span></h2>`,
+                    '<div>',
+                        `<p class="comment">${appItem.comment}</p>`,
+                    '</div>'
+                ];
                 tool.create({
+                    className: 'app_header',
                     html: newText,
                     parent: content
                 });
 
                 for (let model of appItem.models) {
+                    let modelElem = tool.create({
+                        className: 'model_item',
+                        parent: content
+                    });
                     newText = [`<a name="${model.folder}"></a><h3>${model.label}</h3>`];
                     tool.create({
+                        className: 'model_header',
                         html: newText,
-                        parent: content
+                        parent: modelElem
                     });
 
                     if (!model.sorted) {
@@ -143,8 +159,7 @@ let tool = {
                     }
                     let list = model.sorted;
                     for (let figure of list) {
-                        let newDiv = tool.createFigureItem(figure, withIndex);
-                        content.appendChild(newDiv);
+                        tool.createFigureItem(figure, withIndex, modelElem);
                     }
                 }
             }
@@ -158,12 +173,12 @@ let tool = {
                 return;
             }
             for (let appItem of app) {
-                let newElem = {
+                let newText = [`<a href="#${appItem.folder}">${appItem.label}</a>`];
+                tool.create({
                     tag: 'li',
-                    html: [`<a href="#${appItem.folder}">${appItem.label}</a>`],
+                    html: newText,
                     parent: menuElem
-                };
-                tool.create(newElem);
+                });
             }
         },
 
@@ -171,25 +186,33 @@ let tool = {
             let withIndex = true;
             tool.figure.printMenu();
 
-            let content = tool.get('#wrapper');
-            if (!content) {
+            let wrapper = tool.get('#wrapper');
+            if (!wrapper) {
                 return;
             }
             for (let appItem of app) {
+                let content = tool.create({
+                    tag: 'article',
+                    parent: wrapper
+                });
                 let newText = [
-                    `<a name="${appItem.folder}"></a><h2 with-index="${withIndex}">${appItem.label}</h2>`,
-                    '<p>Внутренняя память <span class="storage_path">/storage/emulated/0/</p>',
-                    `<p class="folder_path">${appItem.path}</p>`
+                    `<a name="${appItem.folder}"></a><h2 with-index="${withIndex}"><span>${appItem.label}</span>`,
+                    `<span class="android_id">${appItem.androidId}</span></h2>`,
+                    '<div>',
+                        `<p class="comment">${appItem.comment}</p>`,
+                        '<p>Внутренняя память <span class="storage_path">/storage/emulated/0/</p>',
+                        `<p class="folder_path">${appItem.path}</p>`,
+                    '</div>'
                 ];
                 tool.create({
+                    className: 'app_header',
                     html: newText,
                     parent: content
                 });
 
                 let list = appItem.figures;
                 for (let figure of list) {
-                    let newDiv = tool.createFigureItem(figure, withIndex);
-                    content.appendChild(newDiv);
+                    tool.createFigureItem(figure, withIndex, content);
                 }
             }
         }
