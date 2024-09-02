@@ -1,6 +1,5 @@
 let app = [{
-    label: 'Apitor Kit',
-    folder: 'ApitorKit',
+    label: 'Apitor Kit', folder: 'ApitorKit',
     androidId: 'com.robot.apitor',
     path: 'Android/data/com.robot.apitor/files/download/com.robot.apitor/apitor/.download/',
     comment: 'Новая линейка Apitor',
@@ -16,48 +15,184 @@ let app = [{
         {label: 'Robot B', folder: 'robotB'}
     ]
 }, {
-    label: 'Apitor Robot',
-    folder: 'SuperBot_Apitor',
+    label: 'Apitor Robot', folder: 'SuperBot_Apitor',
     androidId: 'com.tudao.ApitorRobot',
     path: 'SuperBot/construct/',
     comment: 'SuperBot: версия от Apitor',
-    menu: tool.menu.right,
+    menu: tool.menu.left,
     models: [
         {label: 'Apitor SuperBot', folder: 'construct_sb_ap'}
     ]
 }, {
-    label: 'Makerzoid Kit',
-    folder: 'SuperBot_Makerzoid',
+    label: 'Makerzoid Kit', folder: 'SuperBot_Makerzoid',
     androidId: 'com.tudao.MakerzoidKit',
     path: 'Android/data/com.tudao.MakerzoidKit/files/construct/',
     comment: 'SuperBot: версия от Makerzoid',
-    menu: tool.menu.right,
+    menu: tool.menu.left,
     models: [
         {label: 'Makerzoid SuperBot', folder: 'construct_sb_mz'}
     ]
-},{
-    label: 'Makerzoid',
-    folder: 'Makerzoid',
+}, {
+    label: 'makerzoid', folder: 'Makerzoid',
     androidId: 'com.tudao.makerzoid',
     path: 'Android/data/com.tudao.makerzoid/files/construct/',
     comment: 'Новая линейка Makerzoid',
     menu: tool.menu.right,
-    models: [
-        {label: 'Mz Build', folder: 'construct_sb_mz'}
-    ]
+    lines: [{
+        label: 'Fun', folder: 'Fun',
+        sublines: [{
+            label: 'Fun Building Blocks', folder: 'Fun',
+            models: [
+                {label: 'Stretchy Battle', folder: 'stretchy'},
+                {label: 'Star War', folder: 'starWar'},
+                {label: 'Land', folder: 'land'}
+            ]
+        }]
+    }, {
+        label: 'Diverse', folder: 'Diverse',
+        sublines: [{
+            label: 'Diverse', folder: 'Diverse',
+            models: [
+                {label: 'Basic', folder: 'basic'},
+                {label: 'Mechanical', folder: 'mechanical'},
+                {label: 'YL Corps', folder: 'corps'}
+            ]
+        }]
+    }, {
+        label: 'Machinist', folder: 'Machinist',
+        sublines: [{
+            label: 'Machinist Building Blocks', folder: 'Machinist',
+            models: [
+                {label: 'Group', folder: 'group'},
+                {label: 'Basic', folder: 'basic'},
+                {label: 'Mechanical', folder: 'mechanical'},
+                {label: 'YL Corps', folder: 'corps'},
+                {label: 'Electric Engineering', folder: 'electric'},
+                {label: 'Electric YL Crops', folder: 'e_crops'},
+                {label: 'Electric Animal', folder: 'animal'},
+                {label: 'Space Series', folder: 'space'}
+                
+            ]
+        }]
+    }, {
+        label: 'ROBOT MASTER', folder: 'RobotMaster',
+        sublines: [{
+            label: 'Standard', folder: 'Standard',
+            models: [
+                {label: 'Basic', folder: 'basic'},
+                {label: 'Mechanical', folder: 'mechanical'},
+                {label: 'YL Corps', folder: 'corps'},
+                {label: 'Electric Engineering', folder: 'electric'},
+                {label: 'Electric YL Crops', folder: 'e_crops'},
+                {label: 'Electric Animal', folder: 'animal'},
+                {label: 'Jr Programming', folder: 'jr_program'},
+                {label: 'Space Series', folder: 'space'},
+                {label: 'Newly-updated', folder: 'newly'}
+            ]
+        }, {
+            label: 'Premium', folder: 'Premium',
+            models: [
+                {label: 'Basic', folder: 'basic'},
+                {label: 'Mechanical', folder: 'mechanical'},
+                {label: 'YL Corps', folder: 'corps'},
+                {label: 'Electric Engineering', folder: 'electric'},
+                {label: 'Electric YL Crops', folder: 'e_crops'},
+                {label: 'Electric Animal', folder: 'animal'},
+                {label: 'Jr Programming', folder: 'jr_program'},
+                {label: 'Advanced Builging', folder: 'advanced_build'},
+                {label: 'Advanced Programming', folder: 'advanced_program'},
+                {label: 'Space Series', folder: 'space'},
+                {label: 'NEWLY-UPDATED', folder: 'newly'}
+            ]
+        }, {
+            label: 'Tournament', folder: 'Tournament',
+            models: [
+                {label: 'Stretchy Battle', folder: 'stretchy'},
+                {label: 'Star War', folder: 'starWar'},
+                {label: 'Land', folder: 'land'}
+            ]
+        }, {
+            label: 'Soccer Competition', folder: 'Soccer',
+            models: [
+                {label: 'Stretchy Battle', folder: 'stretchy'},
+                {label: 'Star War', folder: 'starWar'},
+                {label: 'Land', folder: 'land'}
+            ]
+        }]
+    }, {
+        label: 'Superbot', folder: 'Superbot',
+        sublines: [{
+            label: 'Superbot', folder: 'Superbot',
+            models: [
+                {label: 'Stretchy Battle123', folder: 'stretchy123'},
+                {label: 'Star War123', folder: 'starWar123'},
+                {label: 'Land123', folder: 'land123'}
+            ]
+        }, {
+            label: 'Superbot Master Premium', folder: 'Premium',
+            models: [
+                {label: 'Stretchy Battle123', folder: 'stretchy123'},
+                {label: 'Star War123', folder: 'starWar123'},
+                {label: 'Land123', folder: 'land123'}
+            ]
+        }]
+    }, {
+        label: 'Smart Robot', folder: 'SmartRobot',
+        sublines: [{
+            label: 'Smart Robot', folder: 'SmartRobot',
+            models: [
+                {label: 'Stretchy Battle123', folder: 'stretchy123'},
+                {label: 'Star War123', folder: 'starWar123'},
+                {label: 'Land123', folder: 'land123'}
+            ]
+        }, {
+            label: 'Smart Robot Premium', folder: 'Premium',
+            models: [
+                {label: 'Stretchy Battle123', folder: 'stretchy123'},
+                {label: 'Star War123', folder: 'starWar123'},
+                {label: 'Land123', folder: 'land123'}
+            ]
+        }]
+    }]
 }, {
-    label: 'SuperBot',
-    folder: 'SuperBot_RobotMake',
+    label: 'SuperBot', folder: 'SuperBot_RobotMake',
     androidId: 'com.tudao.superRobot',
     path: 'RobotMake/construct/',
     comment: 'Старая линейка Makerzoid: китайская версия',
     menu: tool.menu.right,
     models: [
-        {label: 'Robot X', folder: 'robotX1'},
-        {label: 'Robot S', folder: 'robotS1'},
-        {label: 'Robot Q', folder: 'robotQ1'},
-        {label: 'Robot J', folder: 'robotJ1'}
+        {label: 'SuperBot Build', folder: 'construct_rm_tw'}
     ]
+}, {
+    label: 'Futula', folder: 'Futula',
+    androidId: 'com.tudao.Futula',
+    path: 'Android/data/com.tudao.Futula/files/construct/',
+    comment: 'Линейка Futula',
+    menu: tool.menu.right,
+    models: [
+        {label: 'Futula Build', folder: 'construct_ft'}
+    ]
+}, {
+    label: 'RobotMake', folder: 'RobotMake',
+    androidId: 'com.tudao.RobotMake.Taiwan',
+    path: 'Android/data/com.tudao.RobotMake.Taiwan/files/construct/',
+    comment: 'Линейка RobotMake для Тайваня',
+    menu: tool.menu.right,
+    lines: [{
+        label: 'Fun', folder: 'Fun',
+        models: [
+            {label: 'Stretchy Battle', folder: 'stretchy'},
+            {label: 'Star War', folder: 'starWar'},
+            {label: 'Land', folder: 'land'}
+        ]
+    }, {
+        label: 'Fun123', folder: 'Fun123',
+        models: [
+            {label: 'Stretchy Battle123', folder: 'stretchy123'},
+            {label: 'Star War123', folder: 'starWar123'},
+            {label: 'Land123', folder: 'land123'}
+        ]
+    }]
 }];
 
 tool.prepareAppList();

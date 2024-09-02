@@ -3,30 +3,76 @@ let tool = {
         left: 'left_menu',
         right: 'right_menu'
     },
+    
+    folder: (item) => {
+        let parentFolder;
+        if (item.app) {
+            parentFolder = item.app.printFolder;
+        } else if (item.line) {
+            parentFolder = item.line.printFolder;
+        } else if (item.subline) {
+            parentFolder = item.subline.printFolder;
+        }
+        let folders = [parentFolder, item.folder];
+        item.printFolder = folders.join('/');
+        //console.log('folder = ', item.printFolder, item);
+    },
 
     prepareAppList: () => {
         for (let appItem of app) {
-            for (let model of appItem.models) {
-                model.app = appItem;
-                appItem[model.folder] = model;
-            }
+            appItem.printFolder = appItem.folder;
+            if (appItem.lines) {
+                for (let line of appItem.lines) {
+                    line.app = appItem;
+                    tool.folder(line);
+                    appItem[line.folder] = line;
+                    
+                    if (line.sublines) {
+                        for (let subline of line.sublines) {
+                            subline.line = line;
+                            tool.folder(subline);
+                            line[subline.folder] = subline;
+                            
+                            for (let model of subline.models) {
+                                model.subline = subline;
+                                tool.folder(model);
+                                subline[model.folder] = model;
+                            }
+                        }
+                    } else {
+                        for (let model of line.models) {
+                            model.line = line;
+                            tool.folder(model);
+                            line[model.folder] = model;
+                        }
+                    }
+                }
+            } else {
+                for (let model of appItem.models) {
+                    model.app = appItem;
+                    tool.folder(model);
+                    appItem[model.folder] = model;
+                }
+            }                
             appItem.figures = [];
             app[appItem.folder] = appItem;
         }
     },
 
     prepareFigureList: () => {
+        let onlyModel = [];
         for (let appItem of app) {
             for (let figure of appItem.figures) {
+                if (!onlyModel.includes(figure.model)) {
+                    onlyModel.push(figure.model);
+                }
                 if (!figure.model.sorted) {
                     figure.model.sorted = [];
                 }
                 figure.model.sorted.push(figure);
             }
-            for (let model of appItem.models) {
-                if (model.sorted) {
-                    model.sorted.sort((a, b) => a.number - b.number);
-                }
+            for (let model of onlyModel) {
+                model.sorted.sort((a, b) => a.number - b.number);
             }
             delete appItem.figures;
         }
@@ -45,7 +91,7 @@ let tool = {
     },
 
     create: (config) => {
-        let tagName = (config.tag) ? config.tag : 'div';
+        let tagName = (config.tag || 'div');
         let newDiv = document.createElement(tagName);
         newDiv.innerHTML = (config.html || []).join('\r\n');
 
@@ -61,9 +107,21 @@ let tool = {
     get: (search) => document.querySelector(search),
 
     getAll: (search) => document.querySelectorAll(search),
+    
+    createAppElem: (parent, withIndex) => {
+        let appElem = tool.create({
+            tag: 'article',
+            className: 'app_item',
+            parent: parent
+        });
+        if (withIndex) {
+            appElem.classList.add('with_index');
+        }
+        return appElem;
+    },
 
-    createFigureItem: (figure, withIndex, parent) => {
-        let coverSrc = (`img/app/${figure.model.app.folder}/${figure.model.folder}/${figure.folder}/${figure.cover}`);
+    createFigureElem: (figure, parent) => {
+        let coverSrc = (`img/app/${figure.model.printFolder}/${figure.folder}/${figure.cover}`);
 
         let newText = [
             '<div class="item_label">',
@@ -80,7 +138,7 @@ let tool = {
             '<div class="item_right">',
                 `<div class="item_count">${figure.count}</div>`,
                 `<div class="item_cover"><a class="cover" target="_blank" href="${coverSrc}"><img alt="${figure.name.eng}" src="${coverSrc}" /></a></div>`,
-                `<div class="index_value" with-index="${withIndex}">${figure.index + 1})</div>`,
+                `<div class="index_value">${figure.index + 1})</div>`,
             '</div>'
         ];
         tool.create({
@@ -91,6 +149,15 @@ let tool = {
     },
 
     model: {
+        menuRange: (item) => {
+            let newText = ['<ol>'];
+            for (let model of item.models) {
+                newText.push(`<li><a href="#${model.printFolder}">${model.label}</a></li>`);
+            }
+            newText.push('</ol>');
+            return newText;
+        },
+        
         printMenu: () => {
             let menuList = {};
             menuList[tool.menu.left] = tool.get('.nav_menu.' + tool.menu.left);
@@ -101,17 +168,61 @@ let tool = {
                 if (!menuElem) {
                     continue;
                 }
-                let newText = [`<p class="app"><a href="#${appItem.folder}">${appItem.label}</a></p>`];
-                newText.push('<ul>');
-                for (let model of appItem.models) {
-                    newText.push(`<li><a href="#${model.folder}">${model.label}</a></li>`);
+                let newText = [`<p class="app"><a href="#${appItem.printFolder}">${appItem.label}</a></p>`];
+                if (appItem.lines) {
+                    newText.push('<ul>');
+                    for (let line of appItem.lines) {
+                        newText.push('<li>');
+                        newText.push(`<p class="line"><a href="#${line.printFolder}">${line.label}</a></p>`);
+                        if (line.sublines) {
+                            newText.push('<ul>');
+                            for (let subline of line.sublines) {
+                                newText.push(...[
+                                    '<li>',
+                                    `<p class="subline"><a href="#${subline.printFolder}">${subline.label}</a></p>`,
+                                    ...tool.model.menuRange(subline),
+                                    '</li>'
+                                ]);
+                            }
+                            newText.push('</ul>');
+                        } else {
+                            newText.push(...tool.model.menuRange(line));
+                        }
+                        newText.push('</li>');
+                    }
+                    newText.push('</ul>');
+                } else {
+                    newText.push(...tool.model.menuRange(appItem));
                 }
-                newText.push('</ul>');
-
                 tool.create({
                     html: newText,
                     parent: menuElem
                 });
+            }
+        },
+        
+        tableHeader: (item, prefix, parent) => {
+            let headerElem = tool.create({
+                className: `${prefix}_item`,
+                parent: parent
+            });
+            let newText = [`<a name="${item.printFolder}"></a><h3>${item.label}</h3>`];
+            tool.create({
+                className: `${prefix}_header`,
+                html: newText,
+                parent: headerElem
+            });
+            return headerElem;
+        },
+        
+        tableRange: (item, parent) => {
+            for (let model of item.models) {
+                let modelElem = tool.model.tableHeader(model, 'model', parent);
+                if (model.sorted) {
+                    for (let figure of model.sorted) {
+                        tool.createFigureElem(figure, modelElem);
+                    }
+                }
             }
         },
 
@@ -125,12 +236,9 @@ let tool = {
                 return;
             }
             for (let appItem of app) {
-                let content = tool.create({
-                    tag: 'article',
-                    parent: wrapper
-                });
+                let appElem = tool.createAppElem(wrapper, withIndex);
                 let newText = [
-                    `<a name="${appItem.folder}"></a><h2 with-index="${withIndex}"><span>${appItem.label}</span>`,
+                    `<a name="${appItem.printFolder}"></a><h2><span>${appItem.label}</span>`,
                     `<span class="android_id">${appItem.androidId}</span></h2>`,
                     '<div>',
                         `<p class="comment">${appItem.comment}</p>`,
@@ -139,28 +247,23 @@ let tool = {
                 tool.create({
                     className: 'app_header',
                     html: newText,
-                    parent: content
+                    parent: appElem
                 });
-
-                for (let model of appItem.models) {
-                    let modelElem = tool.create({
-                        className: 'model_item',
-                        parent: content
-                    });
-                    newText = [`<a name="${model.folder}"></a><h3>${model.label}</h3>`];
-                    tool.create({
-                        className: 'model_header',
-                        html: newText,
-                        parent: modelElem
-                    });
-
-                    if (!model.sorted) {
-                        continue;
+                
+                if (appItem.lines) {
+                    for (let line of appItem.lines) {
+                        let lineElem = tool.model.tableHeader(line, 'line', appElem);
+                        if (line.sublines) {
+                            for (let subline of line.sublines) {
+                                let sublineElem = tool.model.tableHeader(subline, 'subline', lineElem);
+                                tool.model.tableRange(subline, sublineElem);
+                            }
+                        } else {
+                            tool.model.tableRange(line, lineElem);
+                        }
                     }
-                    let list = model.sorted;
-                    for (let figure of list) {
-                        tool.createFigureItem(figure, withIndex, modelElem);
-                    }
+                } else {
+                    tool.model.tableRange(appItem, appElem);
                 }
             }
         }
@@ -173,7 +276,7 @@ let tool = {
                 return;
             }
             for (let appItem of app) {
-                let newText = [`<a href="#${appItem.folder}">${appItem.label}</a>`];
+                let newText = [`<a href="#${appItem.printFolder}">${appItem.label}</a>`];
                 tool.create({
                     tag: 'li',
                     html: newText,
@@ -191,12 +294,9 @@ let tool = {
                 return;
             }
             for (let appItem of app) {
-                let content = tool.create({
-                    tag: 'article',
-                    parent: wrapper
-                });
+                let appElem = tool.createAppElem(wrapper, withIndex);
                 let newText = [
-                    `<a name="${appItem.folder}"></a><h2 with-index="${withIndex}"><span>${appItem.label}</span>`,
+                    `<a name="${appItem.printFolder}"></a><h2><span>${appItem.label}</span>`,
                     `<span class="android_id">${appItem.androidId}</span></h2>`,
                     '<div>',
                         `<p class="comment">${appItem.comment}</p>`,
@@ -207,12 +307,10 @@ let tool = {
                 tool.create({
                     className: 'app_header',
                     html: newText,
-                    parent: content
+                    parent: appElem
                 });
-
-                let list = appItem.figures;
-                for (let figure of list) {
-                    tool.createFigureItem(figure, withIndex, content);
+                for (let figure of appItem.figures) {
+                    tool.createFigureElem(figure, appElem);
                 }
             }
         }
