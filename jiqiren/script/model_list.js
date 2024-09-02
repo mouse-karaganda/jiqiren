@@ -302,7 +302,7 @@ app.ApitorKit.figures = [{
     folder: '145d87b97b0805bf4222dfe813311e03',
     cover: '81.png',
     count: 81,
-    name: {rus: 'Пусковая установка', eng: ''},
+    name: {rus: 'Пусковая установка', eng: 'Launcher'},
     number: 6,
     model: app.ApitorKit.robotJ
 }, {
@@ -334,7 +334,7 @@ app.ApitorKit.figures = [{
     folder: '476e0af57e8b26868d8f3f93da4ed6f0',
     cover: '66.png',
     count: 64,
-    name: {rus: 'Внедорожник', eng: ''},
+    name: {rus: 'Внедорожник', eng: 'Off-Roader'},
     number: 1,
     model: app.ApitorKit.robotR
 }, {
@@ -398,7 +398,7 @@ app.ApitorKit.figures = [{
     folder: '0920fdd83c6139d18df056b89e33ef8f',
     cover: '66.png',
     count: 64,
-    name: {rus: 'Бурильная машина', eng: ''},
+    name: {rus: 'Бурильная машина', eng: 'Drill Car'},
     number: 1,
     model: app.ApitorKit.robotJ
 }, {
@@ -510,7 +510,7 @@ app.ApitorKit.figures = [{
     folder: 'a3f18dd13e5297aebfbc6213f825b504',
     cover: '75.png',
     count: 75,
-    name: {rus: 'Танк', eng: ''},
+    name: {rus: 'Танк', eng: 'Tank'},
     number: 3,
     model: app.ApitorKit.robotJ
 }, {
@@ -550,7 +550,7 @@ app.ApitorKit.figures = [{
     folder: 'b1a4db45e1988c62d9f270a5efd40472',
     cover: '88.png',
     count: 88,
-    name: {rus: 'Робот', eng: ''},
+    name: {rus: 'Робот', eng: 'Robot J'},
     number: 2,
     model: app.ApitorKit.robotJ
 }, {
@@ -582,7 +582,7 @@ app.ApitorKit.figures = [{
     folder: 'bbab4cb2f44575a3e5240a7dd58d2605',
     cover: '84.png',
     count: 84,
-    name: {rus: 'Робокар', eng: ''},
+    name: {rus: 'Робокар', eng: 'Robo Car'},
     number: 4,
     model: app.ApitorKit.robotJ
 }, {
@@ -678,7 +678,7 @@ app.ApitorKit.figures = [{
     folder: 'df23f42e6e3e8a2497ec6ed475764be0',
     cover: '68.png',
     count: 68,
-    name: {rus: 'Грузовик', eng: ''},
+    name: {rus: 'Грузовик', eng: 'Pickup'},
     number: 3,
     model: app.ApitorKit.robotR
 }, {
@@ -702,7 +702,7 @@ app.ApitorKit.figures = [{
     folder: 'ea3c14e443d3e83766850ada7deef485',
     cover: '65.png',
     count: 65,
-    name: {rus: 'Робот-жук', eng: ''},
+    name: {rus: 'Робот-жук', eng: 'Robo Bug'},
     number: 4,
     model: app.ApitorKit.robotR
 }, {
