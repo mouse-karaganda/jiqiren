@@ -71,7 +71,6 @@ let app = [{
                 {label: 'Electric YL Crops', folder: 'e_crops'},
                 {label: 'Electric Animal', folder: 'animal'},
                 {label: 'Space Series', folder: 'space'}
-                
             ]
         }]
     }, {

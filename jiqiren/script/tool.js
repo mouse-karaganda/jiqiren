@@ -3,7 +3,7 @@ let tool = {
         left: 'left_menu',
         right: 'right_menu'
     },
-    
+
     folder: (item) => {
         let parentFolder;
         if (item.app) {
@@ -26,13 +26,13 @@ let tool = {
                     line.app = appItem;
                     tool.folder(line);
                     appItem[line.folder] = line;
-                    
+
                     if (line.sublines) {
                         for (let subline of line.sublines) {
                             subline.line = line;
                             tool.folder(subline);
                             line[subline.folder] = subline;
-                            
+
                             for (let model of subline.models) {
                                 model.subline = subline;
                                 tool.folder(model);
@@ -53,7 +53,7 @@ let tool = {
                     tool.folder(model);
                     appItem[model.folder] = model;
                 }
-            }                
+            }
             appItem.figures = [];
             app[appItem.folder] = appItem;
         }
@@ -107,7 +107,7 @@ let tool = {
     get: (search) => document.querySelector(search),
 
     getAll: (search) => document.querySelectorAll(search),
-    
+
     createAppElem: (parent, withIndex) => {
         let appElem = tool.create({
             tag: 'article',
@@ -157,7 +157,7 @@ let tool = {
             newText.push('</ol>');
             return newText;
         },
-        
+
         printMenu: () => {
             let menuList = {};
             menuList[tool.menu.left] = tool.get('.nav_menu.' + tool.menu.left);
@@ -200,7 +200,7 @@ let tool = {
                 });
             }
         },
-        
+
         tableHeader: (item, prefix, parent) => {
             let headerElem = tool.create({
                 className: `${prefix}_item`,
@@ -214,7 +214,7 @@ let tool = {
             });
             return headerElem;
         },
-        
+
         tableRange: (item, parent) => {
             for (let model of item.models) {
                 let modelElem = tool.model.tableHeader(model, 'model', parent);
@@ -249,7 +249,7 @@ let tool = {
                     html: newText,
                     parent: appElem
                 });
-                
+
                 if (appItem.lines) {
                     for (let line of appItem.lines) {
                         let lineElem = tool.model.tableHeader(line, 'line', appElem);
