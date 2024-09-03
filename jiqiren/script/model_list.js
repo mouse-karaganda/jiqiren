@@ -1250,14 +1250,6 @@ app.SuperBot_Makerzoid.figures = [{
     model: app.SuperBot_Makerzoid.construct_sb_mz
 }];
 
-app.SuperBot_RobotMake.figures = [{
-    index: 99,
-    folder: '/',
-    cover: '00.png',
-    count: 99,
-    name: {rus: '', eng: ''},
-    number: 99,
-    model: app.SuperBot_Apitor.construct_sb_ap
-}];
+app.SuperBot_RobotMake.figures = [];
 
 console.log('appList = ', app);
