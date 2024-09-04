@@ -8,6 +8,7 @@
     --border-red: #f8d5db;
     --border-red: #ff0000;
     --border-yellow: #f4e89a;
+    --button-width: 40px;
     --color-folder: maroon;
     --color-guid: gray;
     --font-size: 0.8em;
@@ -21,6 +22,7 @@ nav,
 .figure_item,
 .item_number,
 .number,
+.arrow_top a,
 .item_right {
     display: flex;
 }
@@ -54,7 +56,7 @@ h2 {
 }
 
 .with_index h2 {
-    margin-right: 52px;
+    margin-right: 42px;
 }
 
 h2 + div {
@@ -122,13 +124,17 @@ nav {
     white-space: nowrap;
 }
 
-.left_menu {
-    w_margin-right: 40px;
+.nav_menu .app {
+    font-weight: bold;
 }
 
+ul.nav_menu,
 .nav_menu .app {
-    margin-top: 1em;
-    font-weight: bold;
+    margin-top: 3em;
+}
+
+.left_menu {
+    w_margin-right: 40px;
 }
 
 .folder_path {
@@ -156,8 +162,7 @@ a.goto {
 }
 
 .arrow_top a {
-    display: block;
-    padding: 0.4em 0 0.6em 0;
+    height: var(--button-width);
     background: var(--bg-red);
     color: var(--border-red);
     border: 1px solid var(--border-red);
@@ -169,8 +174,6 @@ a.goto {
 }
 
 .number {
-    justify-content: center;
-    align-items: center;
     color: white;
     background: var(--border-green);
     margin-right: 10px;
@@ -178,10 +181,11 @@ a.goto {
 
 .number,
 .arrow_top a {
-    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    width: var(--button-width);
     border-radius: var(--soft-radius);
-    width: 2.1em;
-    text-align: center;
 }
 
 #page {
