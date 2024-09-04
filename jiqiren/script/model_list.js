@@ -1330,6 +1330,110 @@ app.Makerzoid.figures = [{
     name: {eng: 'Stretchy Chariot'},
     number: 3,
     model: app.Makerzoid.Fun.Fun.stretchy
+}, {
+    index: 10,
+    folder: '2e236084-5fe9-4168-afb3-e04f1f1a9eb8/penshekuaiting',
+    cover: '54.png',
+    count: 54,
+    name: {eng: 'Jet Boat'},
+    number: 12,
+    model: app.Makerzoid.Fun.Fun.starWar
+}, {
+    index: 11,
+    folder: '5270969b-603c-494d-9836-3aaffe79bb24/fun_wurenzhanche',
+    cover: '38.png',
+    count: 38,
+    name: {eng: 'Unmanned Combat Vehicle'},
+    number: 10,
+    model: app.Makerzoid.Fun.Fun.starWar
+}, {
+    index: 12,
+    folder: '5e5313a2-d8f1-46dd-80a0-27c64ffa8b00/fun_daodanfasheche',
+    cover: '50.png',
+    count: 50,
+    name: {eng: 'Missile Launching Vehicle'},
+    number: 9,
+    model: app.Makerzoid.Fun.Fun.starWar
+}, {
+    index: 13,
+    folder: '64720011-fdb8-4505-b37f-072018ca16f5/fun_xingzhanshi',
+    cover: '21.png',
+    count: 21,
+    name: {eng: 'Star Warrior'},
+    number: 1,
+    model: app.Makerzoid.Fun.Fun.starWar
+}, {
+    index: 14,
+    folder: '65b31d67-43a4-4e12-879c-d8824228357d/fun_zhishengji',
+    cover: '47.png',
+    count: 47,
+    name: {eng: 'Helicopter'},
+    number: 8,
+    model: app.Makerzoid.Fun.Fun.starWar
+}, {
+    index: 15,
+    folder: '65cb2395-c87e-4c02-bd27-094328d177e6/fun_xzhanji',
+    cover: '47.png',
+    count: 47,
+    name: {eng: 'X-Wing'},
+    number: 3,
+    model: app.Makerzoid.Fun.Fun.starWar
+}, {
+    index: 16,
+    folder: '753d79dd-cc54-411e-a23b-f75a098628d2/jisutanke',
+    cover: '42.png',
+    count: 42,
+    name: {eng: 'Express Tank'},
+    number: 11,
+    model: app.Makerzoid.Fun.Fun.starWar
+}, {
+    index: 17,
+    folder: '8e7f87f9-7c3c-44d2-aa7f-b98733c89384/xingjizhanji',
+    cover: '49.png',
+    count: 49,
+    name: {eng: 'Star Fighter'},
+    number: 13,
+    model: app.Makerzoid.Fun.Fun.starWar
+}, {
+    index: 18,
+    folder: '9d91fac1-82cb-4888-b5e4-64c557463f25/fun_yuzhouzhanjian',
+    cover: '27.png',
+    count: 27,
+    name: {eng: 'Space Warship'},
+    number: 7,
+    model: app.Makerzoid.Fun.Fun.starWar
+}, {
+    index: 19,
+    folder: 'aa67f18a-3b62-4a27-8aab-0670123ae398/fun_juedizhanji',
+    cover: '23.png',
+    count: 23,
+    name: {eng: 'Jedi Fighter'},
+    number: 6,
+    model: app.Makerzoid.Fun.Fun.starWar
+}, {
+    index: 20,
+    folder: 'ac34dfac-df5a-4421-916b-dcda45759827/fun_wuzhuangzhishengji',
+    cover: '63.png',
+    count: 63,
+    name: {eng: 'Attack Helicopter'},
+    number: 4,
+    model: app.Makerzoid.Fun.Fun.starWar
+}, {
+    index: 21,
+    folder: 'b45dd876-be89-4623-9f73-b5374657fd7e/fun_xingzhanduizhang',
+    cover: '35.png',
+    count: 35,
+    name: {eng: 'Star Captain'},
+    number: 2,
+    model: app.Makerzoid.Fun.Fun.starWar
+}, {
+    index: 22,
+    folder: 'f4e8353c-007f-41bc-adfb-15d3f5241897/fun_wurenzhanji',
+    cover: '32.png',
+    count: 32,
+    name: {eng: 'Drone'},
+    number: 5,
+    model: app.Makerzoid.Fun.Fun.starWar
 }];
 
 app.SuperBot_RobotMake.figures = [];

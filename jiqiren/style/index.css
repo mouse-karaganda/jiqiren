@@ -247,11 +247,13 @@ a.goto {
     align-self: center;
 }
 
-.cover img[src^="img/app/ApitorKit/robotX"] { background: #bae3f9; }
-.cover img[src^="img/app/ApitorKit/robotS"] { background: #d5effe; }
-.cover img[src^="img/app/ApitorKit/robotQ"] { background: #c2eba9; }
-.cover img[src^="img/app/ApitorKit/robotJ"] { background: #afcdfa; }
-.cover img[src^="img/app/ApitorKit/robotR"] { background: #f7db94; }
-.cover img[src^="img/app/ApitorKit/robotE"] { background: #dcdfca; }
-.cover img[src^="img/app/ApitorKit/robotG"] { background: #efdfe7; }
-.cover img[src^="img/app/ApitorKit/robotB"] { background: #929ba2; }
+.cover img[src^="img/app/ApitorKit/robotX/"] { background: #bae3f9; }
+.cover img[src^="img/app/ApitorKit/robotS/"] { background: #d5effe; }
+.cover img[src^="img/app/ApitorKit/robotQ/"] { background: #c2eba9; }
+.cover img[src^="img/app/ApitorKit/robotJ/"] { background: #afcdfa; }
+.cover img[src^="img/app/ApitorKit/robotR/"] { background: #f7db94; }
+.cover img[src^="img/app/ApitorKit/robotE/"] { background: #dcdfca; }
+.cover img[src^="img/app/ApitorKit/robotG/"] { background: #efdfe7; }
+.cover img[src^="img/app/ApitorKit/robotB/"] { background: #929ba2; }
+
+/*.cover img[src^="img/app/Makerzoid/"] { background: #38adfc; }*/
