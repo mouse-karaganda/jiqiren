@@ -1434,6 +1434,134 @@ app.Makerzoid.figures = [{
     name: {eng: 'Drone'},
     number: 5,
     model: app.Makerzoid.Fun.Fun.starWar
+}, {
+    index: 23,
+    folder: '0b354060-9012-4321-a2dc-486b0923b5e6/fun_dabashi',
+    cover: '60.png',
+    count: 60,
+    name: {eng: 'Bus'},
+    number: 10,
+    model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 24,
+    folder: '195a5a19-6285-44b7-baea-18eed0a8475f/fun_guanxingche1',
+    cover: '23.png',
+    count: 23,
+    name: {eng: 'Inertia Car'},
+    number: 11,
+    model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 25,
+    folder: '3a30596a-0367-4a11-a84d-52c7a666bc4e/fun_wobashituoluo',
+    cover: '39.png',
+    count: 41,
+    name: {eng: 'Grip Gyro'},
+    number: 14,
+    model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 26,
+    folder: '40c126e0-10b7-42a9-9137-059dbfce40ad/fun_xiaochache',
+    cover: '55.png',
+    count: 55,
+    name: {eng: 'Forklift'},
+    number: 7,
+    model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 27,
+    folder: '422ffc59-f946-4b56-834c-dce023fea3ae/ertongdazhuangji',
+    cover: '42.png',
+    count: 42,
+    name: {eng: 'Pile Driver'},
+    number: 15,
+    model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 28,
+    folder: '46363a45-c08a-4d18-8803-077befaee6b3/fun_diaolanche',
+    cover: '67.png',
+    count: 67,
+    name: {eng: 'Teleferic'},
+    number: 3,
+    model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 29,
+    folder: '5429b22e-8512-44ba-8368-a7c996cec787/konglong',
+    cover: '36.png',
+    count: 36,
+    name: {eng: 'Dinosaur'},
+    number: 16,
+    model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 30,
+    folder: '6fb9fc04-7ccf-4687-8bb8-63fdd38f3c2f/fun_guanxingche2',
+    cover: '33.png',
+    count: 34,
+    name: {eng: 'Inertia Car 2'},
+    number: 12,
+    model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 31,
+    folder: '76aa89c9-6cc5-42bd-a30d-be622e2072e3/fun_kuangshankache',
+    cover: '51.png',
+    count: 51,
+    name: {eng: 'Mining Truck'},
+    number: 9,
+    model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 32,
+    folder: '81af998a-802c-41b9-ad3e-ebbf3688cb83/fun_weixiudiaoche',
+    cover: '68.png',
+    count: 68,
+    name: {eng: 'Maintenance Car'},
+    number: 6,
+    model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 33,
+    folder: '8d8d34c4-1ca9-47d0-b9d0-e9a1aa30764d/shatanche',
+    cover: '51.png',
+    count: 51,
+    name: {eng: 'Dune Buggy'},
+    number: 5,
+    model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 34,
+    folder: '9806d630-91b3-4a62-84ea-8e4d4a96663c/fun_f1',
+    cover: '88.png',
+    count: 88,
+    name: {eng: 'F1'},
+    number: 2,
+    model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 35,
+    folder: '9b568753-e3ca-4c6f-acf8-bb954e0112a4/kadingche',
+    cover: '69.png',
+    count: 69,
+    name: {eng: 'Go-kart'},
+    number: 4,
+    model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 36,
+    folder: '9e8a5cc5-63b6-42b2-97bb-601c2f88c4ea/fun_xiaoche',
+    cover: '23.png',
+    count: 23,
+    name: {eng: 'Car'},
+    number: 8,
+    model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 37,
+    folder: 'cadf7c06-f8f2-4fc9-8303-cb4dbc9b592a/fun_dadanqi',
+    cover: '35.png',
+    count: 36,
+    name: {eng: 'Eggbeater'},
+    number: 13,
+    model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 38,
+    folder: 'e7986657-109e-4f04-a4cd-d9a38708ac8e/fun_fugupaoche',
+    cover: '54.png',
+    count: 54,
+    name: {eng: 'Retro Car'},
+    number: 1,
+    model: app.Makerzoid.Fun.Fun.land
 }];
 
 app.SuperBot_RobotMake.figures = [];
