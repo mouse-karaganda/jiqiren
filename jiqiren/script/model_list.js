@@ -1250,6 +1250,88 @@ app.SuperBot_Makerzoid.figures = [{
     model: app.SuperBot_Makerzoid.construct_sb_mz
 }];
 
+app.Makerzoid.figures = [{
+    index: 99,
+    folder: '1c80e0db-53b0-46fc-a8be-c6633b293cb6/tanliche6',
+    cover: '99.png',
+    count: 99,
+    name: {eng: ''},
+    number: 99,
+    model: app.Makerzoid.Fun.Fun.stretchy
+}, {
+    index: 99,
+    folder: '35769087-c7b9-4fb6-994d-47cbba70f95a/tanliche7',
+    cover: '99.png',
+    count: 99,
+    name: {eng: ''},
+    number: 99,
+    model: app.Makerzoid.Fun.Fun.stretchy
+}, {
+    index: 99,
+    folder: '3e3c4a20-9ec4-46f8-b438-90b63887f2a1/tanliche4',
+    cover: '99.png',
+    count: 99,
+    name: {eng: ''},
+    number: 99,
+    model: app.Makerzoid.Fun.Fun.stretchy
+}, {
+    index: 99,
+    folder: '8d807e8d-daea-4f81-b160-20db7b0ca833/tanlipensheche',
+    cover: '99.png',
+    count: 99,
+    name: {eng: ''},
+    number: 99,
+    model: app.Makerzoid.Fun.Fun.stretchy
+}, {
+    index: 99,
+    folder: '940bc77f-6a99-4b21-8b0f-b942d4ab888f/tanliche2',
+    cover: '99.png',
+    count: 99,
+    name: {eng: ''},
+    number: 99,
+    model: app.Makerzoid.Fun.Fun.stretchy
+}, {
+    index: 99,
+    folder: 'a31aecbc-6058-4d5a-a6ab-500bf0c05985/tanliche3',
+    cover: '99.png',
+    count: 99,
+    name: {eng: ''},
+    number: 99,
+    model: app.Makerzoid.Fun.Fun.stretchy
+}, {
+    index: 99,
+    folder: 'bb4f4076-cbff-429d-9265-12cb6d11931f/tanliche1',
+    cover: '99.png',
+    count: 99,
+    name: {eng: ''},
+    number: 99,
+    model: app.Makerzoid.Fun.Fun.stretchy
+}, {
+    index: 99,
+    folder: 'cfdfeb29-d171-41e2-bdb4-2a89589d6693/tanlipaoche',
+    cover: '99.png',
+    count: 99,
+    name: {eng: ''},
+    number: 99,
+    model: app.Makerzoid.Fun.Fun.stretchy
+}, {
+    index: 99,
+    folder: 'ef912921-18e4-415f-ace1-1f02833f7225/tanliche5',
+    cover: '99.png',
+    count: 99,
+    name: {eng: ''},
+    number: 99,
+    model: app.Makerzoid.Fun.Fun.stretchy
+}, {
+    index: 99,
+    folder: 'f6e33c94-7ca4-4722-a61b-1a9cdabe7e1c/tanlizhanche',
+    cover: '99.png',
+    count: 99,
+    name: {eng: ''},
+    number: 99,
+    model: app.Makerzoid.Fun.Fun.stretchy
+}];
+
 app.SuperBot_RobotMake.figures = [{
     index: 99,
     folder: '/',
