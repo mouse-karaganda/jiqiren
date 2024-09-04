@@ -12,7 +12,9 @@
     --color-folder: maroon;
     --color-guid: gray;
     --font-size: 0.8em;
+    --padding-standard: 10px;
     --soft-radius: 10px;
+    --width-number: 32px;
 }
 
 body,
@@ -47,8 +49,7 @@ h2 {
     border-style: double;
     border-width: 0 0 9px 9px;
     padding: 9px 18px;
-    margin-left: -3px;
-    margin-bottom: 0;
+    margin: 1em 0 0 -3px;
     w_border-top-right-radius: 20px;
     border-radius: 0 20px;
     background: var(--border-blue);
@@ -56,7 +57,7 @@ h2 {
 }
 
 .with_index h2 {
-    margin-right: 42px;
+    margin-right: calc(var(--width-number) + var(--padding-standard));
 }
 
 h2 + div {
@@ -157,7 +158,7 @@ a.goto {
 
 .arrow_top {
     position: fixed;
-    bottom: 10px;
+    bottom: var(--padding-standard);
     left: 270px;
 }
 
@@ -173,10 +174,15 @@ a.goto {
     border-color: var(--border-green);
 }
 
+.arrow_top span {
+    padding: 0 0 0.32em 0;
+}
+
 .number {
     color: white;
     background: var(--border-green);
-    margin-right: 10px;
+    min-height: 2.65em;
+    margin-right: var(--padding-standard);
 }
 
 .number,
@@ -190,19 +196,21 @@ a.goto {
 
 #page {
     margin: 0 auto 60px auto;
-    padding: 10px;
+    padding: var(--padding-standard);
 }
 
 #wrapper {
 }
 
-.item_right {
+.figure_item {
     align-items: center;
 }
 
 .item_label {
+    align-self: stretch;
     width: 300px;
     border-top: 1px dashed var(--color-guid);
+    padding-bottom: 0.5em;
 }
 
 .model_item .figure_item:last-child .item_label {
@@ -213,28 +221,37 @@ a.goto {
     border-bottom: none;
 }
 
-.item_number {
-    padding-bottom: 0.5em;
-}
-
 .item_cover {
     padding: 5px 0;
 }
 
 .item_count,
 .index_value {
-    width: 32px;
+    width: var(--width-number);
     text-align: right;
 }
 
 .item_count {
-    padding-right: 10px;
+    padding-right: var(--padding-standard);
 }
 
 .index_value {
-    padding-left: 10px;
+    padding-left: var(--padding-standard);
 }
 
 .app_item:not(.with_index) .index_value {
     display: none;
 }
+
+.figure_item .name {
+    align-self: center;
+}
+
+.cover img[src^="img/app/ApitorKit/robotX"] { background: #bae3f9; }
+.cover img[src^="img/app/ApitorKit/robotS"] { background: #d5effe; }
+.cover img[src^="img/app/ApitorKit/robotQ"] { background: #c2eba9; }
+.cover img[src^="img/app/ApitorKit/robotJ"] { background: #afcdfa; }
+.cover img[src^="img/app/ApitorKit/robotR"] { background: #f7db94; }
+.cover img[src^="img/app/ApitorKit/robotE"] { background: #dcdfca; }
+.cover img[src^="img/app/ApitorKit/robotG"] { background: #efdfe7; }
+.cover img[src^="img/app/ApitorKit/robotB"] { background: #929ba2; }

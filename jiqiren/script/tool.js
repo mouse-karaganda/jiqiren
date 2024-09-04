@@ -95,6 +95,9 @@ let tool = {
         let newDiv = document.createElement(tagName);
         newDiv.innerHTML = (config.html || []).join('\r\n');
 
+        if (config.id) {
+            newDiv.setAttribute('id', config.id);
+        }
         if (config.className) {
             newDiv.className = config.className;
         }
@@ -108,20 +111,30 @@ let tool = {
 
     getAll: (search) => document.querySelectorAll(search),
 
-    createAppElem: (parent, withIndex) => {
+    createAppElem: (config) => {
         let appElem = tool.create({
             tag: 'article',
             className: 'app_item',
-            parent: parent
+            id: config.item.printFolder,
+            parent: config.parent
         });
-        if (withIndex) {
+        if (config.withIndex) {
             appElem.classList.add('with_index');
         }
+        tool.create({
+            className: 'app_header',
+            html: config.header,
+            parent: appElem
+        });
         return appElem;
     },
 
     createFigureElem: (figure, parent) => {
         let coverSrc = (`img/app/${figure.model.printFolder}/${figure.folder}/${figure.cover}`);
+        let nameText = {
+            rus: (figure.name.rus) ? (`<p class="name_rus">${figure.name.rus}</p>`) : '',
+            eng: (figure.name.eng) ? (`<p class="name_eng">${figure.name.eng}</p>`) : ''
+        };
 
         let newText = [
             '<div class="item_label">',
@@ -130,16 +143,14 @@ let tool = {
                 '<div class="item_number">',
                     `<div class="number"><span>${figure.number}</span></div>`,
                     '<div class="name">',
-                        `<p class="name_rus">${figure.name.rus}</p>`,
-                        `<p class="name_eng">${figure.name.eng}</p>`,
+                        nameText.rus,
+                        nameText.eng,
                     '</div>',
                 '</div>',
             '</div>',
-            '<div class="item_right">',
-                `<div class="item_count">${figure.count}</div>`,
-                `<div class="item_cover"><a class="cover" target="_blank" href="${coverSrc}"><img alt="${figure.name.eng}" src="${coverSrc}" /></a></div>`,
-                `<div class="index_value">${figure.index + 1})</div>`,
-            '</div>'
+            `<div class="item_count">${figure.count}</div>`,
+            `<div class="item_cover"><a class="cover" target="_blank" href="${coverSrc}"><img alt="${figure.name.eng}" src="${coverSrc}" /></a></div>`,
+            `<div class="index_value">${figure.index + 1})</div>`
         ];
         tool.create({
             className: 'figure_item',
@@ -203,12 +214,13 @@ let tool = {
 
         tableHeader: (item, prefix, parent) => {
             let headerElem = tool.create({
-                className: `${prefix}_item`,
+                className: prefix + '_item',
+                id: item.printFolder,
                 parent: parent
             });
-            let newText = [`<a name="${item.printFolder}"></a><h3>${item.label}</h3>`];
+            let newText = [`<h3>${item.label}</h3>`];
             tool.create({
-                className: `${prefix}_header`,
+                className: prefix + '_header',
                 html: newText,
                 parent: headerElem
             });
@@ -227,7 +239,6 @@ let tool = {
         },
 
         printTable: () => {
-            let withIndex = false;
             tool.model.printMenu();
             tool.prepareFigureList();
 
@@ -236,18 +247,18 @@ let tool = {
                 return;
             }
             for (let appItem of app) {
-                let appElem = tool.createAppElem(wrapper, withIndex);
                 let newText = [
-                    `<a name="${appItem.printFolder}"></a><h2><span>${appItem.label}</span>`,
+                    `<h2><span>${appItem.label}</span>`,
                     `<span class="android_id">${appItem.androidId}</span></h2>`,
                     '<div>',
                         `<p class="comment">${appItem.comment}</p>`,
                     '</div>'
                 ];
-                tool.create({
-                    className: 'app_header',
-                    html: newText,
-                    parent: appElem
+                let appElem = tool.createAppElem({
+                    item: appItem,
+                    header: newText,
+                    withIndex: false,
+                    parent: wrapper
                 });
 
                 if (appItem.lines) {
@@ -286,7 +297,6 @@ let tool = {
         },
 
         printTable: () => {
-            let withIndex = true;
             tool.figure.printMenu();
 
             let wrapper = tool.get('#wrapper');
@@ -294,9 +304,8 @@ let tool = {
                 return;
             }
             for (let appItem of app) {
-                let appElem = tool.createAppElem(wrapper, withIndex);
                 let newText = [
-                    `<a name="${appItem.printFolder}"></a><h2><span>${appItem.label}</span>`,
+                    `<h2><span>${appItem.label}</span>`,
                     `<span class="android_id">${appItem.androidId}</span></h2>`,
                     '<div>',
                         `<p class="comment">${appItem.comment}</p>`,
@@ -304,10 +313,11 @@ let tool = {
                         `<p class="folder_path">${appItem.path}</p>`,
                     '</div>'
                 ];
-                tool.create({
-                    className: 'app_header',
-                    html: newText,
-                    parent: appElem
+                let appElem = tool.createAppElem({
+                    item: appItem,
+                    header: newText,
+                    withIndex: true,
+                    parent: wrapper
                 });
                 for (let figure of appItem.figures) {
                     tool.createFigureElem(figure, appElem);

@@ -1251,95 +1251,87 @@ app.SuperBot_Makerzoid.figures = [{
 }];
 
 app.Makerzoid.figures = [{
-    index: 99,
+    index: 0,
     folder: '1c80e0db-53b0-46fc-a8be-c6633b293cb6/tanliche6',
-    cover: '99.png',
-    count: 99,
-    name: {eng: ''},
-    number: 99,
+    cover: '30.png',
+    count: 32,
+    name: {eng: 'Stretchy Car 6'},
+    number: 9,
     model: app.Makerzoid.Fun.Fun.stretchy
 }, {
-    index: 99,
+    index: 1,
     folder: '35769087-c7b9-4fb6-994d-47cbba70f95a/tanliche7',
-    cover: '99.png',
-    count: 99,
-    name: {eng: ''},
-    number: 99,
+    cover: '36.png',
+    count: 38,
+    name: {eng: 'Stretchy Car 7'},
+    number: 10,
     model: app.Makerzoid.Fun.Fun.stretchy
 }, {
-    index: 99,
+    index: 2,
     folder: '3e3c4a20-9ec4-46f8-b438-90b63887f2a1/tanliche4',
-    cover: '99.png',
-    count: 99,
-    name: {eng: ''},
-    number: 99,
+    cover: '41.png',
+    count: 43,
+    name: {eng: 'Stretchy Car 4'},
+    number: 7,
     model: app.Makerzoid.Fun.Fun.stretchy
 }, {
-    index: 99,
+    index: 3,
     folder: '8d807e8d-daea-4f81-b160-20db7b0ca833/tanlipensheche',
-    cover: '99.png',
-    count: 99,
-    name: {eng: ''},
-    number: 99,
+    cover: '59.png',
+    count: 60,
+    name: {eng: 'Stretchy Jet Car'},
+    number: 1,
     model: app.Makerzoid.Fun.Fun.stretchy
 }, {
-    index: 99,
+    index: 4,
     folder: '940bc77f-6a99-4b21-8b0f-b942d4ab888f/tanliche2',
-    cover: '99.png',
-    count: 99,
-    name: {eng: ''},
-    number: 99,
+    cover: '16.png',
+    count: 16,
+    name: {eng: 'Stretchy Car 2'},
+    number: 5,
     model: app.Makerzoid.Fun.Fun.stretchy
 }, {
-    index: 99,
+    index: 5,
     folder: 'a31aecbc-6058-4d5a-a6ab-500bf0c05985/tanliche3',
-    cover: '99.png',
-    count: 99,
-    name: {eng: ''},
-    number: 99,
+    cover: '33.png',
+    count: 35,
+    name: {eng: 'Stretchy Car 3'},
+    number: 6,
     model: app.Makerzoid.Fun.Fun.stretchy
 }, {
-    index: 99,
+    index: 6,
     folder: 'bb4f4076-cbff-429d-9265-12cb6d11931f/tanliche1',
-    cover: '99.png',
-    count: 99,
-    name: {eng: ''},
-    number: 99,
+    cover: '12.png',
+    count: 12,
+    name: {eng: 'Stretchy Car 1'},
+    number: 4,
     model: app.Makerzoid.Fun.Fun.stretchy
 }, {
-    index: 99,
+    index: 7,
     folder: 'cfdfeb29-d171-41e2-bdb4-2a89589d6693/tanlipaoche',
-    cover: '99.png',
-    count: 99,
-    name: {eng: ''},
-    number: 99,
+    cover: '71.png',
+    count: 71,
+    name: {eng: 'Stretchy Racing Car'},
+    number: 2,
     model: app.Makerzoid.Fun.Fun.stretchy
 }, {
-    index: 99,
+    index: 8,
     folder: 'ef912921-18e4-415f-ace1-1f02833f7225/tanliche5',
-    cover: '99.png',
-    count: 99,
-    name: {eng: ''},
-    number: 99,
+    cover: '28.png',
+    count: 30,
+    name: {eng: 'Stretchy Car 5'},
+    number: 8,
     model: app.Makerzoid.Fun.Fun.stretchy
 }, {
-    index: 99,
+    index: 9,
     folder: 'f6e33c94-7ca4-4722-a61b-1a9cdabe7e1c/tanlizhanche',
-    cover: '99.png',
-    count: 99,
-    name: {eng: ''},
-    number: 99,
+    cover: '36.png',
+    count: 38,
+    name: {eng: 'Stretchy Chariot'},
+    number: 3,
     model: app.Makerzoid.Fun.Fun.stretchy
 }];
 
-app.SuperBot_RobotMake.figures = [{
-    index: 99,
-    folder: '/',
-    cover: '00.png',
-    count: 99,
-    name: {rus: '', eng: ''},
-    number: 99,
-    model: app.SuperBot_Apitor.construct_sb_ap
-}];
+app.SuperBot_RobotMake.figures = [];
 
 console.log('appList = ', app);
