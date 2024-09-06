@@ -96,7 +96,7 @@ let tool = {
         newDiv.innerHTML = (config.html || []).join('\r\n');
 
         if (config.id) {
-            newDiv.setAttribute('id', config.id);
+            newDiv.id = config.id;
         }
         if (config.className) {
             newDiv.className = config.className;
@@ -135,11 +135,17 @@ let tool = {
             rus: (figure.name.rus) ? (`<p class="name_rus">${figure.name.rus}</p>`) : '',
             eng: (figure.name.eng) ? (`<p class="name_eng">${figure.name.eng}</p>`) : ''
         };
+        let model = figure.model;
+        let label = model.label;
+        if (!model.app) {
+            let line = (model.subline) ? model.subline.line : model.line;
+            label = `${line.label} : ${label}`;
+        }
 
         let newText = [
             '<div class="item_label">',
                 `<p class="guid">${figure.folder}</p>`,
-                `<p class="model">${figure.model.label}</p>`,
+                `<p class="model">${label}</p>`,
                 '<div class="item_number">',
                     `<div class="number"><span>${figure.number}</span></div>`,
                     '<div class="name">',
@@ -171,8 +177,8 @@ let tool = {
 
         printMenu: () => {
             let menuList = {};
-            menuList[tool.menu.left] = tool.get('.nav_menu.' + tool.menu.left);
-            menuList[tool.menu.right] = tool.get('.nav_menu.' + tool.menu.right);
+            menuList[tool.menu.left] = tool.get(`.nav_menu.${tool.menu.left}`);
+            menuList[tool.menu.right] = tool.get(`.nav_menu.${tool.menu.right}`);
 
             for (let appItem of app) {
                 let menuElem = menuList[appItem.menu];
@@ -214,13 +220,13 @@ let tool = {
 
         tableHeader: (item, prefix, parent) => {
             let headerElem = tool.create({
-                className: prefix + '_item',
+                className: `${prefix}_item`,
                 id: item.printFolder,
                 parent: parent
             });
             let newText = [`<h3>${item.label}</h3>`];
             tool.create({
-                className: prefix + '_header',
+                className: `${prefix}_header`,
                 html: newText,
                 parent: headerElem
             });
