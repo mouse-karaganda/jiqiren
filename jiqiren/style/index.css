@@ -217,7 +217,7 @@ a.goto {
     border-bottom: 1px dashed var(--color-guid);
 }
 
-.model_item:last-child .figure_item:last-child .item_label {
+.app_item > .model_item:last-child .figure_item:last-child .item_label {
     border-bottom: none;
 }
 

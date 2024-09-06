@@ -86,7 +86,7 @@ let app = [{
                 {label: 'Electric Animal', folder: 'animal'},
                 {label: 'Jr Programming', folder: 'jr_program'},
                 {label: 'Space Series', folder: 'space'},
-                {label: 'Newly-updated', folder: 'newly'}
+                {label: 'Newly-updated Programming', folder: 'newly'}
             ]
         }, {
             label: 'Premium', folder: 'Premium',
@@ -98,24 +98,29 @@ let app = [{
                 {label: 'Electric YL Crops', folder: 'e_crops'},
                 {label: 'Electric Animal', folder: 'animal'},
                 {label: 'Jr Programming', folder: 'jr_program'},
-                {label: 'Advanced Builging', folder: 'advanced_build'},
-                {label: 'Advanced Programming', folder: 'advanced_program'},
+                {label: 'Advanced Builging', folder: 'adv_build'},
+                {label: 'Advanced Programming', folder: 'adv_program'},
                 {label: 'Space Series', folder: 'space'},
-                {label: 'NEWLY-UPDATED', folder: 'newly'}
+                {label: 'NEWLY-UPDATED Programming', folder: 'newly'}
             ]
         }, {
             label: 'Tournament', folder: 'Tournament',
             models: [
-                {label: 'Stretchy Battle', folder: 'stretchy'},
-                {label: 'Star War', folder: 'starWar'},
-                {label: 'Land', folder: 'land'}
+                {label: 'Basic', folder: 'basic'}
             ]
         }, {
             label: 'Soccer Competition', folder: 'Soccer',
             models: [
-                {label: 'Stretchy Battle', folder: 'stretchy'},
-                {label: 'Star War', folder: 'starWar'},
-                {label: 'Land', folder: 'land'}
+                {label: 'Soccer Robot', folder: 'soccer'},
+                {label: 'Basic', folder: 'basic'},
+                {label: 'Mechanical', folder: 'mechanical'},
+                {label: 'YL Corps', folder: 'corps'},
+                {label: 'Electric Engineering', folder: 'electric'},
+                {label: 'Electric YL Crops', folder: 'e_crops'},
+                {label: 'Electric Animal', folder: 'animal'},
+                {label: 'Jr Programming', folder: 'jr_program'},
+                {label: 'Space Series', folder: 'space'},
+                {label: 'Newly-updated Programming', folder: 'newly'}
             ]
         }]
     }, {
@@ -123,16 +128,20 @@ let app = [{
         sublines: [{
             label: 'Superbot', folder: 'Superbot',
             models: [
-                {label: 'Stretchy Battle123', folder: 'stretchy123'},
-                {label: 'Star War123', folder: 'starWar123'},
-                {label: 'Land123', folder: 'land123'}
+                {label: 'Power', folder: 'power'},
+                {label: 'Elastic', folder: 'elastic'},
+                {label: 'Basic', folder: 'basic'}
             ]
         }, {
             label: 'Superbot Master Premium', folder: 'Premium',
             models: [
-                {label: 'Stretchy Battle123', folder: 'stretchy123'},
-                {label: 'Star War123', folder: 'starWar123'},
-                {label: 'Land123', folder: 'land123'}
+                {label: 'Intelligent Series', folder: 'intelligent'},
+                {label: 'Transportation Series', folder: 'transportation'},
+                {label: 'Mechanical Series', folder: 'mechanical'},
+                {label: 'Animal Series', folder: 'animal'},
+                {label: 'Basic Series', folder: 'basic'},
+                {label: 'Gear Series', folder: 'gear'},
+                {label: 'Elastic Series', folder: 'elastic'}
             ]
         }]
     }, {
@@ -140,16 +149,28 @@ let app = [{
         sublines: [{
             label: 'Smart Robot', folder: 'SmartRobot',
             models: [
-                {label: 'Stretchy Battle123', folder: 'stretchy123'},
-                {label: 'Star War123', folder: 'starWar123'},
-                {label: 'Land123', folder: 'land123'}
+                {label: 'Family', folder: 'family'},
+                {label: 'Basic Structure', folder: 'basic'},
+                {label: 'Gearwheel', folder: 'gearwheel'},
+                {label: 'Music', folder: 'music'},
+                {label: 'Agriculture', folder: 'agriculture'},
+                {label: 'Training', folder: 'training'},
+                {label: 'Intelligent Robot', folder: 'intelligent'},
+                {label: 'Newly-updated Robot', folder: 'newly'}
             ]
         }, {
             label: 'Smart Robot Premium', folder: 'Premium',
             models: [
-                {label: 'Stretchy Battle123', folder: 'stretchy123'},
-                {label: 'Star War123', folder: 'starWar123'},
-                {label: 'Land123', folder: 'land123'}
+                {label: 'Basic Structure', folder: 'basic'},
+                {label: 'Gearwheel', folder: 'gearwheel'},
+                {label: 'Music', folder: 'music'},
+                {label: 'Agriculture', folder: 'agriculture'},
+                {label: 'Training', folder: 'training'},
+                {label: 'Programming Robot', folder: 'programming'},
+                {label: 'Intelligent Robot', folder: 'intelligent'},
+                {label: 'Electric Machinery', folder: 'machinery'},
+                {label: 'Electric Animals', folder: 'animals'},
+                {label: 'Space Series', folder: 'space'}
             ]
         }]
     }]
