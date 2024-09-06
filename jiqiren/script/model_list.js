@@ -1583,6 +1583,158 @@ app.Makerzoid.figures = [{
     name: {eng: 'Retro Car'},
     number: 1,
     model: app.Makerzoid.Fun.Fun.land
+}, {
+    index: 39,
+    folder: '0aaf4b5e-acc0-461a-8f5f-0003e81d8ba7/niao',
+    cover: '51.png',
+    count: 51,
+    name: {eng: 'bird'},
+    number: 19,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 40,
+    folder: '1e02b832-3af6-4e8d-913f-8bf0012db4f2/huatujiqiren',
+    cover: '59.png',
+    count: 59,
+    name: {eng: 'Drawing Machine'},
+    number: 10,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 41,
+    folder: '2347237f-fdf9-47b5-8125-8833661f31f4/HUOJIANCHE',
+    cover: '58.png',
+    count: 58,
+    name: {eng: 'Jet car'},
+    number: 16,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 42,
+    folder: '2972d24a-321e-4fc7-9a31-ad0d8da5fbde/laohu',
+    cover: '89.png',
+    count: 89,
+    name: {eng: 'Tiger'},
+    number: 1,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 43,
+    folder: '351aebf2-3cdc-473a-aa27-ade9cb0253d4/qiusaijiqiren',
+    cover: '68.png',
+    count: 68,
+    name: {eng: 'Football Robot'},
+    number: 4,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 44,
+    folder: '35b3bf99-4fbb-47ce-87d5-3ff148b06ab5/dajiaoche',
+    cover: '96.png',
+    count: 96,
+    name: {eng: 'Bighorn Car'},
+    number: 15,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 45,
+    folder: '378211c3-bd9c-488d-970a-be79f518ead0/chanche',
+    cover: '47.png',
+    count: 47,
+    name: {eng: 'Plough Car'},
+    number: 2,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 46,
+    folder: '3e9adb75-ac7e-4919-bc54-0edd84bc6e9e/zhinengzamen',
+    cover: '31.png',
+    count: 31,
+    name: {eng: 'Planetary System'},
+    number: 9,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 47,
+    folder: '495e3f1b-4129-48ad-8520-ac0b3db143ed/longhuzhanche',
+    cover: '40.png',
+    count: 40,
+    name: {eng: 'Dragon Tiger Chariot'},
+    number: 8,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 48,
+    folder: '668700c1-f0e0-4757-99e6-25b708d97960/zhihejiqiren',
+    cover: '36.png',
+    count: 36,
+    name: {eng: 'Paper Crane Robot'},
+    number: 14,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 49,
+    folder: '723fa72a-12ec-4634-bdb0-538e68eda79a/jipuche',
+    cover: '72.png',
+    count: 72,
+    name: {eng: 'SUV'},
+    number: 3,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 50,
+    folder: '7400f312-fd39-42d4-b7b2-6b930628d947/cb f1',
+    cover: '74.png',
+    count: 74,
+    name: {eng: 'F1'},
+    number: 18,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 51,
+    folder: 'b1630135-b0f3-44c1-b2e0-1a9b7db766f1/songcanjiqiren',
+    cover: '63.png',
+    count: 63,
+    name: {eng: 'Delivery Man'},
+    number: 12,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 52,
+    folder: 'baa2bc92-f71a-47cc-b302-3e9bd0dba1ed/yinyuehe',
+    cover: '44.png',
+    count: 44,
+    name: {eng: 'Music Box'},
+    number: 13,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 53,
+    folder: 'd1099777-fb98-43a3-9771-742fc09f3433/zhancheshengjiban',
+    cover: '137.png',
+    count: 137,
+    name: {eng: 'Batmobile'},
+    number: 17,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 54,
+    folder: 'dae6e333-e1cc-4be7-a4c7-bd7f70b0bcea/sanlunche',
+    cover: '52.png',
+    count: 52,
+    name: {eng: 'Tricycle'},
+    number: 5,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 55,
+    folder: 'e0f1e031-ddf4-4d15-b2f7-e8cc2da91b1b/zhanche',
+    cover: '34.png',
+    count: 34,
+    name: {eng: 'Chariot'},
+    number: 7,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 56,
+    folder: 'e84622e5-d8b0-419c-b721-53a1a0855271/dianbaoji',
+    cover: '66.png',
+    count: 66,
+    name: {eng: 'Telegraph Machine'},
+    number: 11,
+    model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 57,
+    folder: 'f9232a33-91e1-44b3-95b6-65c6ea7b0dcf/xiangpujiqiren',
+    cover: '57.png',
+    count: 57,
+    name: {eng: 'Sumo Robot'},
+    number: 6,
+    model: app.Makerzoid.Superbot.Superbot.power
 }];
 
 app.SuperBot_RobotMake.figures = [];
