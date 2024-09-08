@@ -3,8 +3,7 @@ let tool = {
         left: 'left_menu',
         right: 'right_menu',
         open: 'open_menu',
-        closed: 'closed_menu',
-        toggle: 'toggle_menu'
+        closed: 'closed_menu'
     },
 
     folder: (item) => {
@@ -22,50 +21,50 @@ let tool = {
     },
 
     prepareAppList: () => {
-        for (let appItem of app) {
+        app.forEach((appItem) => {
             appItem.printFolder = appItem.folder;
             if (appItem.lines) {
-                for (let line of appItem.lines) {
+                appItem.lines.forEach((line) => {
                     line.app = appItem;
                     tool.folder(line);
                     appItem[line.folder] = line;
 
                     if (line.sublines) {
-                        for (let subline of line.sublines) {
+                        line.sublines.forEach((subline) => {
                             subline.line = line;
                             tool.folder(subline);
                             line[subline.folder] = subline;
 
-                            for (let model of subline.models) {
+                            subline.models.forEach((model) => {
                                 model.subline = subline;
                                 tool.folder(model);
                                 subline[model.folder] = model;
-                            }
-                        }
+                            });
+                        });
                     } else {
-                        for (let model of line.models) {
+                        line.models.forEach((model) => {
                             model.line = line;
                             tool.folder(model);
                             line[model.folder] = model;
-                        }
+                        });
                     }
-                }
+                });
             } else {
-                for (let model of appItem.models) {
+                appItem.models.forEach((model) => {
                     model.app = appItem;
                     tool.folder(model);
                     appItem[model.folder] = model;
-                }
+                });
             }
             appItem.figures = [];
             app[appItem.folder] = appItem;
-        }
+        });
     },
 
     prepareFigureList: () => {
         let onlyModel = [];
-        for (let appItem of app) {
-            for (let figure of appItem.figures) {
+        app.forEach((appItem) => {
+            appItem.figures.forEach((figure) => {
                 if (!onlyModel.includes(figure.model)) {
                     onlyModel.push(figure.model);
                 }
@@ -73,12 +72,12 @@ let tool = {
                     figure.model.sorted = [];
                 }
                 figure.model.sorted.push(figure);
-            }
-            for (let model of onlyModel) {
+            });
+            onlyModel.forEach((model) => {
                 model.sorted.sort((a, b) => a.number - b.number);
-            }
+            });
             delete appItem.figures;
-        }
+        });
         console.log('After sort = ', app);
     },
 
@@ -169,6 +168,26 @@ let tool = {
     },
 
     model: {
+        appendToPrototype: () => {
+            Element.prototype.hasClass = function(name) {
+                return this.classList.contains(name);
+            };
+            Element.prototype.isClosed = function() {
+                return this.hasClass(tool.menu.closed);
+            };
+            Element.prototype.setClosedIfOpened = function() {
+                if (!this.isClosed()) {
+                    this.classList.add(tool.menu.closed);
+                }
+            };
+            Element.prototype.toggleClosed = function() {
+                this.classList.toggle(tool.menu.closed);
+            };
+            Element.prototype.findParent = function(tagName) {
+                return tool.findParent(this, tagName);
+            };
+        },
+        
         menuEvent: () => {
             let menuElems = [
                 `.${tool.menu.closed} .line > a`,
@@ -177,29 +196,23 @@ let tool = {
             tool.getAll(menuElems).forEach((menuElem) => {
                 menuElem.addEventListener('click', function(thisEvent) {
                     thisEvent.preventDefault();
-                    let outerLi = tool.findParent(this, 'li');
-                    if (outerLi) {
-                        outerLi.classList.toggle(tool.menu.closed);
-                    }
-                    // check if closed
-                    if (!outerLi.classList.contains(tool.menu.closed)) {
-                        // stop if opened
+                    let outerLi = this.findParent('li');
+                    if (!outerLi) {
                         return;
                     }
-                    // if have sublines, close all sublines automatically
-                    let outerP = tool.findParent(this, 'p');
-                    if (outerP && outerP.classList.contains('line')) {
-                        console.log('thisEvent = ', outerP);
+                    outerLi.toggleClosed();
+                    // stop if opened after toggle
+                    if (!outerLi.isClosed()) {
+                        return;
+                    }
+                    // if line have sublines, close all sublines automatically
+                    let outerP = this.findParent('p');
+                    if (outerP && outerP.hasClass('line')) {
                         let sublines = outerLi.querySelectorAll('p.subline');
-                        if (sublines) {
-                            sublines.forEach((subline) => {
-                                // close if opened
-                                let innerLi = tool.findParent(subline, 'li');
-                                if (innerLi && !innerLi.classList.contains(tool.menu.closed)) {
-                                    innerLi.classList.add(tool.menu.closed);
-                                }
-                            });
-                        }
+                        sublines && sublines.forEach((subline) => {
+                            let innerLi = subline.findParent('li');
+                            innerLi && innerLi.setClosedIfOpened();
+                        });
                     }
                 });
             });
@@ -207,9 +220,9 @@ let tool = {
         
         menuRange: (item) => {
             let newText = ['<ol>'];
-            for (let model of item.models) {
+            item.models.forEach((model) => {
                 newText.push(`<li><a href="#${model.printFolder}">${model.label}</a></li>`);
-            }
+            });
             newText.push('</ol>');
             return newText;
         },
@@ -219,33 +232,33 @@ let tool = {
             menuList[tool.menu.left] = tool.get(`.nav_menu.${tool.menu.left}`);
             menuList[tool.menu.right] = tool.get(`.nav_menu.${tool.menu.right}`);
 
-            for (let appItem of app) {
+            app.forEach((appItem) => {
                 let menuElem = menuList[appItem.menu];
                 if (!menuElem) {
-                    continue;
+                    return;
                 }
                 let newText = [`<p class="app"><a href="#${appItem.printFolder}">${appItem.label}</a></p>`];
                 if (appItem.lines) {
                     newText.push('<ul>');
-                    for (let line of appItem.lines) {
+                    appItem.lines.forEach((line) => {
                         newText.push(`<li class="${tool.menu.closed}">`);
                         newText.push(`<p class="line"><a href="#${line.printFolder}">${line.label}</a></p>`);
                         if (line.sublines) {
                             newText.push('<ul>');
-                            for (let subline of line.sublines) {
+                            line.sublines.forEach((subline) => {
                                 newText.push(...[
                                     `<li class="${tool.menu.closed}">`,
                                     `<p class="subline"><a href="#${subline.printFolder}">${subline.label}</a></p>`,
                                     ...tool.model.menuRange(subline),
                                     '</li>'
                                 ]);
-                            }
+                            });
                             newText.push('</ul>');
                         } else {
                             newText.push(...tool.model.menuRange(line));
                         }
                         newText.push('</li>');
-                    }
+                    });
                     newText.push('</ul>');
                 } else {
                     newText.push(...tool.model.menuRange(appItem));
@@ -254,7 +267,7 @@ let tool = {
                     html: newText,
                     parent: menuElem
                 });
-            }
+            });
         },
 
         tableHeader: (item, prefix, parent) => {
@@ -273,26 +286,22 @@ let tool = {
         },
 
         tableRange: (item, parent) => {
-            for (let model of item.models) {
+            item.models.forEach((model) => {
                 let modelElem = tool.model.tableHeader(model, 'model', parent);
-                if (model.sorted) {
-                    for (let figure of model.sorted) {
-                        tool.createFigureElem(figure, modelElem);
-                    }
-                }
-            }
+                model.sorted && model.sorted.forEach((figure) => {
+                    tool.createFigureElem(figure, modelElem);
+                });
+            });
         },
 
         printTable: () => {
+            tool.model.appendToPrototype();
             tool.model.printMenu();
             tool.model.menuEvent();
             tool.prepareFigureList();
 
             let wrapper = tool.get('#wrapper');
-            if (!wrapper) {
-                return;
-            }
-            for (let appItem of app) {
+            wrapper && app.forEach((appItem) => {
                 let newText = [
                     `<h2><span>${appItem.label}</span>`,
                     `<span class="android_id">${appItem.androidId}</span></h2>`,
@@ -308,48 +317,42 @@ let tool = {
                 });
 
                 if (appItem.lines) {
-                    for (let line of appItem.lines) {
+                    appItem.lines.forEach((line) => {
                         let lineElem = tool.model.tableHeader(line, 'line', appElem);
                         if (line.sublines) {
-                            for (let subline of line.sublines) {
+                            line.sublines.forEach((subline) => {
                                 let sublineElem = tool.model.tableHeader(subline, 'subline', lineElem);
                                 tool.model.tableRange(subline, sublineElem);
-                            }
+                            });
                         } else {
                             tool.model.tableRange(line, lineElem);
                         }
-                    }
+                    });
                 } else {
                     tool.model.tableRange(appItem, appElem);
                 }
-            }
+            });
         }
     },
 
     figure: {
         printMenu: () => {
             let menuElem = tool.get('.nav_menu');
-            if (!menuElem) {
-                return;
-            }
-            for (let appItem of app) {
+            menuElem && app.forEach((appItem) => {
                 let newText = [`<a href="#${appItem.printFolder}">${appItem.label}</a>`];
                 tool.create({
                     tag: 'li',
                     html: newText,
                     parent: menuElem
                 });
-            }
+            });
         },
 
         printTable: () => {
             tool.figure.printMenu();
 
             let wrapper = tool.get('#wrapper');
-            if (!wrapper) {
-                return;
-            }
-            for (let appItem of app) {
+            wrapper && app.forEach((appItem) => {
                 let newText = [
                     `<h2><span>${appItem.label}</span>`,
                     `<span class="android_id">${appItem.androidId}</span></h2>`,
@@ -365,10 +368,10 @@ let tool = {
                     withIndex: true,
                     parent: wrapper
                 });
-                for (let figure of appItem.figures) {
+                appItem.figures.forEach((figure) => {
                     tool.createFigureElem(figure, appElem);
-                }
-            }
+                });
+            });
         }
     }
 };
