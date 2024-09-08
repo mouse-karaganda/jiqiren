@@ -1,7 +1,10 @@
 let tool = {
     menu: {
         left: 'left_menu',
-        right: 'right_menu'
+        right: 'right_menu',
+        open: 'open_menu',
+        closed: 'closed_menu',
+        toggle: 'toggle_menu'
     },
 
     folder: (item) => {
@@ -83,11 +86,11 @@ let tool = {
         if (!node) {
             return null;
         }
-        let p = node.parentElement;
-        if (p && p.tagName.toLowerCase() == tagName.toLowerCase()) {
-            return p;
+        let thisParent = node.parentElement;
+        if (thisParent && thisParent.tagName.toLowerCase() == tagName.toLowerCase()) {
+            return thisParent;
         }
-        return tool.findParent(p, tagName);
+        return tool.findParent(thisParent, tagName);
     },
 
     create: (config) => {
@@ -166,6 +169,42 @@ let tool = {
     },
 
     model: {
+        menuEvent: () => {
+            let menuElems = [
+                `.${tool.menu.closed} .line > a`,
+                `.${tool.menu.closed} .subline > a`
+            ].join(', ');
+            tool.getAll(menuElems).forEach((menuElem) => {
+                menuElem.addEventListener('click', function(thisEvent) {
+                    thisEvent.preventDefault();
+                    let outerLi = tool.findParent(this, 'li');
+                    if (outerLi) {
+                        outerLi.classList.toggle(tool.menu.closed);
+                    }
+                    // check if closed
+                    if (!outerLi.classList.contains(tool.menu.closed)) {
+                        // stop if opened
+                        return;
+                    }
+                    // if have sublines, close all sublines automatically
+                    let outerP = tool.findParent(this, 'p');
+                    if (outerP && outerP.classList.contains('line')) {
+                        console.log('thisEvent = ', outerP);
+                        let sublines = outerLi.querySelectorAll('p.subline');
+                        if (sublines) {
+                            sublines.forEach((subline) => {
+                                // close if opened
+                                let innerLi = tool.findParent(subline, 'li');
+                                if (innerLi && !innerLi.classList.contains(tool.menu.closed)) {
+                                    innerLi.classList.add(tool.menu.closed);
+                                }
+                            });
+                        }
+                    }
+                });
+            });
+        },
+        
         menuRange: (item) => {
             let newText = ['<ol>'];
             for (let model of item.models) {
@@ -189,13 +228,13 @@ let tool = {
                 if (appItem.lines) {
                     newText.push('<ul>');
                     for (let line of appItem.lines) {
-                        newText.push('<li>');
+                        newText.push(`<li class="${tool.menu.closed}">`);
                         newText.push(`<p class="line"><a href="#${line.printFolder}">${line.label}</a></p>`);
                         if (line.sublines) {
                             newText.push('<ul>');
                             for (let subline of line.sublines) {
                                 newText.push(...[
-                                    '<li>',
+                                    `<li class="${tool.menu.closed}">`,
                                     `<p class="subline"><a href="#${subline.printFolder}">${subline.label}</a></p>`,
                                     ...tool.model.menuRange(subline),
                                     '</li>'
@@ -246,6 +285,7 @@ let tool = {
 
         printTable: () => {
             tool.model.printMenu();
+            tool.model.menuEvent();
             tool.prepareFigureList();
 
             let wrapper = tool.get('#wrapper');
