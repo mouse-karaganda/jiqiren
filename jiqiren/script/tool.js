@@ -254,7 +254,7 @@ let tool = {
                         newText.push(`<li class="${tool.menu.closed}">`);
                         newText.push(...[
                             '<p class="line">',
-                                `<span class="as_button">&nbsp;</span> <a href="#${line.printFolder}">${line.label}</a>`,
+                                `<a href="#${line.printFolder}">${line.label}</a><span class="as_button">&nbsp;</span>`,
                             '</p>'
                         ]);
                         if (line.sublines) {
@@ -263,7 +263,7 @@ let tool = {
                                 newText.push(...[
                                     `<li class="${tool.menu.closed}">`,
                                     '<p class="subline">',
-                                        `<span class="as_button">&nbsp;</span> <a href="#${subline.printFolder}">${subline.label}</a>`,
+                                        `<a href="#${subline.printFolder}">${subline.label}</a><span class="as_button">&nbsp;</span>`,
                                     '</p>',
                                     ...tool.model.menuRange(subline),
                                     '</li>'

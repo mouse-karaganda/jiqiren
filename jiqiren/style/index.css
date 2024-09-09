@@ -118,6 +118,7 @@ nav {
 span.as_button {
     cursor: pointer;
     padding: 0 1em;
+    margin-left: 1em;
 }
 
 ul > li {
@@ -136,7 +137,9 @@ ul.only_app > li {
 
 li p.line,
 li p.subline {
-    background: no-repeat left / contain;
+    display: flex;
+    justify-content: space-between;
+    background: no-repeat right / contain;
     background-image: url('../img/gui/icon_close.png');
 }
 
