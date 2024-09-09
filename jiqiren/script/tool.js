@@ -172,11 +172,13 @@ let tool = {
             Element.prototype.hasClass = function(name) {
                 return this.classList.contains(name);
             };
-            Element.prototype.isClosed = function() {
-                return this.hasClass(tool.menu.closed);
-            };
+            Object.defineProperty(Element.prototype, 'isClosed', {
+                get() {
+                    return this.hasClass(tool.menu.closed);
+                }
+            });
             Element.prototype.setClosedIfOpened = function() {
-                if (!this.isClosed()) {
+                if (!this.isClosed) {
                     this.classList.add(tool.menu.closed);
                 }
             };
@@ -186,14 +188,20 @@ let tool = {
             Element.prototype.findParent = function(tagName) {
                 return tool.findParent(this, tagName);
             };
+            Element.prototype.titleIfClosed = function() {
+                let outerLi = this.findParent('li');
+                this.title = (outerLi && outerLi.isClosed) ? 'Открыть' : 'Закрыть';
+            };
         },
         
         menuEvent: () => {
             let menuElems = [
-                `.${tool.menu.closed} .line > a`,
-                `.${tool.menu.closed} .subline > a`
+                `.${tool.menu.closed} .line > .as_button`,
+                `.${tool.menu.closed} .subline > .as_button`
             ].join(', ');
             tool.getAll(menuElems).forEach((menuElem) => {
+                menuElem.titleIfClosed();
+
                 menuElem.addEventListener('click', function(thisEvent) {
                     thisEvent.preventDefault();
                     let outerLi = this.findParent('li');
@@ -201,8 +209,10 @@ let tool = {
                         return;
                     }
                     outerLi.toggleClosed();
+                    this.titleIfClosed();
+
                     // stop if opened after toggle
-                    if (!outerLi.isClosed()) {
+                    if (!outerLi.isClosed) {
                         return;
                     }
                     // if line have sublines, close all sublines automatically
@@ -242,13 +252,19 @@ let tool = {
                     newText.push('<ul>');
                     appItem.lines.forEach((line) => {
                         newText.push(`<li class="${tool.menu.closed}">`);
-                        newText.push(`<p class="line"><a href="#${line.printFolder}">${line.label}</a></p>`);
+                        newText.push(...[
+                            '<p class="line">',
+                                `<span class="as_button">&nbsp;</span> <a href="#${line.printFolder}">${line.label}</a>`,
+                            '</p>'
+                        ]);
                         if (line.sublines) {
                             newText.push('<ul>');
                             line.sublines.forEach((subline) => {
                                 newText.push(...[
                                     `<li class="${tool.menu.closed}">`,
-                                    `<p class="subline"><a href="#${subline.printFolder}">${subline.label}</a></p>`,
+                                    '<p class="subline">',
+                                        `<span class="as_button">&nbsp;</span> <a href="#${subline.printFolder}">${subline.label}</a>`,
+                                    '</p>',
                                     ...tool.model.menuRange(subline),
                                     '</li>'
                                 ]);

@@ -12,9 +12,9 @@
     --color-folder: maroon;
     --color-guid: gray;
     --font-size: 0.8em;
-    --padding-standard: 10px;
+    --number-width: 32px;
     --soft-radius: 10px;
-    --width-number: 32px;
+    --standard-padding: 10px;
 }
 
 body,
@@ -57,7 +57,7 @@ h2 {
 }
 
 .with_index h2 {
-    margin-right: calc(var(--width-number) + var(--padding-standard));
+    margin-right: calc(var(--number-width) + var(--standard-padding));
 }
 
 h2 + div {
@@ -97,9 +97,9 @@ ul {
     padding-left: 24px;
 }
 
-li {
-    w_padding: 0 0 1em 0;
-    line-height: 2.5;
+ol > li,
+ul.only_app > li {
+    padding: 0.5em 0;
 }
 
 p {
@@ -108,7 +108,16 @@ p {
 }
 
 nav {
-    justify-content: space-between;
+    w_justify-content: space-between;
+}
+
+.left_menu {
+    margin-right: 80px;
+}
+
+span.as_button {
+    cursor: pointer;
+    padding: 0 1em;
 }
 
 ul > li {
@@ -121,13 +130,24 @@ li.closed_menu {
     list-style-type: disclosure-closed;
 }
 
+ul.only_app > li {
+    list-style-type: square;
+}
+
+li p.line,
+li p.subline {
+    background: no-repeat left / contain;
+    background-image: url('../img/gui/icon_close.png');
+}
+
+li.closed_menu p.line,
+li.closed_menu p.subline {
+    background-image: url('../img/gui/icon_open.png');
+}
+
 li.closed_menu > ul,
 li.closed_menu > ol {
     display: none;
-}
-
-ul.nav_menu > li {
-    list-style-type: square;
 }
 
 .nav_menu {
@@ -143,10 +163,6 @@ ul.nav_menu,
     margin-top: 3em;
 }
 
-.left_menu {
-    w_margin-right: 40px;
-}
-
 .folder_path {
     color: var(--color-folder);
 }
@@ -160,14 +176,14 @@ ul.nav_menu,
 }
 
 a.goto {
-    background: url(../img/external_link.svg) right center no-repeat;
+    background: url('../img/gui/external_link.svg') right center no-repeat;
     background-size: 12px;
     padding-right: 16px;
 }
 
 .arrow_top {
     position: fixed;
-    bottom: var(--padding-standard);
+    bottom: var(--standard-padding);
     left: 270px;
 }
 
@@ -191,7 +207,7 @@ a.goto {
     color: white;
     background: var(--border-green);
     min-height: 2.65em;
-    margin-right: var(--padding-standard);
+    margin-right: var(--standard-padding);
 }
 
 .number,
@@ -205,7 +221,8 @@ a.goto {
 
 #page {
     margin: 0 auto 60px auto;
-    padding: var(--padding-standard);
+    padding: var(--standard-padding);
+    w_border: 1px dotted green;
 }
 
 #wrapper {
@@ -238,16 +255,16 @@ a.goto {
 
 .item_count,
 .index_value {
-    width: var(--width-number);
+    width: var(--number-width);
     text-align: right;
 }
 
 .item_count {
-    padding-right: var(--padding-standard);
+    padding-right: var(--standard-padding);
 }
 
 .index_value {
-    padding-left: var(--padding-standard);
+    padding-left: var(--standard-padding);
 }
 
 .app_item:not(.with_index) .index_value {
