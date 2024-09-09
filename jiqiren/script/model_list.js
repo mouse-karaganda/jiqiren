@@ -1767,6 +1767,38 @@ app.Makerzoid.figures = [{
     name: {eng: 'Elasti-Car'},
     number: 1,
     model: app.Makerzoid.Superbot.Superbot.elastic
+}, {
+    index: 62,
+    folder: '019c0f91-8064-4658-8885-4791757687ff/motuoche',
+    cover: '38.png',
+    count: 38,
+    name: {eng: 'Motorcycles'},
+    number: 1,
+    model: app.Makerzoid.Superbot.Superbot.basic
+}, {
+    index: 63,
+    folder: '1980dfee-ed34-47b4-893c-69d43f39b73b/cb gancaocha',
+    cover: '11.png',
+    count: 11,
+    name: {eng: 'Hayfork'},
+    number: 3,
+    model: app.Makerzoid.Superbot.Superbot.basic
+}, {
+    index: 64,
+    folder: '29abcc3b-3f5e-49f2-abf3-46d908a87e75/cb shensuojia',
+    cover: '17.png',
+    count: 17,
+    name: {eng: 'Expansion Clamp'},
+    number: 4,
+    model: app.Makerzoid.Superbot.Superbot.basic
+}, {
+    index: 65,
+    folder: '7af4b8df-2dc3-47bf-a4ad-a1f219776a61/tianping',
+    cover: '39.png',
+    count: 39,
+    name: {eng: 'Balance'},
+    number: 2,
+    model: app.Makerzoid.Superbot.Superbot.basic
 }];
 
 app.SuperBot_RobotMake.figures = [];
