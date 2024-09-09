@@ -1735,6 +1735,38 @@ app.Makerzoid.figures = [{
     name: {eng: 'Sumo Robot'},
     number: 6,
     model: app.Makerzoid.Superbot.Superbot.power
+}, {
+    index: 58,
+    folder: '0b210b02-2dcf-4823-8523-d7ffdc4eb17d/huiliche',
+    cover: '31.png',
+    count: 32,
+    name: {eng: 'Inertia Pull-Back Car'},
+    number: 2,
+    model: app.Makerzoid.Superbot.Superbot.elastic
+}, {
+    index: 59,
+    folder: '131e4514-0e55-4ecb-9a70-697272b39702/gangqin',
+    cover: '46.png',
+    count: 46,
+    name: {eng: 'Piano'},
+    number: 4,
+    model: app.Makerzoid.Superbot.Superbot.elastic
+}, {
+    index: 60,
+    folder: '32d6bef4-4d40-402e-904d-836f70bc3292/minihuiliche',
+    cover: '17.png',
+    count: 17,
+    name: {eng: 'mini Inertia Pull-Back Car'},
+    number: 3,
+    model: app.Makerzoid.Superbot.Superbot.elastic
+}, {
+    index: 61,
+    folder: 'c38815eb-1ffe-44ee-b6f1-c0e994ca2cd6/tanliche',
+    cover: '23.png',
+    count: 23,
+    name: {eng: 'Elasti-Car'},
+    number: 1,
+    model: app.Makerzoid.Superbot.Superbot.elastic
 }];
 
 app.SuperBot_RobotMake.figures = [];
