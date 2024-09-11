@@ -2135,6 +2135,174 @@ app.Makerzoid.figures = [{
     name: {eng: 'Swing'},
     number: 1,
     model: app.Makerzoid.Superbot.Premium.mechanical
+}, {
+    index: 108,
+    folder: '0fdb3161-8951-4689-b27c-ed1556d94936_glb',
+    cover: 'shanchitiane-1.png',
+    count: 1,
+    name: {eng: 'Flapping Swan'},
+    number: 14,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 109,
+    folder: '128a8a9f-ff60-40da-93c0-3d0eb9c1beac_glb',
+    cover: '99hudie.png',
+    count: 1,
+    name: {eng: 'Butterfly'},
+    number: 7,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 110,
+    folder: '2438c6da-c44f-4fe3-a364-658cc2bd6de6_glb',
+    cover: '1qingwa.png',
+    count: 1,
+    name: {eng: 'Frog'},
+    number: 11,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 111,
+    folder: '32396f9f-b710-4e65-9b96-668a8fff0e47_glb',
+    cover: 'maerzhuanquanquan.png',
+    count: 1,
+    name: {eng: 'Circling Horse'},
+    number: 9,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 112,
+    folder: '32821623-9044-4a00-a634-9494fab51a0e_glb',
+    cover: '11pangxie.png',
+    count: 1,
+    name: {eng: 'Crab'},
+    number: 10,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 113,
+    folder: '45e2dfbe-af32-40ae-8c09-0397b9d4de1f_glb',
+    cover: 'JvQianPangXie.png',
+    count: 1,
+    name: {eng: 'Giant Claw Crab'},
+    number: 8,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 114,
+    folder: '50067b1f-1d4c-4cfd-97bd-eb4758db63ea_glb',
+    cover: 'liuzujiqiren-1.png',
+    count: 1,
+    name: {eng: 'Hexapod Robot'},
+    number: 1,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 115,
+    folder: '51b3b0fd-747e-40b4-8917-69065d5dc4ab_glb',
+    cover: 'GengNiu-2.png',
+    count: 1,
+    name: {eng: 'Oxen'},
+    number: 3,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 116,
+    folder: '7b84dbdb-2831-4966-b3b3-dc52d6c80a98_glb',
+    cover: '104sanjiaolong.png',
+    count: 1,
+    name: {eng: 'Triceratops'},
+    number: 12,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 117,
+    folder: '93f48e3f-ba95-4a2d-87b1-b8a365946100_glb',
+    cover: '109wanlong.png',
+    count: 1,
+    name: {eng: 'Wrist Dragon'},
+    number: 17,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 118,
+    folder: '9d88efb2-6d9c-43c7-ad0d-25fb45fcec10_glb',
+    cover: '107tuoniao.png',
+    count: 1,
+    name: {eng: 'Ostrich'},
+    number: 15,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 119,
+    folder: 'a5e0553a-6c7d-4ba7-b6fb-2ac60040995d_glb',
+    cover: '1yaoyaoxiaoma.png',
+    count: 1,
+    name: {eng: 'Rocking Horse'},
+    number: 20,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 120,
+    folder: 'a9747ccc-eae0-408b-a340-e31618ae47e9_glb',
+    cover: 'YiLong-2.png',
+    count: 1,
+    name: {eng: 'Pterosaur'},
+    number: 21,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 121,
+    folder: 'abc5c0c5-c0bb-4164-9ce7-613eb9b60964_glb',
+    cover: '11hudie.png',
+    count: 1,
+    name: {eng: 'Flapping Butterfly'},
+    number: 13,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 122,
+    folder: 'c161cd30-f028-446f-a2e5-9581f61e3a0d_glb',
+    cover: '11tuzi.png',
+    count: 1,
+    name: {eng: 'Rabbit'},
+    number: 16,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 123,
+    folder: 'c77a3a6f-2f44-4c20-8d01-522d7ef7a428_glb',
+    cover: '11xiezi.png',
+    count: 1,
+    name: {eng: 'Scorpion'},
+    number: 19,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 124,
+    folder: 'd2be04bb-6b81-4819-a936-0f27c33966ac_glb',
+    cover: 'BBazujiqiren.png',
+    count: 1,
+    name: {eng: 'Octopod Robot'},
+    number: 2,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 125,
+    folder: 'e2e5adff-711b-4de3-965e-5a01e07c4a61_glb',
+    cover: '110xiaoxiezi.png',
+    count: 1,
+    name: {eng: 'Little Scorpion'},
+    number: 18,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 126,
+    folder: 'e92dea43-125c-4d23-94ba-a5c00052a326_glb',
+    cover: 'HaiGui-2.png',
+    count: 1,
+    name: {eng: 'Turtle'},
+    number: 6,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 127,
+    folder: 'f53255c9-910b-407e-b2ad-59617e225a05_glb',
+    cover: 'daxiang-1.png',
+    count: 1,
+    name: {eng: 'Elephant'},
+    number: 4,
+    model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 128,
+    folder: 'f912ec2a-59dd-43c6-8801-3014e1febe62_glb',
+    cover: '11haishi.png',
+    count: 1,
+    name: {eng: 'Sea Lion'},
+    number: 5,
+    model: app.Makerzoid.Superbot.Premium.animal
 }];
 
 app.SuperBot_RobotMake.figures = [];
