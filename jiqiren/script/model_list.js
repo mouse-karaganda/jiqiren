@@ -1943,6 +1943,86 @@ app.Makerzoid.figures = [{
     name: {eng: 'Weightlifting'},
     number: 7,
     model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 84,
+    folder: '0b8c6062-0755-4821-89aa-01902a3e01de_glb',
+    cover: '76zhishengji.png',
+    count: 1,
+    name: {eng: 'Airplane'},
+    number: 8,
+    model: app.Makerzoid.Superbot.Premium.transportation
+}, {
+    index: 85,
+    folder: '26dd1629-25f2-4aa4-ad6d-9fb0198b99cc_glb',
+    cover: 'Saiche2.png',
+    count: 1,
+    name: {eng: 'Racing Car 2'},
+    number: 9,
+    model: app.Makerzoid.Superbot.Premium.transportation
+}, {
+    index: 86,
+    folder: '2e273cf3-cf1d-4359-8bb3-3ca61aa4925a_glb',
+    cover: 'TuoHuangChe.png',
+    count: 1,
+    name: {eng: 'Pioneer Cart'},
+    number: 6,
+    model: app.Makerzoid.Superbot.Premium.transportation
+}, {
+    index: 87,
+    folder: '3fe7ed9c-684b-4e2e-b466-9d70eabf519a_glb',
+    cover: '1zhishengfeiji.png',
+    count: 1,
+    name: {eng: 'Helicopter'},
+    number: 7,
+    model: app.Makerzoid.Superbot.Premium.transportation
+}, {
+    index: 88,
+    folder: '3fef469b-b93e-4665-8fa3-25d83fd3cc6e_glb',
+    cover: '72nuowuche.png',
+    count: 1,
+    name: {eng: 'Moving Cart'},
+    number: 4,
+    model: app.Makerzoid.Superbot.Premium.transportation
+}, {
+    index: 89,
+    folder: 'aaf356bf-cf7b-438d-ad37-5645b3c66239_glb',
+    cover: '10tanceche.png',
+    count: 1,
+    name: {eng: 'Detection Vehicle'},
+    number: 5,
+    model: app.Makerzoid.Superbot.Premium.transportation
+}, {
+    index: 90,
+    folder: 'b0f70857-ab9e-4ace-a9c9-b99a0edc55d8_glb',
+    cover: 'ChaChe-3.png',
+    count: 1,
+    name: {eng: 'Forklift'},
+    number: 1,
+    model: app.Makerzoid.Superbot.Premium.transportation
+}, {
+    index: 91,
+    folder: 'c6ec218f-0650-4f97-909b-f6c7248d2492_glb',
+    cover: 'laoyeche.png',
+    count: 1,
+    name: {eng: 'Vintage Car'},
+    number: 10,
+    model: app.Makerzoid.Superbot.Premium.transportation
+}, {
+    index: 92,
+    folder: 'cfb5a35d-6bf5-46b3-8588-6f8fdcac037c_glb',
+    cover: 'MaChe-2.png',
+    count: 1,
+    name: {eng: 'Carriage'},
+    number: 3,
+    model: app.Makerzoid.Superbot.Premium.transportation
+}, {
+    index: 93,
+    folder: 'd88c8c0e-bc39-476f-9c4d-656e427d561b_glb',
+    cover: '70huaxianche.png',
+    count: 1,
+    name: {eng: 'Line Drawing Vehicle'},
+    number: 2,
+    model: app.Makerzoid.Superbot.Premium.transportation
 }];
 
 app.SuperBot_RobotMake.figures = [];
