@@ -1799,6 +1799,150 @@ app.Makerzoid.figures = [{
     name: {eng: 'Balance'},
     number: 2,
     model: app.Makerzoid.Superbot.Superbot.basic
+}, {
+    index: 66,
+    folder: '03943fe2-fc64-4aae-a7cf-64be5afb3902_glb',
+    cover: 'kunaodexiaohai.png',
+    count: 1,
+    name: {eng: 'Sobbing Child'},
+    number: 8,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 67,
+    folder: '0564fb04-6c05-4ac7-a03d-35c30bfebfd3_glb',
+    cover: 'banyunjiqiren.png',
+    count: 1,
+    name: {eng: 'Handling Robot'},
+    number: 10,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 68,
+    folder: '0b6c30f5-ac20-4d2b-a85a-f47607e3b25c_glb',
+    cover: 'fanyingyouxi2.png',
+    count: 1,
+    name: {eng: 'Reaction Game 2'},
+    number: 13,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 69,
+    folder: '0dd192d4-ad20-4238-b07c-712e4d8256bf_glb',
+    cover: 'XUNfuguaishou.png',
+    count: 1,
+    name: {eng: 'Taming the Monster'},
+    number: 9,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 70,
+    folder: '261a964e-5e3e-4b3a-8738-7013f37eef98_glb',
+    cover: 'xiaochejiawu.png',
+    count: 1,
+    name: {eng: 'Carrying Device'},
+    number: 17,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 71,
+    folder: '2b50e265-6d91-4cf3-9c63-220610f8c85e_glb',
+    cover: 'XuanZhuanHongWai.png',
+    count: 1,
+    name: {eng: 'Intelligent Car Obstacle Avoidance'},
+    number: 2,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 72,
+    folder: '3e16a736-09c5-490c-8ba3-e20004b0f6a0_glb',
+    cover: 'dddanxiaodepachong.png',
+    count: 1,
+    name: {eng: 'Timid Spider'},
+    number: 4,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 73,
+    folder: '45231dca-3ae7-425a-9500-0bdd806e4529_glb',
+    cover: 'jugongxiaoren.png',
+    count: 1,
+    name: {eng: 'Bowing Man'},
+    number: 6,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 74,
+    folder: '46318181-9157-4201-9d78-579881b68cf8_glb',
+    cover: 'ticaoyundong.png',
+    count: 1,
+    name: {eng: 'Gymnastics'},
+    number: 16,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 75,
+    folder: '501b4f9e-dd05-413e-aea5-9d20965eed0c_glb',
+    cover: 'jianshenxiaoren.png',
+    count: 1,
+    name: {eng: 'Fitness Man'},
+    number: 15,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 76,
+    folder: '5e0d6819-c0bd-4d8f-98b1-f808bf23313c_glb',
+    cover: 'HaiDaoChuan-2.png',
+    count: 1,
+    name: {eng: 'Corsair'},
+    number: 3,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 77,
+    folder: '70fae0c8-8b04-4307-a533-5f89f89e76a2_glb',
+    cover: '56buxingjiqiren.png',
+    count: 1,
+    name: {eng: 'Walking Robot'},
+    number: 11,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 78,
+    folder: '731502cc-b302-4e6d-8cc3-beecf149648e_glb',
+    cover: 'qizhongji.png',
+    count: 1,
+    name: {eng: 'Crane'},
+    number: 14,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 79,
+    folder: '9c39888b-badf-4ee2-8508-429e437fc51b_glb',
+    cover: 'jixiejiazi.png',
+    count: 1,
+    name: {eng: 'Mechanical Clamp'},
+    number: 5,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 80,
+    folder: 'ad8a8783-b752-47f9-b733-875c404450eb_glb',
+    cover: 'zuqiuyundong.png',
+    count: 1,
+    name: {eng: 'Soccer'},
+    number: 18,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 81,
+    folder: 'ade7740e-8615-4119-9dde-575d952e38ac_glb',
+    cover: 'fanyingyouxi1.png',
+    count: 1,
+    name: {eng: 'Reaction Game 1'},
+    number: 12,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 82,
+    folder: 'c9c95d7c-cd97-41b6-a48a-ac4be4a1076c_glb',
+    cover: 'JiChuXingTai.png',
+    count: 1,
+    name: {eng: 'Intelligent Car Line Following'},
+    number: 1,
+    model: app.Makerzoid.Superbot.Premium.intelligent
+}, {
+    index: 83,
+    folder: 'e33d6b55-31a6-4b44-ae87-9b1efb6c60c4_glb',
+    cover: 'juzhong.png',
+    count: 1,
+    name: {eng: 'Weightlifting'},
+    number: 7,
+    model: app.Makerzoid.Superbot.Premium.intelligent
 }];
 
 app.SuperBot_RobotMake.figures = [];
