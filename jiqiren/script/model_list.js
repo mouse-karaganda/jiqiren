@@ -2023,6 +2023,118 @@ app.Makerzoid.figures = [{
     name: {eng: 'Line Drawing Vehicle'},
     number: 2,
     model: app.Makerzoid.Superbot.Premium.transportation
+}, {
+    index: 94,
+    folder: '1980b6c4-1deb-4d33-a82c-c0139f0b7eb9_glb',
+    cover: 'zhongbai.png',
+    count: 1,
+    name: {eng: 'Pendulum'},
+    number: 14,
+    model: app.Makerzoid.Superbot.Premium.mechanical
+}, {
+    index: 95,
+    folder: '1b67d3ab-a8f8-414b-a83b-86da2e0e1245_glb',
+    cover: 'YaoShouJiQiRen.png',
+    count: 1,
+    name: {eng: 'Waving Figure'},
+    number: 11,
+    model: app.Makerzoid.Superbot.Premium.mechanical
+}, {
+    index: 96,
+    folder: '3d33d9e4-a0f8-44f2-a816-ef102023fbc8_glb',
+    cover: 'Sshengjiangpingtai.png',
+    count: 1,
+    name: {eng: 'Lift Platform'},
+    number: 13,
+    model: app.Makerzoid.Superbot.Premium.mechanical
+}, {
+    index: 97,
+    folder: '436ca045-3651-42a7-9d6c-cd5e185f2ae0_glb',
+    cover: '86tiaolouji.png',
+    count: 1,
+    name: {eng: 'Bungee Jumping Machine'},
+    number: 8,
+    model: app.Makerzoid.Superbot.Premium.mechanical
+}, {
+    index: 98,
+    folder: '4540e457-cef6-4fcf-a3cb-b2fb57e0c549_glb',
+    cover: 'HuaXueYunDongYuan-2.png',
+    count: 1,
+    name: {eng: 'Skiing Robot'},
+    number: 3,
+    model: app.Makerzoid.Superbot.Premium.mechanical
+}, {
+    index: 99,
+    folder: '4948f26e-39e8-4014-b1d7-5f0082f9fe37_glb',
+    cover: 'tuibiji.png',
+    count: 1,
+    name: {eng: 'Coin Pusher'},
+    number: 9,
+    model: app.Makerzoid.Superbot.Premium.mechanical
+}, {
+    index: 100,
+    folder: '5896051b-ef19-4fb0-a956-61c5240938a1_glb',
+    cover: 'XuanZhuanFeiYi.png',
+    count: 1,
+    name: {eng: 'Rotating Chair Swing'},
+    number: 10,
+    model: app.Makerzoid.Superbot.Premium.mechanical
+}, {
+    index: 101,
+    folder: '5ccf9413-0f64-4b7d-b5c0-f9417ef61808_glb',
+    cover: 'ManBuJi.png',
+    count: 1,
+    name: {eng: 'Treadmill'},
+    number: 5,
+    model: app.Makerzoid.Superbot.Premium.mechanical
+}, {
+    index: 102,
+    folder: '66aa9b69-d944-4aa4-88a1-c3ee97408016_glb',
+    cover: 'ZhiNengLiangYiJia-2.png',
+    count: 1,
+    name: {eng: 'Clothes Rack'},
+    number: 4,
+    model: app.Makerzoid.Superbot.Premium.mechanical
+}, {
+    index: 103,
+    folder: '925e4e36-a51b-4cbe-9968-6bc9d440499b_glb',
+    cover: 'ShengJiangFeiTianYi.png',
+    count: 1,
+    name: {eng: 'Lift-off Flying Chair'},
+    number: 7,
+    model: app.Makerzoid.Superbot.Premium.mechanical
+}, {
+    index: 104,
+    folder: 'de2bdf44-9d04-45b3-9b36-44cadc01a7ee_glb',
+    cover: '84paxingjiqiren.png',
+    count: 1,
+    name: {eng: 'Crawling Robot'},
+    number: 6,
+    model: app.Makerzoid.Superbot.Premium.mechanical
+}, {
+    index: 105,
+    folder: 'e5005dd2-7cf0-4263-8241-4bf4512e6092_glb',
+    cover: 'duanlianxiaoren.png',
+    count: 1,
+    name: {eng: 'Exercise Man'},
+    number: 2,
+    model: app.Makerzoid.Superbot.Premium.mechanical
+}, {
+    index: 106,
+    folder: 'e8bcb5af-ab06-4543-a68e-3b9eb0d2cc07_glb',
+    cover: 'jianshenzixingche.png',
+    count: 1,
+    name: {eng: 'Exercise Bike'},
+    number: 12,
+    model: app.Makerzoid.Superbot.Premium.mechanical
+}, {
+    index: 107,
+    folder: 'f3383a65-807a-4d3c-a2c1-3412eaa1f582_glb',
+    cover: 'DangQiuQian.png',
+    count: 1,
+    name: {eng: 'Swing'},
+    number: 1,
+    model: app.Makerzoid.Superbot.Premium.mechanical
 }];
 
 app.SuperBot_RobotMake.figures = [];
