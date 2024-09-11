@@ -2303,6 +2303,158 @@ app.Makerzoid.figures = [{
     name: {eng: 'Sea Lion'},
     number: 5,
     model: app.Makerzoid.Superbot.Premium.animal
+}, {
+    index: 129,
+    folder: '0254be83-cfad-4822-9aeb-6cb46c3fcca3_glb',
+    cover: '118huaban.png',
+    count: 1,
+    name: {eng: 'Skateboard'},
+    number: 4,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 130,
+    folder: '18833d99-96f1-4aaf-b571-a60617dc6ac0_glb',
+    cover: '11saiche.png',
+    count: 1,
+    name: {eng: 'Racing Car'},
+    number: 9,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 131,
+    folder: '224c548d-64b8-454e-9217-53b6eafd43fa_glb',
+    cover: '11lunyi.png',
+    count: 1,
+    name: {eng: 'Wheelchair'},
+    number: 6,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 132,
+    folder: '22fa5b70-c04b-428d-8078-4ae2576c4055_glb',
+    cover: '11siquche.png',
+    count: 1,
+    name: {eng: 'Four-wheel Drive Vehicle'},
+    number: 10,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 133,
+    folder: '293b82d3-9220-46b1-bbff-fadbf2f55e66_glb',
+    cover: '11xiaotuiche.png',
+    count: 1,
+    name: {eng: 'Pushcart'},
+    number: 11,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 134,
+    folder: '335df706-e79a-4707-ae95-6ecf6dac22b4_glb',
+    cover: '133shaqiuche.png',
+    count: 1,
+    name: {eng: 'Sand Dune Buggy'},
+    number: 19,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 135,
+    folder: '6ee9bd37-8a1e-4ea9-b68a-bff4d30e205a_glb',
+    cover: '11tuoyuanji.png',
+    count: 1,
+    name: {eng: 'Elliptical Machine'},
+    number: 17,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 136,
+    folder: '82e17253-0461-40d2-89d9-c16f850e9fa8_glb',
+    cover: '130feiji.png',
+    count: 1,
+    name: {eng: 'Airplane'},
+    number: 16,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 137,
+    folder: '8352a287-0711-4e4a-85d0-529d4a9392ee_glb',
+    cover: 'YuanGui.png',
+    count: 1,
+    name: {eng: 'Compass'},
+    number: 13,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 138,
+    folder: '8a6a2930-57f6-4fdd-8bd0-644d9dc0c0c5_glb',
+    cover: 'ddalishiyouxiji.png',
+    count: 1,
+    name: {eng: 'Pinball Machine'},
+    number: 1,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 139,
+    folder: '9149fd85-0b51-49bb-9195-fd101013bbff_glb',
+    cover: '116haidaochuan.png',
+    count: 1,
+    name: {eng: 'Pirate Ship'},
+    number: 2,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 140,
+    folder: '93d6e4c3-9164-4986-8534-141fe871e7ec_glb',
+    cover: '128zhuanwanche.png',
+    count: 1,
+    name: {eng: 'Turning Car'},
+    number: 14,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 141,
+    folder: '960d5235-fa25-431e-b657-b6f34ab82b90_glb',
+    cover: '126yaluji.png',
+    count: 1,
+    name: {eng: 'Steamroller'},
+    number: 12,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 142,
+    folder: '9afdd89d-d656-4142-bbc4-18f59314675d_glb',
+    cover: 'ZiXingChe.png',
+    count: 1,
+    name: {eng: 'Bicycle'},
+    number: 15,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 143,
+    folder: 'adbc66e2-b25c-45d6-85e3-2f99a6ba1a8a_glb',
+    cover: '122pinghengniao.png',
+    count: 1,
+    name: {eng: 'Balancing Bird'},
+    number: 8,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 144,
+    folder: 'e2484879-f7ca-4a87-bd5f-94aaf036f6f2_glb',
+    cover: '1huochetou.png',
+    count: 1,
+    name: {eng: 'Locomotive'},
+    number: 5,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 145,
+    folder: 'e31dc32a-f710-418d-849c-ddff8a71ab9d_glb',
+    cover: 'sanlunzixingche.png',
+    count: 1,
+    name: {eng: 'Tricycle'},
+    number: 18,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 146,
+    folder: 'e6244bf0-b778-40d0-b5e3-83b5c6ed8ba3_glb',
+    cover: '11motuoche.png',
+    count: 1,
+    name: {eng: 'Motorcycle'},
+    number: 7,
+    model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 147,
+    folder: 'fecf74d5-c604-440f-b538-1686490e1d98_glb',
+    cover: '117haleimotuoche.png',
+    count: 1,
+    name: {eng: 'Harley Motorcycle'},
+    number: 3,
+    model: app.Makerzoid.Superbot.Premium.basic
 }];
 
 app.SuperBot_RobotMake.figures = [];
