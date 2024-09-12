@@ -2559,6 +2559,558 @@ app.Makerzoid.figures = [{
     name: {eng: 'Gyro Launcher'},
     number: 4,
     model: app.Makerzoid.Superbot.Premium.elastic
+}, {
+    index: 161,
+    folder: '00b7b820-feac-4bdd-b8b5-509a01123ae4/lvlamo',
+    cover: '25.png',
+    count: 25,
+    name: {eng: 'Grinding Donkey'},
+    number: 34,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 162,
+    folder: '07568e71-7bb2-46ed-ad97-fbf36728ffae/shouyaofengshan',
+    cover: '35.png',
+    count: 35,
+    name: {eng: 'Hand Fan'},
+    number: 67,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 163,
+    folder: '0a66ca77-73c5-4e93-8861-0e047323359e/jianyibanfengrenji',
+    cover: '57.png',
+    count: 57,
+    name: {eng: 'Sewing Machine'},
+    number: 33,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 164,
+    folder: '10d47982-818a-4064-83b5-a47658e4ce79/tuoluo1',
+    cover: '4.png',
+    count: 4,
+    name: {eng: 'Spinning Top 1'},
+    number: 21,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 165,
+    folder: '11da2532-1048-41bd-af53-145c8f0bc93a/denglong',
+    cover: '25.png',
+    count: 25,
+    name: {eng: 'Group1-Little Lantern'},
+    number: 4,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 166,
+    folder: '12e52a18-4653-4932-a0f9-c1d6329ed017/zhengmianqizhongji_',
+    cover: '34.png',
+    count: 34,
+    name: {eng: 'Front Crane'},
+    number: 63,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 167,
+    folder: '14879148-088b-4ee6-a3cd-d1a9192685a9/dashouyaofengshan',
+    cover: '51.png',
+    count: 51,
+    name: {eng: 'Big Hand Fan'},
+    number: 25,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 168,
+    folder: '20a2433b-0e36-40b8-9fcc-089263a16f0e/tuoluo3',
+    cover: '5.png',
+    count: 5,
+    name: {eng: 'Spinning Top 3'},
+    number: 23,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 169,
+    folder: '2247ce42-0266-4eea-b1ac-31e188afa7fb/guache',
+    cover: '77.png',
+    count: 77,
+    name: {eng: 'Trailer'},
+    number: 66,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 170,
+    folder: '236564d7-1d49-4325-b28f-351e21d9ee29/tuopantianping',
+    cover: '23.png',
+    count: 23,
+    name: {eng: 'Counter Balance'},
+    number: 58,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 171,
+    folder: '25267273-c095-4c2d-963f-b49f3ffbdce4/qianjinding',
+    cover: '69.png',
+    count: 69,
+    name: {eng: 'Jack'},
+    number: 68,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 172,
+    folder: '282acc5b-819f-4696-a068-67e26aa35b5b/qiguaidezhong',
+    cover: '53.png',
+    count: 53,
+    name: {eng: 'Weirdo Clock'},
+    number: 26,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 173,
+    folder: '2933657e-dfc2-4461-84d8-5432c0c2e08a/tuoluo2',
+    cover: '4.png',
+    count: 4,
+    name: {eng: 'Spinning Top 2'},
+    number: 22,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 174,
+    folder: '2af7ee8e-a86e-46ac-8b2a-798379464c47/tuoluo1',
+    cover: '7.png',
+    count: 7,
+    name: {eng: 'Group1-Spinning Top1'},
+    number: 1,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 175,
+    folder: '2d9060c2-3cc4-447d-bc0f-5bba11541ee9/yaobaixiaohuangren',
+    cover: '35.png',
+    count: 35,
+    name: {eng: 'Group1-Rocking YL Man'},
+    number: 7,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 176,
+    folder: '2fa1b15e-ca0b-4c6d-a0d7-441100a72d27/huapazi',
+    cover: '10.png',
+    count: 10,
+    name: {eng: 'Rabble'},
+    number: 50,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 177,
+    folder: '3785cd48-ddc9-4b61-a89d-5176e67a6ba6/zuantouche',
+    cover: '41.png',
+    count: 41,
+    name: {eng: 'Drill car'},
+    number: 38,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 178,
+    folder: '415cfab5-588e-42b6-bf66-55f58fd3800e/ancheng_',
+    cover: '39.png',
+    count: 39,
+    name: {eng: 'Counter Scale'},
+    number: 44,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 179,
+    folder: '448f10ac-1d6c-4fbe-84d2-c3e84b49915c/minihuochetou',
+    cover: '11.png',
+    count: 11,
+    name: {eng: 'Mini Locomotive'},
+    number: 55,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 180,
+    folder: '49428d56-4406-4a8a-8b66-745063ea03b0/taikongmanbuji',
+    cover: '21.png',
+    count: 21,
+    name: {eng: 'Cardio Cruiser'},
+    number: 57,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 181,
+    folder: '4a0008eb-a0e3-45b2-a26b-76348141bb90/qiuqian',
+    cover: '31.png',
+    count: 31,
+    name: {eng: 'Swing'},
+    number: 14,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 182,
+    folder: '4f314be8-375d-4283-8102-7d78c41ee150/sibianxing',
+    cover: '4.png',
+    count: 4,
+    name: {eng: 'Quadrilateral'},
+    number: 13,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 183,
+    folder: '56e42c0f-2808-480d-b8e6-8b358d003067/dingpa',
+    cover: '13.png',
+    count: 13,
+    name: {eng: 'Group1-Rake'},
+    number: 3,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 184,
+    folder: '57bdff72-fcc1-48f5-af7e-0226182bbc0e/tanliche5',
+    cover: '29.png',
+    count: 29,
+    name: {eng: 'Group1-Elasti-Car'},
+    number: 5,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 185,
+    folder: '596ae634-9057-416e-bb3e-b7c338ee85e3/shensuojia',
+    cover: '12.png',
+    count: 12,
+    name: {eng: 'Expansion Clamp'},
+    number: 20,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 186,
+    folder: '5a037efc-16b7-4b6b-b359-ce24f47dc271/lianjia',
+    cover: '12.png',
+    count: 12,
+    name: {eng: 'Flail'},
+    number: 54,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 187,
+    folder: '5a54c06c-d8fe-4582-a7a9-d6cb4f012646/qiaoqiaoban',
+    cover: '13.png',
+    count: 13,
+    name: {eng: 'Teeterboard'},
+    number: 12,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 188,
+    folder: '66098039-4653-45d6-8e40-2fb642eb93eb/xaiodenglong-3',
+    cover: '34.png',
+    count: 34,
+    name: {eng: 'Little Lantern'},
+    number: 9,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 189,
+    folder: '6f5fedaa-1cb2-4e39-bdaa-c44d32d5dcb9/chongmiji_',
+    cover: '34.png',
+    count: 34,
+    name: {eng: 'Grinding Machine'},
+    number: 45,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 190,
+    folder: '739328c8-43bf-49f3-9860-873447cb2192/tuoyuanji',
+    cover: '23.png',
+    count: 23,
+    name: {eng: 'Elliptical Machine'},
+    number: 59,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 191,
+    folder: '775e2c75-18f4-42bd-aff8-9532ce364793/pinghengche',
+    cover: '24.png',
+    count: 24,
+    name: {eng: 'Balance Car'},
+    number: 35,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 192,
+    folder: '823609c0-c965-4264-aea7-0d2b127000aa/zixingche',
+    cover: '34.png',
+    count: 34,
+    name: {eng: 'Bicycle'},
+    number: 65,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 193,
+    folder: '824da5e0-ad46-4c46-9685-82660e61f540/tuoluo4',
+    cover: '6.png',
+    count: 6,
+    name: {eng: 'Spinning Top 4'},
+    number: 24,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 194,
+    folder: '872d6baa-2208-4c74-bc5a-cc70c6a337ba/denglong',
+    cover: '33.png',
+    count: 33,
+    name: {eng: 'Lantern'},
+    number: 39,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 195,
+    folder: '8795fee3-0a99-4d2d-93a1-be1a36d263fd/zhediezhuo',
+    cover: '13.png',
+    count: 13,
+    name: {eng: 'Folding Table'},
+    number: 62,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 196,
+    folder: '8c894b42-984d-4213-9417-78cadf92a7dc/hualundiaoji',
+    cover: '66.png',
+    count: 66,
+    name: {eng: 'Pulley Crane'},
+    number: 31,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 197,
+    folder: '8db0427b-8a0f-40a4-ac9b-5447a958130a/shouqiang',
+    cover: '20.png',
+    count: 20,
+    name: {eng: 'Elastic Band Gun'},
+    number: 27,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 198,
+    folder: '91764166-ec1a-4988-a58b-c7d9c6f8a737/duluntuiche',
+    cover: '20.png',
+    count: 20,
+    name: {eng: 'Wheelbarrow'},
+    number: 47,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 199,
+    folder: '9558e7c8-f152-4111-94d1-06a28e6d3697/tuoluo2',
+    cover: '10.png',
+    count: 10,
+    name: {eng: 'Group1-Spinning Top2'},
+    number: 2,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 200,
+    folder: '99034c4c-8f2a-4550-962c-b8e088212d8d/zhediedao',
+    cover: '5.png',
+    count: 5,
+    name: {eng: 'Jackknife'},
+    number: 18,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 201,
+    folder: '9a4deaaa-6ae8-4a01-b6da-924442347e0e/zhuanwanxiaoche',
+    cover: '33.png',
+    count: 33,
+    name: {eng: 'Wheel Car'},
+    number: 30,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 202,
+    folder: 'a6ff8afd-3669-4072-9891-fb1998a872b3/qianzi',
+    cover: '19.png',
+    count: 19,
+    name: {eng: 'Pliers'},
+    number: 17,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 203,
+    folder: 'a911167e-848b-493e-bfa4-6ed22c8669a0/fengrenji--',
+    cover: '75.png',
+    count: 75,
+    name: {eng: 'Sweing Machine'},
+    number: 8,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 204,
+    folder: 'b1a92826-c4e1-4aaa-b1a3-db4914deac45/jiaobanqi',
+    cover: '34.png',
+    count: 34,
+    name: {eng: 'stirrer'},
+    number: 41,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 205,
+    folder: 'b296b5f9-9a2f-4511-9f98-f44ca9150c13/jianyitianping',
+    cover: '14.png',
+    count: 14,
+    name: {eng: 'Balance'},
+    number: 53,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 206,
+    folder: 'b97df12f-18c4-49dc-91af-d81878bbac37/niuyaoji_',
+    cover: '11.png',
+    count: 11,
+    name: {eng: 'Twister Machine'},
+    number: 56,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 207,
+    folder: 'c1cd57c8-d19c-484e-9767-54d3dd9a28ef/huabanche',
+    cover: '21.png',
+    count: 21,
+    name: {eng: 'Scooter'},
+    number: 52,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 208,
+    folder: 'c3ce7955-5fed-415f-b061-fd7fe0ba18d2/HuaBan',
+    cover: '17.png',
+    count: 17,
+    name: {eng: 'Skateboard'},
+    number: 51,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 209,
+    folder: 'c4e278e0-92e3-4aca-9f07-470aee6f2ba1/zhedieshatanyi',
+    cover: '18.png',
+    count: 18,
+    name: {eng: 'Beach Chair'},
+    number: 61,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 210,
+    folder: 'c8053342-b6b3-41da-992e-35f090cc8f95/gancaocha',
+    cover: '12.png',
+    count: 12,
+    name: {eng: 'Hayfork'},
+    number: 48,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 211,
+    folder: 'c90f92da-ed9b-484d-b069-c58663cd7e99/langanmen_',
+    cover: '32.png',
+    count: 32,
+    name: {eng: 'Rail Gate'},
+    number: 43,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 212,
+    folder: 'cd8f9984-d2b8-461b-830b-b47992393b6c/gongchengche',
+    cover: '30.png',
+    count: 30,
+    name: {eng: 'Siege Vehicle'},
+    number: 49,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 213,
+    folder: 'ce9490a0-9cc2-464b-972b-4cfe0987c989/pingxingsibianxing',
+    cover: '7.png',
+    count: 7,
+    name: {eng: 'Parallelogram'},
+    number: 16,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 214,
+    folder: 'cee332bc-e0ed-41d6-9fe7-fe73e32ed398/tianping',
+    cover: '35.png',
+    count: 35,
+    name: {eng: 'Balance'},
+    number: 29,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 215,
+    folder: 'cf331899-da48-413c-afcf-dd76e8d26b97/dalijiyaji',
+    cover: '24.png',
+    count: 24,
+    name: {eng: 'Vigorous Extrusion Machine'},
+    number: 32,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 216,
+    folder: 'd050106e-df47-4387-8cc6-7e73ed47a2ab/choulashituoluo-',
+    cover: '21.png',
+    count: 21,
+    name: {eng: 'Group1-Top Launcher With Handle'},
+    number: 6,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 217,
+    folder: 'd4418bde-7c3a-493e-9a27-16d6922ac54f/dingpa',
+    cover: '10.png',
+    count: 10,
+    name: {eng: 'Rake'},
+    number: 46,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 218,
+    folder: 'ddf85a38-fe43-444f-a717-1a66f41d1bbb/shaokaojia',
+    cover: '19.png',
+    count: 19,
+    name: {eng: 'Barbecue Grill'},
+    number: 15,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 219,
+    folder: 'e1d760d2-798a-4641-9f90-c4184abd5f4e/jiyaji',
+    cover: '30.png',
+    count: 30,
+    name: {eng: 'Extrusion Machine'},
+    number: 42,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 220,
+    folder: 'e40b590f-bd6f-4eeb-b81f-a2d6c1eac8eb/yushuaqi',
+    cover: '33.png',
+    count: 33,
+    name: {eng: 'Windscreen Wiper'},
+    number: 40,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 221,
+    folder: 'e5f5aa39-21af-4707-a3dc-dbf5889b6a82/xiaotuiche',
+    cover: '13.png',
+    count: 13,
+    name: {eng: 'Wheel Barrow'},
+    number: 19,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 222,
+    folder: 'ec507bcd-0076-4897-bbec-337f37953b07/xuanzhuanmuma',
+    cover: '93.png',
+    count: 93,
+    name: {eng: 'Merry-Go-Round'},
+    number: 36,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 223,
+    folder: 'ec59c55c-8d32-4e70-aeec-21186e7c0448/sanjiaoxing',
+    cover: '8.png',
+    count: 8,
+    name: {eng: 'Triangle'},
+    number: 10,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 224,
+    folder: 'ef39a107-362f-43a7-a8d3-0e3efb801f82/xiaohuoche',
+    cover: '20.png',
+    count: 20,
+    name: {eng: 'Buggy'},
+    number: 60,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 225,
+    folder: 'f5c9829d-5ffc-4b8b-a352-52f2c8f25f33/qizhongji',
+    cover: '97.png',
+    count: 97,
+    name: {eng: 'Crane'},
+    number: 11,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 226,
+    folder: 'f8ebd2f4-9022-48ae-a352-b63591624262/shoujizhijia',
+    cover: '91.png',
+    count: 91,
+    name: {eng: 'Cellphone Mount'},
+    number: 69,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 227,
+    folder: 'f9d2fa1e-09b4-49a8-8749-a8552c505b8c/zhinuganyunshuji',
+    cover: '46.png',
+    count: 46,
+    name: {eng: 'Chinook'},
+    number: 37,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 228,
+    folder: 'fd0dae09-1434-476d-a24f-4152390ac9d3/shouyaodianzhuan',
+    cover: '35.png',
+    count: 35,
+    name: {eng: 'Hand Drill'},
+    number: 28,
+    model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 229,
+    folder: 'fd30b32c-f769-4c19-b669-82af087fd9af/zhilibantoushiche',
+    cover: '27.png',
+    count: 27,
+    name: {eng: 'Vertical Slab Catapult'},
+    number: 64,
+    model: app.Makerzoid.Diverse.Diverse.basic
 }];
 
 app.SuperBot_RobotMake.figures = [];
