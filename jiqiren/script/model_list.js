@@ -2503,6 +2503,62 @@ app.Makerzoid.figures = [{
     name: {eng: 'Gate'},
     number: 4,
     model: app.Makerzoid.Superbot.Premium.gear
+}, {
+    index: 154,
+    folder: '0684544a-78fe-42c4-8c76-3c59d28bb554_glb',
+    cover: 'toushiji.png',
+    count: 1,
+    name: {eng: 'Catapult 2'},
+    number: 6,
+    model: app.Makerzoid.Superbot.Premium.elastic
+}, {
+    index: 155,
+    folder: '5f2d5d81-cb9d-448e-9c06-3baa880e6bff_glb',
+    cover: 'tanliyueyeche.png',
+    count: 1,
+    name: {eng: 'Bouncy Off-Road Vehicle'},
+    number: 7,
+    model: app.Makerzoid.Superbot.Premium.elastic
+}, {
+    index: 156,
+    folder: '6c520dc0-1f22-4052-9841-f074c1923b91_glb',
+    cover: 'TanLiChe-2.png',
+    count: 1,
+    name: {eng: 'Bouncy Car'},
+    number: 2,
+    model: app.Makerzoid.Superbot.Premium.elastic
+}, {
+    index: 157,
+    folder: '836ee43a-c334-4d8a-8c7b-1d22955e3891_glb',
+    cover: 'TouShiChe-3.png',
+    count: 1,
+    name: {eng: 'Catapult'},
+    number: 3,
+    model: app.Makerzoid.Superbot.Premium.elastic
+}, {
+    index: 158,
+    folder: '9cc219df-1576-437d-ab0d-45781b5e3451_glb',
+    cover: 'AnYaTanLiChe.png',
+    count: 1,
+    name: {eng: 'Pressed Bouncy Car'},
+    number: 1,
+    model: app.Makerzoid.Superbot.Premium.elastic
+}, {
+    index: 159,
+    folder: '9eb04fc2-d26e-487b-b580-a4856c01215f_glb',
+    cover: 'ZhiFeiJiFaSheQi-2.png',
+    count: 1,
+    name: {eng: 'Paper Airplane Launcher'},
+    number: 5,
+    model: app.Makerzoid.Superbot.Premium.elastic
+}, {
+    index: 160,
+    folder: 'b3b6b2fd-efe3-442d-95d9-f226910c1489_glb',
+    cover: 'TuoLuoFaSheQi.png',
+    count: 1,
+    name: {eng: 'Gyro Launcher'},
+    number: 4,
+    model: app.Makerzoid.Superbot.Premium.elastic
 }];
 
 app.SuperBot_RobotMake.figures = [];
