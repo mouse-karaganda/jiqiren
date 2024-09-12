@@ -2455,6 +2455,54 @@ app.Makerzoid.figures = [{
     name: {eng: 'Harley Motorcycle'},
     number: 3,
     model: app.Makerzoid.Superbot.Premium.basic
+}, {
+    index: 148,
+    folder: '0b67d156-cd27-4be2-9b45-d3638383783b_glb',
+    cover: 'daxingqizhongji.png',
+    count: 1,
+    name: {eng: 'Large Crane'},
+    number: 5,
+    model: app.Makerzoid.Superbot.Premium.gear
+}, {
+    index: 149,
+    folder: '1d5dd8f3-1869-4ec7-baca-bf3b36acc803_glb',
+    cover: '134chache.png',
+    count: 1,
+    name: {eng: 'Forklift'},
+    number: 1,
+    model: app.Makerzoid.Superbot.Premium.gear
+}, {
+    index: 150,
+    folder: '3b4301cd-4256-4ffa-814a-44944c352176_glb',
+    cover: '11shanchixiaoche.png',
+    count: 1,
+    name: {eng: 'Winged Cart'},
+    number: 2,
+    model: app.Makerzoid.Superbot.Premium.gear
+}, {
+    index: 151,
+    folder: '5335d9f0-bab5-40fd-9675-a4f7d6b905b3_glb',
+    cover: '136jiazi.png',
+    count: 1,
+    name: {eng: 'Clamp'},
+    number: 3,
+    model: app.Makerzoid.Superbot.Premium.gear
+}, {
+    index: 152,
+    folder: '64b4c153-cf70-4c3a-bc55-cb881bb5d0d4_glb',
+    cover: '139shengjiangchache.png',
+    count: 1,
+    name: {eng: 'Elevating Forklift'},
+    number: 6,
+    model: app.Makerzoid.Superbot.Premium.gear
+}, {
+    index: 153,
+    folder: 'd8cac350-70ab-4f82-a9a6-3b29ea8769f6_glb',
+    cover: 'menzha.png',
+    count: 1,
+    name: {eng: 'Gate'},
+    number: 4,
+    model: app.Makerzoid.Superbot.Premium.gear
 }];
 
 app.SuperBot_RobotMake.figures = [];
