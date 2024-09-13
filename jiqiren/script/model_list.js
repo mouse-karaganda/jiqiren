@@ -3111,6 +3111,78 @@ app.Makerzoid.figures = [{
     name: {eng: 'Vertical Slab Catapult'},
     number: 64,
     model: app.Makerzoid.Diverse.Diverse.basic
+}, {
+    index: 230,
+    folder: '39941251-08f7-4c6c-9c61-eab7961a2723/banshitanliche',
+    cover: '57.png',
+    count: 57,
+    name: {eng: 'Elasti-Pumper With Trigger'},
+    number: 1,
+    model: app.Makerzoid.Diverse.Diverse.mechanical
+}, {
+    index: 231,
+    folder: '6c4fd579-9972-49ba-87e3-d86fca26c95a/guanxingche-2',
+    cover: '32.png',
+    count: 32,
+    name: {eng: 'Inertia Car 2'},
+    number: 4,
+    model: app.Makerzoid.Diverse.Diverse.mechanical
+}, {
+    index: 232,
+    folder: '82c179ce-e404-4184-8df5-145f337d43d3/tanlichejiasuban',
+    cover: '23.png',
+    count: 23,
+    name: {eng: 'Elasti-Car (accekerated)'},
+    number: 9,
+    model: app.Makerzoid.Diverse.Diverse.mechanical
+}, {
+    index: 233,
+    folder: '939f67d2-bb45-4dbb-8b0f-ca1328cc0a55/huiliche',
+    cover: '57.png',
+    count: 57,
+    name: {eng: 'Inertia Pull-Back Car'},
+    number: 2,
+    model: app.Makerzoid.Diverse.Diverse.mechanical
+}, {
+    index: 234,
+    folder: '96c757ba-fd14-45aa-b739-16ad64554423/choulashituoluo',
+    cover: '21.png',
+    count: 21,
+    name: {eng: 'Top Launcher With Handle'},
+    number: 8,
+    model: app.Makerzoid.Diverse.Diverse.mechanical
+}, {
+    index: 235,
+    folder: 'a2c02793-272b-472a-a245-a1a18b1d2457/banjishituoluo',
+    cover: '28.png',
+    count: 28,
+    name: {eng: 'Top Launcher With Trigger'},
+    number: 6,
+    model: app.Makerzoid.Diverse.Diverse.mechanical
+}, {
+    index: 236,
+    folder: 'b1c5052a-ba18-4c41-a58b-9d0ddadb3f65/guanxingche-3',
+    cover: '33.png',
+    count: 33,
+    name: {eng: 'Inertia Car 3'},
+    number: 5,
+    model: app.Makerzoid.Diverse.Diverse.mechanical
+}, {
+    index: 237,
+    folder: 'b551565d-4caf-4622-8d17-fe6bc344bcc4/guanxingche-1',
+    cover: '40.png',
+    count: 40,
+    name: {eng: 'Inertia Car 1'},
+    number: 3,
+    model: app.Makerzoid.Diverse.Diverse.mechanical
+}, {
+    index: 238,
+    folder: 'bd9e2134-c4ba-484a-913c-c2b80be24e3f/tanliche',
+    cover: '18.png',
+    count: 18,
+    name: {eng: 'Elasti-Car'},
+    number: 7,
+    model: app.Makerzoid.Diverse.Diverse.mechanical
 }];
 
 app.SuperBot_RobotMake.figures = [];

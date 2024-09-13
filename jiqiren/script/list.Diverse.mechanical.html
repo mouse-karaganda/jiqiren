@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>model_list.js</title>
+</head>
+<body>
+<input type="button" value="Select and copy" />
+<pre id="terminal"></pre>
+<script>
+let one = [
+'39941251-08f7-4c6c-9c61-eab7961a2723/banshitanliche',
+'6c4fd579-9972-49ba-87e3-d86fca26c95a/guanxingche-2',
+'82c179ce-e404-4184-8df5-145f337d43d3/tanlichejiasuban',
+'939f67d2-bb45-4dbb-8b0f-ca1328cc0a55/huiliche',
+'96c757ba-fd14-45aa-b739-16ad64554423/choulashituoluo',
+'a2c02793-272b-472a-a245-a1a18b1d2457/banjishituoluo',
+'b1c5052a-ba18-4c41-a58b-9d0ddadb3f65/guanxingche-3',
+'b551565d-4caf-4622-8d17-fe6bc344bcc4/guanxingche-1',
+'bd9e2134-c4ba-484a-913c-c2b80be24e3f/tanliche'
+];
+
+let two = [
+'39941251-08f7-4c6c-9c61-eab7961a2723/    1)   57   57   Elasti-Pumper With Trigger',
+'939f67d2-bb45-4dbb-8b0f-ca1328cc0a55/    2)   57   57   Inertia Pull-Back Car',
+'b551565d-4caf-4622-8d17-fe6bc344bcc4/    3)   40   40   Inertia Car 1',
+'6c4fd579-9972-49ba-87e3-d86fca26c95a/    4)   32   32   Inertia Car 2',
+'b1c5052a-ba18-4c41-a58b-9d0ddadb3f65/    5)   33   33   Inertia Car 3',
+'a2c02793-272b-472a-a245-a1a18b1d2457/    6)   28   28   Top Launcher With Trigger',
+'bd9e2134-c4ba-484a-913c-c2b80be24e3f/    7)   18   18   Elasti-Car',
+'96c757ba-fd14-45aa-b739-16ad64554423/    8)   21   21   Top Launcher With Handle',
+'82c179ce-e404-4184-8df5-145f337d43d3/    9)   23   23   Elasti-Car (accekerated)'
+];
+
+let terminal = document.querySelector('#terminal');
+let fromIndex = 230;
+let three = [];
+
+two.forEach((twoItem) => {
+    let split = twoItem.match(/(.+)\/ +(\d+)\) +(\d+) +(\d+) +(.+)/);
+    //console.log('threeItem == ', split);
+    three.push({
+        folder: split[1],
+        number: split[2],
+        count: split[3],
+        cover: split[4],
+        name:  split[5]
+    });
+});
+
+console.log('three == ', three);
+
+one.forEach((oneItem) => {
+    let path = oneItem.match(/(.+)\/.+/);
+    //console.log('oneItem == ', path);
+    let findThree = three.find((threeItem) => threeItem.folder == path[1]);
+    if (!findThree) {
+        return;
+    }
+    let text = [
+        ', {',
+        [
+            `    index: ${fromIndex++}`,
+            `    folder: '${oneItem}'`,
+            `    cover: '${findThree.cover}.png'`,
+            `    count: ${findThree.count}`,
+            `    name: {eng: '${findThree.name}'}`,
+            `    number: ${findThree.number}`,
+            '    model: app.Makerzoid.Diverse.Diverse.mechanical'
+        ].join(',\r\n'),
+        '}'
+    ].join('\r\n');
+    terminal.innerHTML += text;
+});
+
+document.querySelector('input').addEventListener('click', function(thisEvent) {
+    window.getSelection().selectAllChildren(terminal);
+    navigator.clipboard.writeText(terminal.innerText);
+});
+</script>
+</body>
+</html>
