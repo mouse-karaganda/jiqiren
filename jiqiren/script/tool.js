@@ -143,10 +143,15 @@ let tool = {
             let line = (model.subline) ? model.subline.line : model.line;
             label = `${line.label} : ${label}`;
         }
+        let folder = figure.folder;
+        let subfolder = folder.match(/(.+)\/(.+)/);
+        if (subfolder) {
+            folder = `${subfolder[1]}\/<br />${subfolder[2]}`;
+        }
 
         let newText = [
             '<div class="item_label">',
-                `<p class="guid">${figure.folder}</p>`,
+                `<p class="guid">${folder}</p>`,
                 `<p class="model">${label}</p>`,
                 '<div class="item_number">',
                     `<div class="number"><span>${figure.number}</span></div>`,

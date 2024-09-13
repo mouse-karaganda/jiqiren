@@ -177,9 +177,8 @@ ul.nav_menu,
 
 .guid {
     color: var(--color-guid);
-    max-height: 2.5em;
-    line-height: 1.35em;
-    overflow-y: hidden;
+    w_overflow-x: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
 }
 

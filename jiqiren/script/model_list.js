@@ -173,6 +173,15 @@ let app = [{
                 {label: 'Space Series', folder: 'space'}
             ]
         }]
+    }, {
+        label: 'Future Mechanic', folder: 'Future',
+        sublines: [{
+            label: 'Future Mechanic', folder: 'Future',
+            models: [
+                {label: 'Electric Robot', folder: 'electric'},
+                {label: 'Manual Robot', folder: 'manual'}
+            ]
+        }]
     }]
 }, {
     label: 'SuperBot', folder: 'SuperBot_RobotMake',
@@ -204,13 +213,6 @@ let app = [{
             {label: 'Stretchy Battle', folder: 'stretchy'},
             {label: 'Star War', folder: 'starWar'},
             {label: 'Land', folder: 'land'}
-        ]
-    }, {
-        label: 'Fun123', folder: 'Fun123',
-        models: [
-            {label: 'Stretchy Battle123', folder: 'stretchy123'},
-            {label: 'Star War123', folder: 'starWar123'},
-            {label: 'Land123', folder: 'land123'}
         ]
     }]
 }];
