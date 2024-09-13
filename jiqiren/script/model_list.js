@@ -3183,6 +3183,334 @@ app.Makerzoid.figures = [{
     name: {eng: 'Elasti-Car'},
     number: 7,
     model: app.Makerzoid.Diverse.Diverse.mechanical
+}, {
+    index: 239,
+    folder: '02e5042f-47b0-4081-b7ee-cbed354eaca1/3-feixingxiaohuangren-1_',
+    cover: '59.png',
+    count: 59,
+    name: {eng: 'Manual Joint Motion 1'},
+    number: 9,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 240,
+    folder: '060443b5-a182-40ee-a988-5ab18daac390/3-tiaoyuexiaohuangren-4',
+    cover: '72.png',
+    count: 72,
+    name: {eng: 'Manual Jumping YL Man 4'},
+    number: 16,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 241,
+    folder: '135c676b-1347-4ce3-bd52-382fd98665cb/3-tiaoyuexiaohuangren-6',
+    cover: '58.png',
+    count: 58,
+    name: {eng: 'Manual Jumping YL Man 6'},
+    number: 18,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 242,
+    folder: '14370439-d0cf-4cf2-8f2b-c8b2c5348dbd/3-tiaoyuexiaohuangren-2',
+    cover: '35.png',
+    count: 35,
+    name: {eng: 'Manual Jumping YL Man 2'},
+    number: 14,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 243,
+    folder: '1e42e1ce-fe28-4661-b1f9-22dff94fec4b/3-yaobaixiaohuangren-1',
+    cover: '64.png',
+    count: 64,
+    name: {eng: 'Manual Rocking YL Man 1'},
+    number: 30,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 244,
+    folder: '209a1500-b632-480c-a4ca-973b1069e171/3-tiaoyuexiaohuangren-10',
+    cover: '46.png',
+    count: 46,
+    name: {eng: 'Manual Jumping YL Man 10'},
+    number: 22,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 245,
+    folder: '27912c6c-e103-4bc3-b7f2-6a3c27ad3a82/xiaohuangrenxiaoche-4',
+    cover: '68.png',
+    count: 68,
+    name: {eng: 'Car with YL Man 4'},
+    number: 8,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 246,
+    folder: '2b3deec6-d192-4390-8ea3-a15a7347a945/3-xuanzhuanxiaohuangren-6',
+    cover: '90.png',
+    count: 90,
+    name: {eng: 'Manual Rotating YL Man 6'},
+    number: 28,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 247,
+    folder: '2f3c8d0d-49c4-4078-a458-65dcea8a7041/3-yaobaixiaohuangren-4',
+    cover: '32.png',
+    count: 32,
+    name: {eng: 'Manual Rocking YL Man 4'},
+    number: 33,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 248,
+    folder: '308d3a8e-1112-4c41-89e3-c4a3ec440516/xiaohuangrenxiaoche-2',
+    cover: '54.png',
+    count: 54,
+    name: {eng: 'Car with YL Man 2'},
+    number: 6,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 249,
+    folder: '34956220-a1d9-489b-8a12-b5ee291983ce/3-feixingxiaohuangren-4_',
+    cover: '54.png',
+    count: 54,
+    name: {eng: 'Manual Joint Motion 2'},
+    number: 10,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 250,
+    folder: '39b3408f-3867-4bab-98ec-185533fd5c1e/3-xuanzhuanxiaohuangren-7',
+    cover: '90.png',
+    count: 90,
+    name: {eng: 'Manual Rotating YL Man 7'},
+    number: 29,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 251,
+    folder: '3c4ca4c9-d287-4edb-8886-62630d25ec36/3-xuanzhuanxiaohuangren-4',
+    cover: '74.png',
+    count: 74,
+    name: {eng: 'Manual Rotating YL Man 4'},
+    number: 26,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 252,
+    folder: '40cdad3a-b0c4-440f-a94b-6556258824fb/3-yaobaixiaohuangren-9',
+    cover: '59.png',
+    count: 59,
+    name: {eng: 'Manual Rocking YL Man 9'},
+    number: 38,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 253,
+    folder: '468f34c2-680d-43a8-a972-6bbf53d28ac1/3-yaobaixiaohuangren-7',
+    cover: '65.png',
+    count: 65,
+    name: {eng: 'Manual Rocking YL Man 7'},
+    number: 36,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 254,
+    folder: '53ee59a3-818c-4b67-a959-003330dc8258/3-yaobaixiaohuangren-8',
+    cover: '69.png',
+    count: 69,
+    name: {eng: 'Manual Rocking YL Man 8'},
+    number: 37,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 255,
+    folder: '549d6560-6c61-4d2d-94a1-81d8da7cff42/3-tiaoyuexiaohuangren-9',
+    cover: '86.png',
+    count: 86,
+    name: {eng: 'Manual Jumping YL Man 9'},
+    number: 21,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 256,
+    folder: '5ca27ac8-e369-46b6-968c-8ea8575ad46b/3-tiaoyuexiaohuangren-5',
+    cover: '69.png',
+    count: 69,
+    name: {eng: 'Manual Jumping YL Man 5'},
+    number: 17,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 257,
+    folder: '6542a591-d225-4d14-8dc2-0eb04fd6562d/3-yaobaixiaohuangren-3',
+    cover: '100.png',
+    count: 100,
+    name: {eng: 'Manual Rocking YL Man 3'},
+    number: 32,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 258,
+    folder: '663c71b1-ae5b-49b7-a790-6611a373c30b/3-xuanzhuanxiaohuangren-5',
+    cover: '79.png',
+    count: 79,
+    name: {eng: 'Manual Rotating YL Man 5'},
+    number: 27,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 259,
+    folder: '707d82a1-6ef3-4452-ba0f-3dc67bba19f5/3-yaobaixiaohuangren-10',
+    cover: '33.png',
+    count: 33,
+    name: {eng: 'Manual Rocking YL Man 10'},
+    number: 39,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 260,
+    folder: '78701d63-7840-47a6-a2e9-e9fc7cc555f0/jiatelinxiaohuangrenshoudongban',
+    cover: '62.png',
+    count: 62,
+    name: {eng: 'Manual Gatling Gun'},
+    number: 2,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 261,
+    folder: '866766d1-ace2-40a7-8dd9-69efa83ca8fc/ZZzairenzhishengjiXIN',
+    cover: '66.png',
+    count: 66,
+    name: {eng: 'Copter With YL Man'},
+    number: 41,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 262,
+    folder: '8695bfc8-c8ab-4a2e-bb07-e9b14a6daf03/3-xuanzhuanxiaohuangren-1',
+    cover: '45.png',
+    count: 45,
+    name: {eng: 'Manual Rotating YL Man 1'},
+    number: 23,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 263,
+    folder: '94fc19f2-20d1-4988-9288-4d817b5e9674/3-tiaoyuexiaohuangren-3',
+    cover: '52.png',
+    count: 52,
+    name: {eng: 'Manual Jumping YL Man 3'},
+    number: 15,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 264,
+    folder: '950baf30-5be4-46c5-8e43-4c32b23b9020/3-tiaoyuexiaohuangren-8',
+    cover: '67.png',
+    count: 67,
+    name: {eng: 'Manual Jumping YL Man 8'},
+    number: 20,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 265,
+    folder: '95dcb810-907d-4cb3-82e2-abebd09bed42/3-tiaoyuexiaohuangren-1',
+    cover: '43.png',
+    count: 43,
+    name: {eng: 'Manual Jumping YL Man 1'},
+    number: 13,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 266,
+    folder: 'a33ca316-f633-41e7-8e57-51e696330f11/3-yaobaixiaohuangren-5',
+    cover: '56.png',
+    count: 56,
+    name: {eng: 'Manual Rocking YL Man 5'},
+    number: 34,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 267,
+    folder: 'a7e7810e-fea3-4492-a522-6a9c5060face/3-xuanzhuanxiaohuangren-2',
+    cover: '47.png',
+    count: 47,
+    name: {eng: 'Manual Rotating YL Man 2'},
+    number: 24,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 268,
+    folder: 'af6e6b2c-a4fc-4114-b23e-b08569885fa0/xiaohuangrenzuantouche',
+    cover: '47.png',
+    count: 47,
+    name: {eng: 'Manual Drill Car'},
+    number: 4,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 269,
+    folder: 'c1ed7ed3-c24c-4279-a6f3-104f070dd398/3-feixingxiaohuangren-3_',
+    cover: '50.png',
+    count: 50,
+    name: {eng: 'Manual Joint Motion 3'},
+    number: 11,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 270,
+    folder: 'c76575e9-21da-40da-885b-a3eee5aab21c/xiaohuangrenxiaoche-1',
+    cover: '56.png',
+    count: 56,
+    name: {eng: 'Car with YL Man 1'},
+    number: 5,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 271,
+    folder: 'd4dae176-4d3f-4ccc-a261-20122ab51f44/budaoweng',
+    cover: '43.png',
+    count: 43,
+    name: {eng: 'Tumbler'},
+    number: 1,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 272,
+    folder: 'd52507a1-d6fe-4375-8312-c0ac36a1d31f/3-yaobaixiaohuangren-2',
+    cover: '58.png',
+    count: 58,
+    name: {eng: 'Manual Rocking YL Man 2'},
+    number: 31,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 273,
+    folder: 'd712d741-ce1e-4301-83ab-461bd75472bb/3-feixingxiaohuangren-2_',
+    cover: '60.png',
+    count: 60,
+    name: {eng: 'Manual Joint Motion 4'},
+    number: 12,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 274,
+    folder: 'e081ae31-db13-45c6-a3f7-ce9dc25e4500/3-yaobaixiaohuangren-6',
+    cover: '69.png',
+    count: 69,
+    name: {eng: 'Manual Rocking YL Man 6'},
+    number: 35,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 275,
+    folder: 'e69d6fb7-f90e-4c61-b029-85e064899d2c/3-tiaoyuexiaohuangren-7',
+    cover: '57.png',
+    count: 57,
+    name: {eng: 'Manual Jumping YL Man 7'},
+    number: 19,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 276,
+    folder: 'eaf5749b-ee4e-4512-921b-3f27c0eb21ba/zhanchixiaoche',
+    cover: '58.png',
+    count: 58,
+    name: {eng: 'Wings car'},
+    number: 40,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 277,
+    folder: 'ec33e8df-ce78-4e38-b114-5df49997ab58/damojishoudongban',
+    cover: '46.png',
+    count: 46,
+    name: {eng: 'Manual Buhr Mill'},
+    number: 3,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 278,
+    folder: 'f0103522-f536-4e42-9bc2-12e9897db40f/3-xuanzhuanxiaohuangren-3',
+    cover: '81.png',
+    count: 81,
+    name: {eng: 'Manual Rotating YL Man 3'},
+    number: 25,
+    model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 279,
+    folder: 'f6f7851a-1c6f-4dad-a6b8-f80c4b8b2fef/xiaohuangrenxiaoche-3',
+    cover: '60.png',
+    count: 60,
+    name: {eng: 'Car with YL Man 3'},
+    number: 7,
+    model: app.Makerzoid.Diverse.Diverse.corps
 }];
 
 app.SuperBot_RobotMake.figures = [];

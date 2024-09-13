@@ -25,7 +25,9 @@ nav,
 .item_number,
 .number,
 .arrow_top a,
-.item_right {
+.item_right,
+li p.line,
+li p.subline {
     display: flex;
 }
 
@@ -137,7 +139,6 @@ ul.only_app > li {
 
 li p.line,
 li p.subline {
-    display: flex;
     justify-content: space-between;
     background: no-repeat right / contain;
     background-image: url('../img/gui/icon_close.png');
@@ -176,6 +177,10 @@ ul.nav_menu,
 
 .guid {
     color: var(--color-guid);
+    max-height: 2.5em;
+    line-height: 1.35em;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
 }
 
 a.goto {
