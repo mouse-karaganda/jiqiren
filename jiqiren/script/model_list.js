@@ -3513,6 +3513,246 @@ app.Makerzoid.figures = [{
     name: {eng: 'Car with YL Man 3'},
     number: 7,
     model: app.Makerzoid.Diverse.Diverse.corps
+}, {
+    index: 280,
+    folder: '005dbd5c-7942-4db7-8475-4876015349a8/tanliche3',
+    cover: '19.png',
+    count: 19,
+    name: {eng: 'Group1-Elasti-Car3'},
+    number: 7,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 281,
+    folder: '03775ef3-65f3-455b-b74a-258dad9e9cd9/tanliche7',
+    cover: '24.png',
+    count: 24,
+    name: {eng: 'Group4-Spinning Top7'},
+    number: 25,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 282,
+    folder: '04052300-943a-41dd-8dfa-66a46f273104/choulashituoluo2',
+    cover: '25.png',
+    count: 25,
+    name: {eng: 'Group4-Top Launcher With Handle'},
+    number: 26,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 283,
+    folder: '05062cb0-762d-48f0-a013-210770a44f99/tanliche4',
+    cover: '19.png',
+    count: 19,
+    name: {eng: 'Group2-Elasti-Car2'},
+    number: 13,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 284,
+    folder: '1048faa3-94a6-4dcb-b4fe-d42736ae2709/tanliche5',
+    cover: '29.png',
+    count: 29,
+    name: {eng: 'Group3-Elastic Car5'},
+    number: 20,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 285,
+    folder: '1059b46e-4da7-4fe7-9e28-14473dd46d36/sibianxing',
+    cover: '4.png',
+    count: 4,
+    name: {eng: 'Group1-Quadrilateral'},
+    number: 3,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 286,
+    folder: '18185071-8a43-4d44-8abe-98a99715f847/xuanzhuanxiaohuangren-1',
+    cover: '50.png',
+    count: 50,
+    name: {eng: 'Group2-Rotating YL Man'},
+    number: 15,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 287,
+    folder: '1f493e4c-4588-4e41-b147-5c6044c1cdec/choulashituoluo-',
+    cover: '21.png',
+    count: 21,
+    name: {eng: 'Group3-Top Launcher With Handle'},
+    number: 21,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 288,
+    folder: '2343c97f-0890-45d0-996e-0cc1a75a229c/zhediedao',
+    cover: '5.png',
+    count: 5,
+    name: {eng: 'Group3-Pliers'},
+    number: 19,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 289,
+    folder: '2372d62e-dd89-4e9a-ba80-008f1724d78c/tuoluo5',
+    cover: '3.png',
+    count: 3,
+    name: {eng: 'Group3-Spinning Top5'},
+    number: 16,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 290,
+    folder: '3772672c-82ce-4421-bda2-24485c6b4487/tuoluo6',
+    cover: '10.png',
+    count: 10,
+    name: {eng: 'Group1-Spinning Top6'},
+    number: 1,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 291,
+    folder: '383a077f-e975-45b5-8228-965b825a8f71/3he1xiaohuangren',
+    cover: '56.png',
+    count: 56,
+    name: {eng: 'Group4-LY Man'},
+    number: 30,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 292,
+    folder: '3f8c0e2c-1564-4843-b486-55402a0657a9/xiaodenglong5',
+    cover: '21.png',
+    count: 21,
+    name: {eng: 'Group4-Little Lantern5'},
+    number: 23,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 293,
+    folder: '4a58cf13-7175-4f3f-be66-cfd1886a6d82/tuoluo7',
+    cover: '5.png',
+    count: 5,
+    name: {eng: 'Group1-Spinning Top7'},
+    number: 2,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 294,
+    folder: '4b7b0289-08f5-4ee5-9dec-1f0ff328db06/3he1xiaohuangren-01',
+    cover: '19.png',
+    count: 19,
+    name: {eng: 'Group4-LY Man 1'},
+    number: 27,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 295,
+    folder: '50da71a5-74db-4762-8e4c-8114f133aab3/3he1xiaohuangren-03',
+    cover: '27.png',
+    count: 27,
+    name: {eng: 'Group4-LY Man 3'},
+    number: 29,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 296,
+    folder: '60e6634b-f6c1-4fa3-b21c-4ea85ce441eb/sibianxing',
+    cover: '4.png',
+    count: 4,
+    name: {eng: 'Group2-Quadrilateral'},
+    number: 11,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 297,
+    folder: '6c0756bd-a186-41fd-9ab4-1037f75ea84f/tuoluo6',
+    cover: '10.png',
+    count: 10,
+    name: {eng: 'Group3-Spinning Top6'},
+    number: 17,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 298,
+    folder: '6c24afa3-5935-44d6-bc51-f2e2e611040f/sanjiaoxing',
+    cover: '8.png',
+    count: 8,
+    name: {eng: 'Group3-Triangle'},
+    number: 18,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 299,
+    folder: '7c18f8a3-dcd5-44f3-88f7-9eeed5fb7458/tuoluo7',
+    cover: '5.png',
+    count: 5,
+    name: {eng: 'Group2-Spinning Top7'},
+    number: 10,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 300,
+    folder: '8282fe06-7394-436b-bea2-7be1149aed47/sanjiaoxing',
+    cover: '8.png',
+    count: 8,
+    name: {eng: 'Group1-Triangle'},
+    number: 4,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 301,
+    folder: '8c0c8ad7-7c4c-4e5d-bddd-f9c6b9360031/yaobaixiaohuangren-4',
+    cover: '43.png',
+    count: 43,
+    name: {eng: 'Group1-Rocking'},
+    number: 8,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 302,
+    folder: 'c247f68f-bc38-4f2f-8153-79ae0a7b30d9/xiaodenglong-3_',
+    cover: '34.png',
+    count: 34,
+    name: {eng: 'Group2-Little Lantern3'},
+    number: 12,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 303,
+    folder: 'c3cc0297-c1a3-4c99-8b85-24b2472af7c1/3he1xiaohuangren-02',
+    cover: '14.png',
+    count: 14,
+    name: {eng: 'Group4-LY Man 2'},
+    number: 28,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 304,
+    folder: 'd56ebfe4-96b4-484e-93e7-3a0e493244e8/tuoluo6',
+    cover: '10.png',
+    count: 10,
+    name: {eng: 'Group2-Spinning Top6'},
+    number: 9,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 305,
+    folder: 'da07d788-fca0-4493-87e8-30cebd68b417/tanliche6',
+    cover: '13.png',
+    count: 13,
+    name: {eng: 'Group4-Spinning Top6'},
+    number: 24,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 306,
+    folder: 'e055f489-32e7-438c-a016-2d303f6d4268/tanliche2',
+    cover: '12.png',
+    count: 12,
+    name: {eng: 'Group1-Elasti-Car2'},
+    number: 6,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 307,
+    folder: 'e19c5aad-c11a-4489-97ce-601db9d82702/yaobaixiaohuangren-10',
+    cover: '44.png',
+    count: 44,
+    name: {eng: 'Group3-Rocking YL Man 10'},
+    number: 22,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 308,
+    folder: 'f84ef63d-e926-43ca-9d70-5178084fd155/zhediedao',
+    cover: '5.png',
+    count: 5,
+    name: {eng: 'Group1-Jackknife'},
+    number: 5,
+    model: app.Makerzoid.Machinist.Machinist.group
+}, {
+    index: 309,
+    folder: 'fa2ace1c-277f-49d7-9134-46c7656e4651/choulashituoluo-',
+    cover: '21.png',
+    count: 21,
+    name: {eng: 'Group2-Top Launcher With Handle'},
+    number: 14,
+    model: app.Makerzoid.Machinist.Machinist.group
 }];
 
 app.SuperBot_RobotMake.figures = [];
